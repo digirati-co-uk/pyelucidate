@@ -236,8 +236,7 @@ def test_items_by_target_container_none():
 
 @pytest.mark.datafiles(
     os.path.join(FIXTURE_DIR, "single_topic_page.json"),
-    os.path.join(FIXTURE_DIR, "single_topic_page0.json"),
-    os.path.join(FIXTURE_DIR, "single_anno.json"),
+    os.path.join(FIXTURE_DIR, "single_topic_page0.json")
 )
 def test_manifests_by_topic(datafiles):
     path = str(datafiles)
@@ -246,8 +245,6 @@ def test_manifests_by_topic(datafiles):
             j = json.load(f)
         with open(os.path.join(path, "single_topic_page0.json"), "r") as f:
             j0 = json.load(f)
-        with open(os.path.join(path, "single_anno.json"), "r") as f:
-            j1 = json.load(f)
         url = (
             "https://elucidate.example.org/annotation/w3c/services/search/body?fields=source,id&value="
             + "https%3A%2F%2Fomeka.example.org%2Ftopic%2Fvirtual%3Aperson%2Fmatter"

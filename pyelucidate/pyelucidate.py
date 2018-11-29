@@ -16,7 +16,9 @@ import requests
 from aiohttp import ClientSession, TCPConnector
 
 
-def set_query_field(url: str, field: str, value: Union[int, str], replace: bool = False):
+def set_query_field(
+    url: str, field: str, value: Union[int, str], replace: bool = False
+):
     """
     Parse out the different parts of a URL, and optionally replace a query string parameter,
     before return the unparsed new URL.
@@ -177,9 +179,7 @@ def parent_from_annotation(content: dict) -> Optional[str]:
         parent = content["target"].split("canvas")[0] + "manifest"
     else:
         # just use the first target if it's a list of targets.
-        if isinstance(
-                content["target"], list
-        ):
+        if isinstance(content["target"], list):
             t = content["target"][0]
         else:
             t = content["target"]
@@ -223,10 +223,10 @@ def parents_by_topic(elucidate: str, topic: str) -> Optional[str]:
 
 
 def batch_update_body(
-        new_topic_id: str, old_topic_ids: list, elucidate_base: str, dry_run: bool = True
+    new_topic_id: str, old_topic_ids: list, elucidate_base: str, dry_run: bool = True
 ) -> Tuple[int, dict]:
     """
-    Use Elucidate's bulk update APIs to replace all instances of each of a list of body source or 
+    Use Elucidate's bulk update APIs to replace all instances of each of a list of body source or
     id URIs
     (aka a topic) with the new URI (aka topic).
 
@@ -268,8 +268,9 @@ def batch_update_body(
         return 200, post_data
 
 
-def batch_delete_topic(topic_id: str, elucidate_base: str, dry_run: bool = True) -> Tuple[
-    int, dict]:
+def batch_delete_topic(
+    topic_id: str, elucidate_base: str, dry_run: bool = True
+) -> Tuple[int, dict]:
     """
     Use Elucidate's batch update apis to delete all instances of a topic URI.
 
@@ -305,7 +306,7 @@ def batch_delete_topic(topic_id: str, elucidate_base: str, dry_run: bool = True)
 
 
 def gen_search_by_target_uri(
-        target_uri: Optional[str], elucidate_base: str, model: str = "w3c", field=None
+    target_uri: Optional[str], elucidate_base: str, model: str = "w3c", field=None
 ) -> Optional[str]:
     """
     Returns a search URI for searching Elucidate for a target using Elucidate's basic search API.
@@ -314,7 +315,7 @@ def gen_search_by_target_uri(
 
     :param model: oa or w3c, defaults to w3c.
     :param elucidate_base: base URI for the annotation server, e.g. https://elucidate.example.org
-    :param target_uri: target URI to search for, e.g. a IIIF Presentatiion API canvas or manifest 
+    :param target_uri: target URI to search for, e.g. a IIIF Presentatiion API canvas or manifest
     URI
     :param field: list of fields to search on, defaults to both source and id
     :return: uri
@@ -351,7 +352,7 @@ def gen_search_by_target_uri(
 
 
 def gen_search_by_container_uri(
-        elucidate_base: str, target_uri: Optional[str], model: str = "w3c"
+    elucidate_base: str, target_uri: Optional[str], model: str = "w3c"
 ) -> Optional[str]:
     """
     Return the annotation container uri for a target. Assuming that the container URI
@@ -432,8 +433,9 @@ def read_anno(anno_uri: str) -> (Optional[str], Optional[str]):
     r = requests.get(anno_uri)
     if r.status_code == requests.codes.ok:
         anno = r.json()
-        etag = r.headers["ETag"].replace('W/"', "").replace('"',
-                                                            "")  # cleanup weak ETag format for 
+        etag = (
+            r.headers["ETag"].replace('W/"', "").replace('"', "")
+        )  # cleanup weak ETag format for
         # reuse
         return anno, etag
     else:
@@ -587,11 +589,11 @@ def identify_target(annotation_content: dict) -> Optional[str]:
 
 
 def create_anno(
-        elucidate_base: str,
-        annotation: dict,
-        target: Optional[str] = None,
-        container: Optional[str] = None,
-        model: Optional[str] = "w3c",
+    elucidate_base: str,
+    annotation: dict,
+    target: Optional[str] = None,
+    container: Optional[str] = None,
+    model: Optional[str] = "w3c",
 ) -> int:
     """
     POST an annotation to Elucidate, can be optionally passed a container, if container is None
@@ -609,9 +611,7 @@ def create_anno(
     if elucidate_base:
         if annotation:
             # N.B. assumes all targets in the annotation have the same base URI
-            if (
-                    not container
-            ):
+            if not container:
                 if not target:
                     target = identify_target(annotation)
                     if not target:
@@ -649,10 +649,10 @@ def create_anno(
 
 
 def batch_delete_target(
-        target_uri: str, elucidate_uri: str, dry_run: bool = True
+    target_uri: str, elucidate_uri: str, dry_run: bool = True
 ) -> int:
     """
-    Use Elucidate's batch delete API to delete everything with a given target id or target source 
+    Use Elucidate's batch delete API to delete everything with a given target id or target source
     URI.
 
     https://github.com/dlcs/elucidate-server/blob/master/USAGE.md#batch-delete
@@ -684,10 +684,10 @@ def batch_delete_target(
 
 
 def iterative_delete_by_target(
-        target: str,
-        elucidate_base: str,
-        search_method: str = "container",
-        dryrun: bool = True,
+    target: str,
+    elucidate_base: str,
+    search_method: str = "container",
+    dryrun: bool = True,
 ) -> bool:
     """
     Delete all annotations in a container for a target URI. Works by querying for the
@@ -753,7 +753,7 @@ def iterative_delete_by_target(
 
 
 def iiif_iterative_delete_by_manifest(
-        manifest_uri: str, elucidate_uri: str, method: str = "search", dry_run: bool = True
+    manifest_uri: str, elucidate_uri: str, method: str = "search", dry_run: bool = True
 ) -> bool:
     """
     Provides a IIIF aware wrapper around the iterative_delete_by_target function.
@@ -761,12 +761,12 @@ def iiif_iterative_delete_by_manifest(
     Iteratively delete all annotations for every canvas in a IIIF Presentation manifest and for the
     IIIF Presentation API manifest itself.
 
-    Requests annotations either by container or by target URI and iteratively deletes the 
+    Requests annotations either by container or by target URI and iteratively deletes the
     annotations by
     id, one at a time, using HTTP DELETE. Does not use Elucidate's batch APIs.
 
     :param dry_run: if True, will not actually delete
-    :param method: identify the annotations to delete via container (hash) or search (Elucidate 
+    :param method: identify the annotations to delete via container (hash) or search (Elucidate
     query)
     :param manifest_uri: URI for IIIF Presentation API manifest.
     :param elucidate_uri: Elucidate base URI, e.g. https://elucidate.example.org
@@ -790,9 +790,7 @@ def iiif_iterative_delete_by_manifest(
                         )
                     )
             else:
-                logging.error(
-                    "Could not find canvases in manifest %s", manifest_uri
-                )
+                logging.error("Could not find canvases in manifest %s", manifest_uri)
                 return False
         else:
             logging.error("Manifest %s contained no sequences", manifest_uri)
@@ -812,15 +810,15 @@ def iiif_iterative_delete_by_manifest(
 
 
 def iiif_batch_delete_by_manifest(
-        manifest_uri: str, elucidate_uri: str, dry_run: bool = True
+    manifest_uri: str, elucidate_uri: str, dry_run: bool = True
 ) -> bool:
     """
-    Provides a IIIF aware wrapper around the _batch_delete_by_target_ function. Requests a IIIF 
+    Provides a IIIF aware wrapper around the _batch_delete_by_target_ function. Requests a IIIF
     Presentation API
-    manifest and deletes all of the annotations with the canvas or the manifest URIs as their 
+    manifest and deletes all of the annotations with the canvas or the manifest URIs as their
     target.
 
-    Use Elucidate's batch delete API to delete everything with a given target id or target source 
+    Use Elucidate's batch delete API to delete everything with a given target id or target source
     URI.
 
     https://github.com/dlcs/elucidate-server/blob/master/USAGE.md#batch-delete
@@ -856,9 +854,7 @@ def iiif_batch_delete_by_manifest(
         statuses.append(
             200
             == batch_delete_target(
-                target_uri=manifest_uri,
-                elucidate_uri=elucidate_uri,
-                dry_run=dry_run,
+                target_uri=manifest_uri, elucidate_uri=elucidate_uri, dry_run=dry_run
             )
         )
     else:
@@ -892,7 +888,9 @@ def target_extract(json_dict: dict, fake_selector: bool = False) -> Optional[str
 
 
 def transform_annotation(
-        item: dict, flatten_at_ids: bool = True, transform_function: Optional[Callable] = None
+    item: dict,
+    flatten_at_ids: bool = True,
+    transform_function: Optional[Callable] = None,
 ) -> Optional[dict]:
     """
     Transform an annotation given an arbitrary
@@ -909,7 +907,9 @@ def transform_annotation(
                 if "@id" in item[k]:
                     item[k] = item[k]["@id"]
         item["motivation"] = "oa:tagging"  # force motivation to tagging
-        if isinstance(item["body"], list):  # transform each anno body (in list of bodies)
+        if isinstance(
+            item["body"], list
+        ):  # transform each anno body (in list of bodies)
             item["body"] = [transform_function(body) for body in item["body"]]
         elif isinstance(item["body"], dict):  # transform single anno (if not a list)
             item["body"] = transform_function(item["body"])
@@ -923,7 +923,8 @@ def transform_annotation(
         item["@type"] = "oa:Annotation"
         item["resource"] = item["body"]
         item = remove_keys(
-            d=item, keys=["generator", "label", "target", "creator", "type", "id", "body"]
+            d=item,
+            keys=["generator", "label", "target", "creator", "type", "id", "body"],
         )  # remove unused keys
         return item
     else:
@@ -940,12 +941,16 @@ def mirador_oa(w3c_body: dict) -> dict:
     """
     new_body = {}
     if "source" in w3c_body.keys():
-        new_body["chars"] = '<a href="' + w3c_body["source"] + '">' + w3c_body["source"] + "</a>"
+        new_body["chars"] = (
+            '<a href="' + w3c_body["source"] + '">' + w3c_body["source"] + "</a>"
+        )
         new_body["format"] = "application/html"
     if "value" in w3c_body.keys():
         new_body["@type"] = "oa:Tag"
         new_body["chars"] = w3c_body["value"]
-    new_body = remove_keys(new_body, ["value", "type", "generator", "source", "purpose"])
+    new_body = remove_keys(
+        new_body, ["value", "type", "generator", "source", "purpose"]
+    )
     return new_body
 
 
@@ -1010,7 +1015,7 @@ def async_items_by_topic(elucidate: str, topic: str, **kwargs) -> dict:
     """
     t = quote_plus(topic)
     sample_uri = (
-            elucidate + "/annotation/w3c/services/search/body?fields=source,id&value=" + t
+        elucidate + "/annotation/w3c/services/search/body?fields=source,id&value=" + t
     )
     r = requests.get(sample_uri)
     if r.status_code == requests.codes.ok:
@@ -1041,9 +1046,7 @@ def async_items_by_target(elucidate: str, target_uri: str, **kwargs) -> dict:
     """
     t = quote_plus(target_uri)
     sample_uri = (
-            elucidate
-            + "/annotation/w3c/services/search/target?fields=source,id&value="
-            + t
+        elucidate + "/annotation/w3c/services/search/target?fields=source,id&value=" + t
     )
     r = requests.get(sample_uri)
     filter_by = kwargs.get("filter_by")
@@ -1060,38 +1063,40 @@ def async_items_by_target(elucidate: str, target_uri: str, **kwargs) -> dict:
                 # filter property, e.g. {"creator": ["id": "https://example.org/users/foo"]}
                 # if the value of they is a simple string, e.g. if the annotation has
                 # "creator" : ""https://example.org/users/foo"
-                # the code will ignore the "id" key, and check that all values match, 
+                # the code will ignore the "id" key, and check that all values match,
                 # irresepctive of
                 # the key.
-                if (
-                        filter_by
-                ):
+                if filter_by:
                     for filter_key, filter_value_list in filter_by.items():
                         for filter_value in filter_value_list:
                             if item.get(filter_key):
                                 if isinstance(item.get(filter_key), dict):
                                     if all(
-                                            [
-                                                item[filter_key][k] == v
-                                                for k, v in filter_value.items()
-                                            ]
+                                        [
+                                            item[filter_key][k] == v
+                                            for k, v in filter_value.items()
+                                        ]
                                     ):
                                         yield transform_annotation(
                                             item=item,
                                             flatten_at_ids=kwargs.get("flatten_ids"),
-                                            transform_function=kwargs.get("trans_function"),
+                                            transform_function=kwargs.get(
+                                                "trans_function"
+                                            ),
                                         )
                                 elif isinstance(item.get(filter_key), str):
                                     if all(
-                                            [
-                                                item[filter_key] == v
-                                                for k, v in filter_value.items()
-                                            ]
+                                        [
+                                            item[filter_key] == v
+                                            for k, v in filter_value.items()
+                                        ]
                                     ):
                                         yield transform_annotation(
                                             item=item,
                                             flatten_at_ids=kwargs.get("flatten_ids"),
-                                            transform_function=kwargs.get("trans_function"),
+                                            transform_function=kwargs.get(
+                                                "trans_function"
+                                            ),
                                         )
 
                 else:
@@ -1103,11 +1108,11 @@ def async_items_by_target(elucidate: str, target_uri: str, **kwargs) -> dict:
 
 
 def async_items_by_container(
-        elucidate: str,
-        container: Optional[str] = None,
-        target_uri: Optional[str] = None,
-        header_dict: Optional[dict] = None,
-        **kwargs
+    elucidate: str,
+    container: Optional[str] = None,
+    target_uri: Optional[str] = None,
+    header_dict: Optional[dict] = None,
+    **kwargs
 ) -> Optional[dict]:
     """
     Asynchronously yield annotations from a query by container to Elucidate.
@@ -1137,35 +1142,41 @@ def async_items_by_container(
             pages = loop.run_until_complete(future)  # loop until done
             for page in pages:
                 for item in page["items"]:
-                    if (
-                            filter_by
-                    ):
+                    if filter_by:
                         for filter_key, filter_value_list in filter_by.items():
                             for filter_value in filter_value_list:
                                 if item.get(filter_key):
                                     if isinstance(item.get(filter_key), dict):
                                         if all(
-                                                [
-                                                    item[filter_key][k] == v
-                                                    for k, v in filter_value.items()
-                                                ]
+                                            [
+                                                item[filter_key][k] == v
+                                                for k, v in filter_value.items()
+                                            ]
                                         ):
                                             yield transform_annotation(
                                                 item=item,
-                                                flatten_at_ids=kwargs.get("flatten_ids"),
-                                                transform_function=kwargs.get("trans_function"),
+                                                flatten_at_ids=kwargs.get(
+                                                    "flatten_ids"
+                                                ),
+                                                transform_function=kwargs.get(
+                                                    "trans_function"
+                                                ),
                                             )
                                     elif isinstance(item.get(filter_key), str):
                                         if all(
-                                                [
-                                                    item[filter_key] == v
-                                                    for k, v in filter_value.items()
-                                                ]
+                                            [
+                                                item[filter_key] == v
+                                                for k, v in filter_value.items()
+                                            ]
                                         ):
                                             yield transform_annotation(
                                                 item=item,
-                                                flatten_at_ids=kwargs.get("flatten_ids"),
-                                                transform_function=kwargs.get("trans_function"),
+                                                flatten_at_ids=kwargs.get(
+                                                    "flatten_ids"
+                                                ),
+                                                transform_function=kwargs.get(
+                                                    "trans_function"
+                                                ),
                                             )
 
                     else:
@@ -1179,7 +1190,7 @@ def async_items_by_container(
 
 
 def async_manifests_by_topic(
-        elucidate: str, topic: Optional[str] = None
+    elucidate: str, topic: Optional[str] = None
 ) -> Optional[list]:
     """
     Asynchronously fetch the results from a topic query to Elucidate and yield manifest URIs
@@ -1192,14 +1203,18 @@ def async_manifests_by_topic(
     :return: manifest URI
     """
     if topic:
-        return list(set([
-            parent_from_annotation(anno)
-            for anno in async_items_by_topic(elucidate, topic)
-        ]))
+        return list(
+            set(
+                [
+                    parent_from_annotation(anno)
+                    for anno in async_items_by_topic(elucidate, topic)
+                ]
+            )
+        )
 
 
 def iterative_delete_by_target_async_get(
-        target: str, elucidate_base: str, dryrun: bool = True
+    target: str, elucidate_base: str, dryrun: bool = True
 ) -> bool:
     """
     Delete all annotations in a container for a target uri. Works by querying for the
@@ -1244,7 +1259,7 @@ def iterative_delete_by_target_async_get(
 
 
 def iiif_iterative_delete_by_manifest_async_get(
-        manifest_uri: str, elucidate_uri: str, dry_run: bool = True
+    manifest_uri: str, elucidate_uri: str, dry_run: bool = True
 ) -> bool:
     """
     Delete all annotations for every canvas in a IIIF manifest and for the manifest.

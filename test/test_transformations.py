@@ -95,8 +95,10 @@ def test_mirador_oa(datafiles):
     test_data = os.path.join(path, 'single_anno.json')
     with open(test_data, "r") as f:
         j = json.load(f)
+    chars = '<a href="https://omeka.example.org/topic/virtual:person/matter">' + \
+        'https://omeka.example.org/topic/virtual:person/matter</a>'
     result = {
-        "chars": '<a href="https://omeka.example.org/topic/virtual:person/matter">https://omeka.example.org/topic/virtual:person/matter</a>',
+        "chars": chars,
         "format": "application/html",
     }
     assert elucidate.mirador_oa(j["body"][0]) == result
@@ -120,16 +122,20 @@ def test_mirador_oa_val(datafiles):
 def test_transformation(datafiles):
     path = str(datafiles)
     test_data = os.path.join(path, 'single_anno.json')
+    chars = '<a href="https://omeka.example.org/topic/virtual:person/matter">' + \
+        'https://omeka.example.org/topic/virtual:person/matter</a>'
     with open(test_data, "r") as f:
         j = json.load(f)
+    i = "https://elucidate.example.org/annotation/w3c/fd8c7a22abcde179e30850b5d1f7c439/" + \
+        "8cbec70c-e859-4624-b1e3-1bbec5bcca85"
     result = {
         "motivation": "oa:tagging",
         "on": "http://waylon.example.org/work/AVT/canvas/274#xywh=659,1646,174,62",
-        "@id": "https://elucidate.example.org/annotation/w3c/fd8c7a22abcde179e30850b5d1f7c439/8cbec70c-e859-4624-b1e3-1bbec5bcca85",
+        "@id": i,
         "@type": "oa:Annotation",
         "resource": [
             {
-                "chars": '<a href="https://omeka.example.org/topic/virtual:person/matter">https://omeka.example.org/topic/virtual:person/matter</a>',
+                "chars": chars,
                 "format": "application/html",
             },
             {"@type": "oa:Tag", "chars": "Matter"},
@@ -153,14 +159,18 @@ def test_transformation_flatten(datafiles):
     with open(test_data, "r") as f:
         j = json.load(f)
     j["creator"] = {"@id": "https://montague.example.org/"}
+    i = "https://elucidate.example.org/annotation/w3c/fd8c7a22abcde179e30850b5d1f7c439/" + \
+        "8cbec70c-e859-4624-b1e3-1bbec5bcca85"
+    chars = '<a href="https://omeka.example.org/topic/virtual:person/matter">' + \
+        'https://omeka.example.org/topic/virtual:person/matter</a>'
     result = {
         "motivation": "oa:tagging",
         "on": "http://waylon.example.org/work/AVT/canvas/274#xywh=659,1646,174,62",
-        "@id": "https://elucidate.example.org/annotation/w3c/fd8c7a22abcde179e30850b5d1f7c439/8cbec70c-e859-4624-b1e3-1bbec5bcca85",
+        "@id": i,
         "@type": "oa:Annotation",
         "resource": [
             {
-                "chars": '<a href="https://omeka.example.org/topic/virtual:person/matter">https://omeka.example.org/topic/virtual:person/matter</a>',
+                "chars": chars,
                 "format": "application/html",
             },
             {"@type": "oa:Tag", "chars": "Matter"},
@@ -173,6 +183,7 @@ def test_transformation_flatten(datafiles):
         )
         == result
     )
+
 
 @pytest.mark.datafiles(
     os.path.join(FIXTURE_DIR, 'single_anno.json')
@@ -193,13 +204,17 @@ def test_transformation_single_body(datafiles):
     test_data = os.path.join(path, 'single_anno_single_body.json')
     with open(test_data, "r") as f:
         j = json.load(f)
+    i = "https://elucidate.example.org/annotation/w3c/fd8c7a22abcde179e30850b5d1f7c439/" + \
+        "8cbec70c-e859-4624-b1e3-1bbec5bcca85"
+    chars = '<a href="https://omeka.example.org/topic/virtual:person/matter">' + \
+        'https://omeka.example.org/topic/virtual:person/matter</a>'
     result = {
         "motivation": "oa:tagging",
         "on": "http://waylon.example.org/work/AVT/canvas/274#xywh=659,1646,174,62",
-        "@id": "https://elucidate.example.org/annotation/w3c/fd8c7a22abcde179e30850b5d1f7c439/8cbec70c-e859-4624-b1e3-1bbec5bcca85",
+        "@id": i,
         "@type": "oa:Annotation",
         "resource": {
-            "chars": '<a href="https://omeka.example.org/topic/virtual:person/matter">https://omeka.example.org/topic/virtual:person/matter</a>',
+            "chars": chars,
             "format": "application/html",
         },
     }
@@ -219,13 +234,17 @@ def test_transformation_single_body_multi_target(datafiles):
     test_data = os.path.join(path, 'single_anno_single_body_multi_target.json')
     with open(test_data, "r") as f:
         j = json.load(f)
+    chars = '<a href="https://omeka.example.org/topic/virtual:person/matter">' + \
+        'https://omeka.example.org/topic/virtual:person/matter</a>'
+    i = "https://elucidate.example.org/annotation/w3c/fd8c7a22abcde179e30850b5d1f7c439/" + \
+        "8cbec70c-e859-4624-b1e3-1bbec5bcca85"
     result = {
         "motivation": "oa:tagging",
         "on": "http://waylon.example.org/work/AVT/canvas/274#xywh=659,1646,174,62",
-        "@id": "https://elucidate.example.org/annotation/w3c/fd8c7a22abcde179e30850b5d1f7c439/8cbec70c-e859-4624-b1e3-1bbec5bcca85",
+        "@id": i,
         "@type": "oa:Annotation",
         "resource": {
-            "chars": '<a href="https://omeka.example.org/topic/virtual:person/matter">https://omeka.example.org/topic/virtual:person/matter</a>',
+            "chars": chars,
             "format": "application/html",
         },
     }
@@ -238,8 +257,10 @@ def test_transformation_single_body_multi_target(datafiles):
 
 
 def test_transformation_single_body_simple_target():
+    i = "https://elucidate.example.org/annotation/w3c/fd8c7a22abcde179e30850b5d1f7c439/" + \
+        "8cbec70c-e859-4624-b1e3-1bbec5bcca85"
     j = {
-        "id": "https://elucidate.example.org/annotation/w3c/fd8c7a22abcde179e30850b5d1f7c439/8cbec70c-e859-4624-b1e3-1bbec5bcca85",
+        "id": i,
         "type": "Annotation",
         "creator": "https://montague.example.org/",
         "generator": "https://montague.example.org/",
@@ -254,13 +275,15 @@ def test_transformation_single_body_simple_target():
         "target": "http://waylon.example.org/work/AVT/canvas/274#xywh=659,1646,174,62",
         "motivation": "tagging"
     }
+    chars = '<a href="https://omeka.example.org/topic/virtual:person/matter">' + \
+        'https://omeka.example.org/topic/virtual:person/matter</a>'
     result = {
         "motivation": "oa:tagging",
         "on": "http://waylon.example.org/work/AVT/canvas/274#xywh=659,1646,174,62",
-        "@id": "https://elucidate.example.org/annotation/w3c/fd8c7a22abcde179e30850b5d1f7c439/8cbec70c-e859-4624-b1e3-1bbec5bcca85",
+        "@id": i,
         "@type": "oa:Annotation",
         "resource": {
-            "chars": '<a href="https://omeka.example.org/topic/virtual:person/matter">https://omeka.example.org/topic/virtual:person/matter</a>',
+            "chars": chars,
             "format": "application/html",
         },
     }
