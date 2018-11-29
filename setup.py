@@ -28,10 +28,12 @@ setup(
     long_description=readme + '\n\n' + doclink + '\n\n' + history,
     author='Matt McGrattan',
     author_email='matt.mcgrattan@digirati.com',
-    url='https://github.com/mattmcgrattan/pyelucidate',
+    url='https://github.com/digirati-co-uk/pyelucidate',
     packages=[
         'pyelucidate',
     ],
+    setup_requires=["pytest-runner"],
+    tests_require=["pytest"],
     package_dir={'pyelucidate': 'pyelucidate'},
     include_package_data=True,
     install_requires=[
@@ -45,7 +47,6 @@ setup(
         'License :: OSI Approved :: MIT License',
         'Natural Language :: English',
         'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.4',
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',

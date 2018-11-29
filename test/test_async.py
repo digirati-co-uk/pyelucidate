@@ -4,6 +4,14 @@ from aioresponses import aioresponses
 import json
 import types
 import requests_mock
+import pytest
+import os
+
+
+FIXTURE_DIR = os.path.join(
+    os.path.dirname(os.path.realpath(__file__)),
+    'data',
+    )
 
 
 def test_fetch_all():
@@ -18,13 +26,20 @@ def test_fetch_all():
         assert results == [{"foo": "bar"}]
 
 
-def test_items_by_body_source():
+@pytest.mark.datafiles(
+    os.path.join(FIXTURE_DIR, 'single_topic_page.json'),
+    os.path.join(FIXTURE_DIR, 'single_topic_page0.json'),
+    os.path.join(FIXTURE_DIR, 'single_anno.json'),
+
+)
+def test_items_by_body_source(datafiles):
+    path = str(datafiles)
     with aioresponses() as mock, requests_mock.Mocker() as m:
-        with open("single_topic_page.json", "r") as f:
+        with open(os.path.join(path, "single_topic_page.json"), "r") as f:
             j = json.load(f)
-        with open("single_topic_page0.json", "r") as f:
+        with open(os.path.join(path, "single_topic_page0.json"), "r") as f:
             j0 = json.load(f)
-        with open("single_anno.json", "r") as f:
+        with open(os.path.join(path, "single_anno.json"), "r") as f:
             j1 = json.load(f)
         url = (
             "https://elucidate.example.org/annotation/w3c/services/search/body?fields=source,id&value="
@@ -46,11 +61,16 @@ def test_items_by_body_source():
         assert anno_list[3] == j1
 
 
-def test_items_by_target():
+@pytest.mark.datafiles(
+    os.path.join(FIXTURE_DIR, 'search_by_target.json'),
+    os.path.join(FIXTURE_DIR, 'search_by_target_0.json')
+)
+def test_items_by_target(datafiles):
+    path = str(datafiles)
     with aioresponses() as mock, requests_mock.Mocker() as m:
-        with open("search_by_target.json", "r") as f:
+        with open(os.path.join(path, "search_by_target.json"), "r") as f:
             search_by_target = json.load(f)
-        with open("search_by_target_0.json", "r") as f0:
+        with open(os.path.join(path, "search_by_target_0.json"), "r") as f0:
             search_by_target_page = json.load(f0)
         t = "http://iiif.io/api/presentation/2.0/example/fixtures/canvas/19/c1.json"
         u = (
@@ -74,11 +94,16 @@ def test_items_by_target():
         assert anno_list[0] == search_by_target_page["items"][0]
 
 
-def test_items_by_target_filter():
+@pytest.mark.datafiles(
+    os.path.join(FIXTURE_DIR, 'search_by_target.json'),
+    os.path.join(FIXTURE_DIR, 'search_by_target_0.json')
+)
+def test_items_by_target_filter(datafiles):
+    path = str(datafiles)
     with aioresponses() as mock, requests_mock.Mocker() as m:
-        with open("search_by_target.json", "r") as f:
+        with open(os.path.join(path, "search_by_target.json"), "r") as f:
             search_by_target = json.load(f)
-        with open("search_by_target_0.json", "r") as f0:
+        with open(os.path.join(path, "search_by_target_0.json"), "r") as f0:
             search_by_target_page = json.load(f0)
         t = "http://iiif.io/api/presentation/2.0/example/fixtures/canvas/19/c1.json"
         u = (
@@ -103,11 +128,16 @@ def test_items_by_target_filter():
         assert anno_list[0] == search_by_target_page["items"][0]
 
 
-def test_items_by_target_container():
+@pytest.mark.datafiles(
+    os.path.join(FIXTURE_DIR, 'container.json'),
+    os.path.join(FIXTURE_DIR, 'container_page.json')
+)
+def test_items_by_target_container(datafiles):
+    path = str(datafiles)
     with aioresponses() as mock, requests_mock.Mocker() as m:
-        with open("container.json", "r") as f:
+        with open(os.path.join(path, "container.json"), "r") as f:
             container = json.load(f)
-        with open("container_page.json", "r") as f0:
+        with open(os.path.join(path, "container_page.json"), "r") as f0:
             container_page = json.load(f0)
         t = "http://iiif.io/api/presentation/2.0/example/fixtures/canvas/19/c1.json"
         u = "https://elucidate.example.org/annotation/w3c/6913ae2c2f5a7b6e59bc1d88192be0f6/"

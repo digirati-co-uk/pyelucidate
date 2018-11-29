@@ -27,7 +27,7 @@ lint:
 	flake8 pyelucidate test
 
 test:
-	py.test
+	cd test; py.test
 
 test-all:
 	tox

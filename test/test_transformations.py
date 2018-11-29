@@ -1,14 +1,22 @@
 from pyelucidate import pyelucidate as elucidate
 import json
+import pytest
+import os
+
+
+FIXTURE_DIR = os.path.join(
+    os.path.dirname(os.path.realpath(__file__)),
+    'data',
+    )
 
 
 def test_remove_keys():
-    foo = {"bar": "thing", "notbar": "nothing"}
-    assert elucidate.remove_keys(foo, ["bar"]) == {"notbar": "nothing"}
+    test_data = {"bar": "thing", "notbar": "nothing"}
+    assert elucidate.remove_keys(test_data, ["bar"]) == {"notbar": "nothing"}
 
 
 def test_target_extract_source():
-    foo = {
+    test_data = {
         "type": "SpecificResource",
         "creator": "https://montague.example.org/",
         "dcterms:isPartOf": {"id": "http://waylon.example.org/work/AVT", "type": "sc:Manifest"},
@@ -21,13 +29,13 @@ def test_target_extract_source():
         "source": "http://waylon.example.org/work/AVT/canvas/274",
     }
     assert (
-        elucidate.target_extract(json_dict=foo, fake_selector=False)
+        elucidate.target_extract(json_dict=test_data, fake_selector=False)
         == "http://waylon.example.org/work/AVT/canvas/274#xywh=659,1646,174,62"
     )
 
 
 def test_target_extract_source_fake():
-    foo = {
+    test_data = {
         "type": "SpecificResource",
         "creator": "https://montague.example.org/",
         "dcterms:isPartOf": {"id": "http://waylon.example.org/work/AVT", "type": "sc:Manifest"},
@@ -35,13 +43,13 @@ def test_target_extract_source_fake():
         "source": "http://waylon.example.org/work/AVT/canvas/274",
     }
     assert (
-        elucidate.target_extract(json_dict=foo, fake_selector=True)
+        elucidate.target_extract(json_dict=test_data, fake_selector=True)
         == "http://waylon.example.org/work/AVT/canvas/274#xywh=0,0,50,50"
     )
 
 
 def test_target_extract_source_no_fake():
-    foo = {
+    test_data = {
         "type": "SpecificResource",
         "creator": "https://montague.example.org/",
         "dcterms:isPartOf": {"id": "http://waylon.example.org/work/AVT", "type": "sc:Manifest"},
@@ -49,7 +57,7 @@ def test_target_extract_source_no_fake():
         "source": "http://waylon.example.org/work/AVT/canvas/274",
     }
     assert (
-        elucidate.target_extract(json_dict=foo, fake_selector=False)
+        elucidate.target_extract(json_dict=test_data, fake_selector=False)
         == "http://waylon.example.org/work/AVT/canvas/274"
     )
 
@@ -79,8 +87,13 @@ def test_format_results_empty():
     )
 
 
-def test_mirador_oa():
-    with open("single_anno.json", "r") as f:
+@pytest.mark.datafiles(
+    os.path.join(FIXTURE_DIR, 'single_anno.json')
+    )
+def test_mirador_oa(datafiles):
+    path = str(datafiles)
+    test_data = os.path.join(path, 'single_anno.json')
+    with open(test_data, "r") as f:
         j = json.load(f)
     result = {
         "chars": '<a href="https://omeka.example.org/topic/virtual:person/matter">https://omeka.example.org/topic/virtual:person/matter</a>',
@@ -89,15 +102,25 @@ def test_mirador_oa():
     assert elucidate.mirador_oa(j["body"][0]) == result
 
 
-def test_mirador_oa_val():
-    with open("single_anno.json", "r") as f:
+@pytest.mark.datafiles(
+    os.path.join(FIXTURE_DIR, 'single_anno.json')
+    )
+def test_mirador_oa_val(datafiles):
+    path = str(datafiles)
+    test_data = os.path.join(path, 'single_anno.json')
+    with open(test_data, "r") as f:
         j = json.load(f)
     result = {"@type": "oa:Tag", "chars": "Matter"}
     assert elucidate.mirador_oa(j["body"][1]) == result
 
 
-def test_transformation():
-    with open("single_anno.json", "r") as f:
+@pytest.mark.datafiles(
+    os.path.join(FIXTURE_DIR, 'single_anno.json')
+    )
+def test_transformation(datafiles):
+    path = str(datafiles)
+    test_data = os.path.join(path, 'single_anno.json')
+    with open(test_data, "r") as f:
         j = json.load(f)
     result = {
         "motivation": "oa:tagging",
@@ -121,8 +144,13 @@ def test_transformation():
     )
 
 
-def test_transformation_flatten():
-    with open("single_anno.json", "r") as f:
+@pytest.mark.datafiles(
+    os.path.join(FIXTURE_DIR, 'single_anno.json')
+    )
+def test_transformation_flatten(datafiles):
+    path = str(datafiles)
+    test_data = os.path.join(path, 'single_anno.json')
+    with open(test_data, "r") as f:
         j = json.load(f)
     j["creator"] = {"@id": "https://montague.example.org/"}
     result = {
@@ -146,15 +174,24 @@ def test_transformation_flatten():
         == result
     )
 
-
-def test_transformation_no_transform():
-    with open("single_anno.json", "r") as f:
+@pytest.mark.datafiles(
+    os.path.join(FIXTURE_DIR, 'single_anno.json')
+    )
+def test_transformation_no_transform(datafiles):
+    path = str(datafiles)
+    test_data = os.path.join(path, 'single_anno.json')
+    with open(test_data, "r") as f:
         j = json.load(f)
     assert elucidate.transform_annotation(item=j) == j
 
 
-def test_transformation_single_body():
-    with open("single_anno_single_body.json", "r") as f:
+@pytest.mark.datafiles(
+    os.path.join(FIXTURE_DIR, 'single_anno_single_body.json')
+    )
+def test_transformation_single_body(datafiles):
+    path = str(datafiles)
+    test_data = os.path.join(path, 'single_anno_single_body.json')
+    with open(test_data, "r") as f:
         j = json.load(f)
     result = {
         "motivation": "oa:tagging",
@@ -174,8 +211,13 @@ def test_transformation_single_body():
     )
 
 
-def test_transformation_single_body_multi_target():
-    with open("single_anno_single_body_multi_target.json", "r") as f:
+@pytest.mark.datafiles(
+    os.path.join(FIXTURE_DIR, 'single_anno_single_body_multi_target.json')
+    )
+def test_transformation_single_body_multi_target(datafiles):
+    path = str(datafiles)
+    test_data = os.path.join(path, 'single_anno_single_body_multi_target.json')
+    with open(test_data, "r") as f:
         j = json.load(f)
     result = {
         "motivation": "oa:tagging",
