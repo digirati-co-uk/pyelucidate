@@ -1,0 +1,1069 @@
+{
+"@context": [
+"http://www.w3.org/ns/anno.jsonld",
+"http://www.w3.org/ns/ldp.jsonld"
+],
+"type": "AnnotationPage",
+"items": [
+{
+"id": "https://elucidate.example.org/annotation/w3c/10fdd4a621b5625f30abe8fa5c81dbd7/0005ebfd-53ed-499a-930b-62ed96ae73a5",
+"type": "Annotation",
+"creator": "https://montague.example.org/",
+"generator": "https://montague.example.org/",
+"body": [
+{
+"type": "SpecificResource",
+"format": "application/html",
+"creator": "https://montague.example.org/",
+"generator": "https://montague.example.org//nlp/",
+"purpose": "tagging",
+"source": "https://omeka.example.org/topic/virtual:person/matter"
+},
+{
+"type": "TextualBody",
+"format": "text/plain",
+"creator": "https://montague.example.org/",
+"value": "Matter",
+"generator": "https://montague.example.org/",
+"purpose": "tagging"
+},
+{
+"creator": "https://montague.example.org/",
+"value": "entity:person",
+"generator": "https://montague.example.org/",
+"purpose": "tagging"
+}
+],
+"target": {
+"type": "SpecificResource",
+"creator": "https://montague.example.org/",
+"dcterms:isPartOf": {
+"id": "http://waylon.example.org/work/AVT",
+"type": "sc:Manifest"
+},
+"generator": "https://montague.example.org/",
+"selector": {
+"type": "FragmentSelector",
+"conformsTo": "http://www.w3.org/TR/media-frags/",
+"value": "xywh=1225,439,159,67"
+},
+"source": "http://waylon.example.org/work/AVT/canvas/93"
+},
+"motivation": "tagging"
+},
+{
+"id": "https://elucidate.example.org/annotation/w3c/ebcd028551fb1164d4be1ee8601bf5f2/e6a71845-2392-4d0f-8529-a50577493519",
+"type": "Annotation",
+"creator": "https://montague.example.org/",
+"generator": "https://montague.example.org/",
+"body": [
+{
+"type": "SpecificResource",
+"format": "application/html",
+"creator": "https://montague.example.org/",
+"generator": "https://montague.example.org//nlp/",
+"purpose": "tagging",
+"source": "https://omeka.example.org/topic/virtual:person/matter"
+},
+{
+"type": "TextualBody",
+"format": "text/plain",
+"creator": "https://montague.example.org/",
+"value": "Matter",
+"generator": "https://montague.example.org/",
+"purpose": "tagging"
+},
+{
+"creator": "https://montague.example.org/",
+"value": "entity:person",
+"generator": "https://montague.example.org/",
+"purpose": "tagging"
+}
+],
+"target": {
+"type": "SpecificResource",
+"creator": "https://montague.example.org/",
+"dcterms:isPartOf": {
+"id": "http://waylon.example.org/work/AVT",
+"type": "sc:Manifest"
+},
+"generator": "https://montague.example.org/",
+"selector": {
+"type": "FragmentSelector",
+"conformsTo": "http://www.w3.org/TR/media-frags/",
+"value": "xywh=1387,970,184,61"
+},
+"source": "http://waylon.example.org/work/AVT/canvas/207"
+},
+"motivation": "tagging"
+},
+{
+"id": "https://elucidate.example.org/annotation/w3c/ecdd547114d96822d3483fa06fd228ce/22a3249e-834e-4c07-b35e-49e14bd10e3d",
+"type": "Annotation",
+"creator": "https://montague.example.org/",
+"generator": "https://montague.example.org/",
+"body": [
+{
+"type": "SpecificResource",
+"format": "application/html",
+"creator": "https://montague.example.org/",
+"generator": "https://montague.example.org//nlp/",
+"purpose": "tagging",
+"source": "https://omeka.example.org/topic/virtual:person/matter"
+},
+{
+"type": "TextualBody",
+"format": "text/plain",
+"creator": "https://montague.example.org/",
+"value": "Matter",
+"generator": "https://montague.example.org/",
+"purpose": "tagging"
+},
+{
+"creator": "https://montague.example.org/",
+"value": "entity:person",
+"generator": "https://montague.example.org/",
+"purpose": "tagging"
+}
+],
+"target": {
+"type": "SpecificResource",
+"creator": "https://montague.example.org/",
+"dcterms:isPartOf": {
+"id": "http://waylon.example.org/work/AVT",
+"type": "sc:Manifest"
+},
+"generator": "https://montague.example.org/",
+"selector": {
+"type": "FragmentSelector",
+"conformsTo": "http://www.w3.org/TR/media-frags/",
+"value": "xywh=442,1063,162,74"
+},
+"source": "http://waylon.example.org/work/AVT/canvas/402"
+},
+"motivation": "tagging"
+},
+{
+"id": "https://elucidate.example.org/annotation/w3c/fd8c7a22abcde179e30850b5d1f7c439/8cbec70c-e859-4624-b1e3-1bbec5bcca85",
+"type": "Annotation",
+"creator": "https://montague.example.org/",
+"generator": "https://montague.example.org/",
+"body": [
+{
+"type": "SpecificResource",
+"format": "application/html",
+"creator": "https://montague.example.org/",
+"generator": "https://montague.example.org//nlp/",
+"purpose": "tagging",
+"source": "https://omeka.example.org/topic/virtual:person/matter"
+},
+{
+"type": "TextualBody",
+"format": "text/plain",
+"creator": "https://montague.example.org/",
+"value": "Matter",
+"generator": "https://montague.example.org/",
+"purpose": "tagging"
+},
+{
+"creator": "https://montague.example.org/",
+"value": "entity:person",
+"generator": "https://montague.example.org/",
+"purpose": "tagging"
+}
+],
+"target": {
+"type": "SpecificResource",
+"creator": "https://montague.example.org/",
+"dcterms:isPartOf": {
+"id": "http://waylon.example.org/work/AVT",
+"type": "sc:Manifest"
+},
+"generator": "https://montague.example.org/",
+"selector": {
+"type": "FragmentSelector",
+"conformsTo": "http://www.w3.org/TR/media-frags/",
+"value": "xywh=659,1646,174,62"
+},
+"source": "http://waylon.example.org/work/AVT/canvas/274"
+},
+"motivation": "tagging"
+},
+{
+"id": "https://elucidate.example.org/annotation/w3c/1bbbd70d4c8860b7921ca2c22513dfc7/facf6699-a7df-4639-8d3b-4e924d1f3f91",
+"type": "Annotation",
+"creator": "https://montague.example.org/",
+"generator": "https://montague.example.org/",
+"body": [
+{
+"type": "SpecificResource",
+"format": "application/html",
+"creator": "https://montague.example.org/",
+"generator": "https://montague.example.org//nlp/",
+"purpose": "tagging",
+"source": "https://omeka.example.org/topic/virtual:person/matter"
+},
+{
+"type": "TextualBody",
+"format": "text/plain",
+"creator": "https://montague.example.org/",
+"value": "Matter",
+"generator": "https://montague.example.org/",
+"purpose": "tagging"
+},
+{
+"creator": "https://montague.example.org/",
+"value": "entity:person",
+"generator": "https://montague.example.org/",
+"purpose": "tagging"
+}
+],
+"target": {
+"type": "SpecificResource",
+"creator": "https://montague.example.org/",
+"dcterms:isPartOf": {
+"id": "http://waylon.example.org/work/AVT",
+"type": "sc:Manifest"
+},
+"generator": "https://montague.example.org/",
+"selector": {
+"type": "FragmentSelector",
+"conformsTo": "http://www.w3.org/TR/media-frags/",
+"value": "xywh=1031,1987,166,65"
+},
+"source": "http://waylon.example.org/work/AVT/canvas/275"
+},
+"motivation": "tagging"
+},
+{
+"id": "https://elucidate.example.org/annotation/w3c/3c6b2443eba9df29d0082031ad79f059/026be248-3c98-4090-bd16-39fb6ae30f0f",
+"type": "Annotation",
+"creator": "https://montague.example.org/",
+"generator": "https://montague.example.org/",
+"body": [
+{
+"type": "SpecificResource",
+"format": "application/html",
+"creator": "https://montague.example.org/",
+"generator": "https://montague.example.org//nlp/",
+"purpose": "tagging",
+"source": "https://omeka.example.org/topic/virtual:person/matter"
+},
+{
+"type": "TextualBody",
+"format": "text/plain",
+"creator": "https://montague.example.org/",
+"value": "Matter",
+"generator": "https://montague.example.org/",
+"purpose": "tagging"
+},
+{
+"creator": "https://montague.example.org/",
+"value": "entity:person",
+"generator": "https://montague.example.org/",
+"purpose": "tagging"
+}
+],
+"target": {
+"type": "SpecificResource",
+"creator": "https://montague.example.org/",
+"dcterms:isPartOf": {
+"id": "http://waylon.example.org/work/AVT",
+"type": "sc:Manifest"
+},
+"generator": "https://montague.example.org/",
+"selector": {
+"type": "FragmentSelector",
+"conformsTo": "http://www.w3.org/TR/media-frags/",
+"value": "xywh=1022,2039,183,66"
+},
+"source": "http://waylon.example.org/work/AVT/canvas/201"
+},
+"motivation": "tagging"
+},
+{
+"id": "https://elucidate.example.org/annotation/w3c/c9396837a5a4f35707f02567a7c23cb3/7f993636-ae95-4cf9-99b2-4ea230986b3c",
+"type": "Annotation",
+"creator": "https://montague.example.org/",
+"generator": "https://montague.example.org/",
+"body": [
+{
+"type": "SpecificResource",
+"format": "application/html",
+"creator": "https://montague.example.org/",
+"generator": "https://montague.example.org//nlp/",
+"purpose": "tagging",
+"source": "https://omeka.example.org/topic/virtual:person/matter"
+},
+{
+"type": "TextualBody",
+"format": "text/plain",
+"creator": "https://montague.example.org/",
+"value": "Matter",
+"generator": "https://montague.example.org/",
+"purpose": "tagging"
+},
+{
+"creator": "https://montague.example.org/",
+"value": "entity:person",
+"generator": "https://montague.example.org/",
+"purpose": "tagging"
+}
+],
+"target": {
+"type": "SpecificResource",
+"creator": "https://montague.example.org/",
+"dcterms:isPartOf": {
+"id": "http://waylon.example.org/work/AVT",
+"type": "sc:Manifest"
+},
+"generator": "https://montague.example.org/",
+"selector": {
+"type": "FragmentSelector",
+"conformsTo": "http://www.w3.org/TR/media-frags/",
+"value": "xywh=1032,2180,153,68"
+},
+"source": "http://waylon.example.org/work/AVT/canvas/245"
+},
+"motivation": "tagging"
+},
+{
+"id": "https://elucidate.example.org/annotation/w3c/695495227da18c7dffba60792ceb4f6b/8e1fa0c8-c73b-4dea-a19d-ad30805425b7",
+"type": "Annotation",
+"creator": "https://montague.example.org/",
+"generator": "https://montague.example.org/",
+"body": [
+{
+"type": "SpecificResource",
+"format": "application/html",
+"creator": "https://montague.example.org/",
+"generator": "https://montague.example.org//nlp/",
+"purpose": "tagging",
+"source": "https://omeka.example.org/topic/virtual:person/matter"
+},
+{
+"type": "TextualBody",
+"format": "text/plain",
+"creator": "https://montague.example.org/",
+"value": "Matter",
+"generator": "https://montague.example.org/",
+"purpose": "tagging"
+},
+{
+"creator": "https://montague.example.org/",
+"value": "entity:person",
+"generator": "https://montague.example.org/",
+"purpose": "tagging"
+}
+],
+"target": {
+"type": "SpecificResource",
+"creator": "https://montague.example.org/",
+"dcterms:isPartOf": {
+"id": "http://waylon.example.org/work/AVT",
+"type": "sc:Manifest"
+},
+"generator": "https://montague.example.org/",
+"selector": {
+"type": "FragmentSelector",
+"conformsTo": "http://www.w3.org/TR/media-frags/",
+"value": "xywh=887,534,170,55"
+},
+"source": "http://waylon.example.org/work/AVT/canvas/178"
+},
+"motivation": "tagging"
+},
+{
+"id": "https://elucidate.example.org/annotation/w3c/13853dfee8858a19036e41e4f4f0523f/0cb2d7aa-8713-4911-86e2-ea84da94b0d3",
+"type": "Annotation",
+"creator": "https://montague.example.org/",
+"generator": "https://montague.example.org/",
+"body": [
+{
+"type": "SpecificResource",
+"format": "application/html",
+"creator": "https://montague.example.org/",
+"generator": "https://montague.example.org//nlp/",
+"purpose": "tagging",
+"source": "https://omeka.example.org/topic/virtual:person/matter"
+},
+{
+"type": "TextualBody",
+"format": "text/plain",
+"creator": "https://montague.example.org/",
+"value": "Matter",
+"generator": "https://montague.example.org/",
+"purpose": "tagging"
+},
+{
+"creator": "https://montague.example.org/",
+"value": "entity:person",
+"generator": "https://montague.example.org/",
+"purpose": "tagging"
+}
+],
+"target": {
+"type": "SpecificResource",
+"creator": "https://montague.example.org/",
+"dcterms:isPartOf": {
+"id": "http://waylon.example.org/work/AVT",
+"type": "sc:Manifest"
+},
+"generator": "https://montague.example.org/",
+"selector": {
+"type": "FragmentSelector",
+"conformsTo": "http://www.w3.org/TR/media-frags/",
+"value": "xywh=1513,1637,189,67"
+},
+"source": "http://waylon.example.org/work/AVT/canvas/237"
+},
+"motivation": "tagging"
+},
+{
+"id": "https://elucidate.example.org/annotation/w3c/ef56a660695b5421e321ef4f51c7d69e/e9959415-925c-46f6-be6e-aad549305001",
+"type": "Annotation",
+"creator": "https://montague.example.org/",
+"generator": "https://montague.example.org/",
+"body": [
+{
+"type": "SpecificResource",
+"format": "application/html",
+"creator": "https://montague.example.org/",
+"generator": "https://montague.example.org//nlp/",
+"purpose": "tagging",
+"source": "https://omeka.example.org/topic/virtual:person/matter"
+},
+{
+"type": "TextualBody",
+"format": "text/plain",
+"creator": "https://montague.example.org/",
+"value": "Matter",
+"generator": "https://montague.example.org/",
+"purpose": "tagging"
+},
+{
+"creator": "https://montague.example.org/",
+"value": "entity:person",
+"generator": "https://montague.example.org/",
+"purpose": "tagging"
+}
+],
+"target": {
+"type": "SpecificResource",
+"creator": "https://montague.example.org/",
+"dcterms:isPartOf": {
+"id": "http://waylon.example.org/work/AVT",
+"type": "sc:Manifest"
+},
+"generator": "https://montague.example.org/",
+"selector": {
+"type": "FragmentSelector",
+"conformsTo": "http://www.w3.org/TR/media-frags/",
+"value": "xywh=963,1821,155,65"
+},
+"source": "http://waylon.example.org/work/AVT/canvas/360"
+},
+"motivation": "tagging"
+},
+{
+"id": "https://elucidate.example.org/annotation/w3c/d928254a94087c7da1a9401d10bae6d7/815ab566-b590-44de-8ac1-b2c039eebab4",
+"type": "Annotation",
+"creator": "https://montague.example.org/",
+"generator": "https://montague.example.org/",
+"body": [
+{
+"type": "SpecificResource",
+"format": "application/html",
+"creator": "https://montague.example.org/",
+"generator": "https://montague.example.org//nlp/",
+"purpose": "tagging",
+"source": "https://omeka.example.org/topic/virtual:person/matter"
+},
+{
+"type": "TextualBody",
+"format": "text/plain",
+"creator": "https://montague.example.org/",
+"value": "Matter",
+"generator": "https://montague.example.org/",
+"purpose": "tagging"
+},
+{
+"creator": "https://montague.example.org/",
+"value": "entity:person",
+"generator": "https://montague.example.org/",
+"purpose": "tagging"
+}
+],
+"target": {
+"type": "SpecificResource",
+"creator": "https://montague.example.org/",
+"dcterms:isPartOf": {
+"id": "http://waylon.example.org/work/AVT",
+"type": "sc:Manifest"
+},
+"generator": "https://montague.example.org/",
+"selector": {
+"type": "FragmentSelector",
+"conformsTo": "http://www.w3.org/TR/media-frags/",
+"value": "xywh=710,1506,160,61"
+},
+"source": "http://waylon.example.org/work/AVT/canvas/346"
+},
+"motivation": "tagging"
+},
+{
+"id": "https://elucidate.example.org/annotation/w3c/12878c10fa30b8984e131e6885f6e8a1/1a4594f0-294f-49bd-a92a-1ad90be53a96",
+"type": "Annotation",
+"creator": "https://montague.example.org/",
+"generator": "https://montague.example.org/",
+"body": [
+{
+"type": "SpecificResource",
+"format": "application/html",
+"creator": "https://montague.example.org/",
+"generator": "https://montague.example.org//nlp/",
+"purpose": "tagging",
+"source": "https://omeka.example.org/topic/virtual:person/matter"
+},
+{
+"type": "TextualBody",
+"format": "text/plain",
+"creator": "https://montague.example.org/",
+"value": "Matter",
+"generator": "https://montague.example.org/",
+"purpose": "tagging"
+},
+{
+"creator": "https://montague.example.org/",
+"value": "entity:person",
+"generator": "https://montague.example.org/",
+"purpose": "tagging"
+}
+],
+"target": {
+"type": "SpecificResource",
+"creator": "https://montague.example.org/",
+"dcterms:isPartOf": {
+"id": "http://waylon.example.org/work/AVT",
+"type": "sc:Manifest"
+},
+"generator": "https://montague.example.org/",
+"selector": {
+"type": "FragmentSelector",
+"conformsTo": "http://www.w3.org/TR/media-frags/",
+"value": "xywh=927,1978,181,67"
+},
+"source": "http://waylon.example.org/work/AVT/canvas/87"
+},
+"motivation": "tagging"
+},
+{
+"id": "https://elucidate.example.org/annotation/w3c/b90d2d7a87601e38d02225ddc61e3a0b/2edc63f4-b86d-4517-be35-160763f93584",
+"type": "Annotation",
+"creator": "https://montague.example.org/",
+"generator": "https://montague.example.org/",
+"body": [
+{
+"type": "SpecificResource",
+"format": "application/html",
+"creator": "https://montague.example.org/",
+"generator": "https://montague.example.org//nlp/",
+"purpose": "tagging",
+"source": "https://omeka.example.org/topic/virtual:person/matter"
+},
+{
+"type": "TextualBody",
+"format": "text/plain",
+"creator": "https://montague.example.org/",
+"value": "Matter",
+"generator": "https://montague.example.org/",
+"purpose": "tagging"
+},
+{
+"creator": "https://montague.example.org/",
+"value": "entity:person",
+"generator": "https://montague.example.org/",
+"purpose": "tagging"
+}
+],
+"target": {
+"type": "SpecificResource",
+"creator": "https://montague.example.org/",
+"dcterms:isPartOf": {
+"id": "http://waylon.example.org/work/AVT",
+"type": "sc:Manifest"
+},
+"generator": "https://montague.example.org/",
+"selector": {
+"type": "FragmentSelector",
+"conformsTo": "http://www.w3.org/TR/media-frags/",
+"value": "xywh=1609,1782,109,47"
+},
+"source": "http://waylon.example.org/work/AVT/canvas/205"
+},
+"motivation": "tagging"
+},
+{
+"id": "https://elucidate.example.org/annotation/w3c/76b3d73c75ce38704fce19b8dcb7ae7d/ae0f4fe4-c03c-4f38-ac5d-d09eed3b709f",
+"type": "Annotation",
+"creator": "https://montague.example.org/",
+"generator": "https://montague.example.org/",
+"body": [
+{
+"type": "SpecificResource",
+"format": "application/html",
+"creator": "https://montague.example.org/",
+"generator": "https://montague.example.org//nlp/",
+"purpose": "tagging",
+"source": "https://omeka.example.org/topic/virtual:person/matter"
+},
+{
+"type": "TextualBody",
+"format": "text/plain",
+"creator": "https://montague.example.org/",
+"value": "Matter",
+"generator": "https://montague.example.org/",
+"purpose": "tagging"
+},
+{
+"creator": "https://montague.example.org/",
+"value": "entity:person",
+"generator": "https://montague.example.org/",
+"purpose": "tagging"
+}
+],
+"target": {
+"type": "SpecificResource",
+"creator": "https://montague.example.org/",
+"dcterms:isPartOf": {
+"id": "http://waylon.example.org/work/AVT",
+"type": "sc:Manifest"
+},
+"generator": "https://montague.example.org/",
+"selector": {
+"type": "FragmentSelector",
+"conformsTo": "http://www.w3.org/TR/media-frags/",
+"value": "xywh=1375,1317,192,64"
+},
+"source": "http://waylon.example.org/work/AVT/canvas/343"
+},
+"motivation": "tagging"
+},
+{
+"id": "https://elucidate.example.org/annotation/w3c/4606c997a803f421e0c97daf0810f999/b8fedb6c-b382-41be-8067-ceda34436a22",
+"type": "Annotation",
+"creator": "https://montague.example.org/",
+"generator": "https://montague.example.org/",
+"body": [
+{
+"type": "SpecificResource",
+"format": "application/html",
+"creator": "https://montague.example.org/",
+"generator": "https://montague.example.org//nlp/",
+"purpose": "tagging",
+"source": "https://omeka.example.org/topic/virtual:person/matter"
+},
+{
+"type": "TextualBody",
+"format": "text/plain",
+"creator": "https://montague.example.org/",
+"value": "Matter",
+"generator": "https://montague.example.org/",
+"purpose": "tagging"
+},
+{
+"creator": "https://montague.example.org/",
+"value": "entity:person",
+"generator": "https://montague.example.org/",
+"purpose": "tagging"
+}
+],
+"target": {
+"type": "SpecificResource",
+"creator": "https://montague.example.org/",
+"dcterms:isPartOf": {
+"id": "http://waylon.example.org/work/AVT",
+"type": "sc:Manifest"
+},
+"generator": "https://montague.example.org/",
+"selector": {
+"type": "FragmentSelector",
+"conformsTo": "http://www.w3.org/TR/media-frags/",
+"value": "xywh=1392,990,179,64"
+},
+"source": "http://waylon.example.org/work/AVT/canvas/177"
+},
+"motivation": "tagging"
+},
+{
+"id": "https://elucidate.example.org/annotation/w3c/71d9e15adadc987ed79f1e58dd94feed/1fab5dc7-2af2-4d46-aa49-62cc57d74340",
+"type": "Annotation",
+"creator": "https://montague.example.org/",
+"generator": "https://montague.example.org/",
+"body": [
+{
+"type": "SpecificResource",
+"format": "application/html",
+"creator": "https://montague.example.org/",
+"generator": "https://montague.example.org//nlp/",
+"purpose": "tagging",
+"source": "https://omeka.example.org/topic/virtual:person/matter"
+},
+{
+"type": "TextualBody",
+"format": "text/plain",
+"creator": "https://montague.example.org/",
+"value": "Matter",
+"generator": "https://montague.example.org/",
+"purpose": "tagging"
+},
+{
+"creator": "https://montague.example.org/",
+"value": "entity:person",
+"generator": "https://montague.example.org/",
+"purpose": "tagging"
+}
+],
+"target": {
+"type": "SpecificResource",
+"creator": "https://montague.example.org/",
+"dcterms:isPartOf": {
+"id": "http://waylon.example.org/work/AVT",
+"type": "sc:Manifest"
+},
+"generator": "https://montague.example.org/",
+"selector": {
+"type": "FragmentSelector",
+"conformsTo": "http://www.w3.org/TR/media-frags/",
+"value": "xywh=618,1581,186,61"
+},
+"source": "http://waylon.example.org/work/AVT/canvas/219"
+},
+"motivation": "tagging"
+},
+{
+"id": "https://elucidate.example.org/annotation/w3c/f860088de7166ad459c92e26b9cc6740/3fd60877-4e42-4a8a-b4ff-a8faae29ce80",
+"type": "Annotation",
+"creator": "https://montague.example.org/",
+"generator": "https://montague.example.org/",
+"body": [
+{
+"type": "SpecificResource",
+"format": "application/html",
+"creator": "https://montague.example.org/",
+"generator": "https://montague.example.org//nlp/",
+"purpose": "tagging",
+"source": "https://omeka.example.org/topic/virtual:person/matter"
+},
+{
+"type": "TextualBody",
+"format": "text/plain",
+"creator": "https://montague.example.org/",
+"value": "Matter",
+"generator": "https://montague.example.org/",
+"purpose": "tagging"
+},
+{
+"creator": "https://montague.example.org/",
+"value": "entity:person",
+"generator": "https://montague.example.org/",
+"purpose": "tagging"
+}
+],
+"target": {
+"type": "SpecificResource",
+"creator": "https://montague.example.org/",
+"dcterms:isPartOf": {
+"id": "http://waylon.example.org/work/AVT",
+"type": "sc:Manifest"
+},
+"generator": "https://montague.example.org/",
+"selector": {
+"type": "FragmentSelector",
+"conformsTo": "http://www.w3.org/TR/media-frags/",
+"value": "xywh=178,696,156,63"
+},
+"source": "http://waylon.example.org/work/AVT/canvas/400"
+},
+"motivation": "tagging"
+},
+{
+"id": "https://elucidate.example.org/annotation/w3c/47cbfacd6ccc9edb6565ed95a498e41d/0a32cbea-e036-4d95-a6d5-8fd90c8f6d0c",
+"type": "Annotation",
+"creator": "https://montague.example.org/",
+"generator": "https://montague.example.org/",
+"body": [
+{
+"type": "SpecificResource",
+"format": "application/html",
+"creator": "https://montague.example.org/",
+"generator": "https://montague.example.org//nlp/",
+"purpose": "tagging",
+"source": "https://omeka.example.org/topic/virtual:person/matter"
+},
+{
+"type": "TextualBody",
+"format": "text/plain",
+"creator": "https://montague.example.org/",
+"value": "Matter",
+"generator": "https://montague.example.org/",
+"purpose": "tagging"
+},
+{
+"creator": "https://montague.example.org/",
+"value": "entity:person",
+"generator": "https://montague.example.org/",
+"purpose": "tagging"
+}
+],
+"target": {
+"type": "SpecificResource",
+"creator": "https://montague.example.org/",
+"dcterms:isPartOf": {
+"id": "http://waylon.example.org/work/AVT",
+"type": "sc:Manifest"
+},
+"generator": "https://montague.example.org/",
+"selector": {
+"type": "FragmentSelector",
+"conformsTo": "http://www.w3.org/TR/media-frags/",
+"value": "xywh=611,442,160,60"
+},
+"source": "http://waylon.example.org/work/AVT/canvas/362"
+},
+"motivation": "tagging"
+},
+{
+"id": "https://elucidate.example.org/annotation/w3c/0cfc63829bcbca1481c42885d83f9493/7dea0b07-807b-4fec-a284-f971879dd67c",
+"type": "Annotation",
+"creator": "https://montague.example.org/",
+"generator": "https://montague.example.org/",
+"body": [
+{
+"type": "SpecificResource",
+"format": "application/html",
+"creator": "https://montague.example.org/",
+"generator": "https://montague.example.org//nlp/",
+"purpose": "tagging",
+"source": "https://omeka.example.org/topic/virtual:person/matter"
+},
+{
+"type": "TextualBody",
+"format": "text/plain",
+"creator": "https://montague.example.org/",
+"value": "Matter",
+"generator": "https://montague.example.org/",
+"purpose": "tagging"
+},
+{
+"creator": "https://montague.example.org/",
+"value": "entity:person",
+"generator": "https://montague.example.org/",
+"purpose": "tagging"
+}
+],
+"target": {
+"type": "SpecificResource",
+"creator": "https://montague.example.org/",
+"dcterms:isPartOf": {
+"id": "http://waylon.example.org/work/AVT",
+"type": "sc:Manifest"
+},
+"generator": "https://montague.example.org/",
+"selector": {
+"type": "FragmentSelector",
+"conformsTo": "http://www.w3.org/TR/media-frags/",
+"value": "xywh=154,1573,162,69"
+},
+"source": "http://waylon.example.org/work/AVT/canvas/120"
+},
+"motivation": "tagging"
+},
+{
+"id": "https://elucidate.example.org/annotation/w3c/b90d2d7a87601e38d02225ddc61e3a0b/5032d675-2d5e-4829-a0ed-c45f4d77bff2",
+"type": "Annotation",
+"creator": "https://montague.example.org/",
+"generator": "https://montague.example.org/",
+"body": [
+{
+"type": "SpecificResource",
+"format": "application/html",
+"creator": "https://montague.example.org/",
+"generator": "https://montague.example.org//nlp/",
+"purpose": "tagging",
+"source": "https://omeka.example.org/topic/virtual:person/matter"
+},
+{
+"type": "TextualBody",
+"format": "text/plain",
+"creator": "https://montague.example.org/",
+"value": "Matter",
+"generator": "https://montague.example.org/",
+"purpose": "tagging"
+},
+{
+"creator": "https://montague.example.org/",
+"value": "entity:person",
+"generator": "https://montague.example.org/",
+"purpose": "tagging"
+}
+],
+"target": {
+"type": "SpecificResource",
+"creator": "https://montague.example.org/",
+"dcterms:isPartOf": {
+"id": "http://waylon.example.org/work/AVT",
+"type": "sc:Manifest"
+},
+"generator": "https://montague.example.org/",
+"selector": {
+"type": "FragmentSelector",
+"conformsTo": "http://www.w3.org/TR/media-frags/",
+"value": "xywh=685,701,180,70"
+},
+"source": "http://waylon.example.org/work/AVT/canvas/205"
+},
+"motivation": "tagging"
+},
+{
+"id": "https://elucidate.example.org/annotation/w3c/0f2ff89f7eb2a6f77b23f5ce7aa361e2/5cb7ff4b-219c-4ea5-b0c5-f53637ee63b5",
+"type": "Annotation",
+"creator": "https://montague.example.org/",
+"generator": "https://montague.example.org/",
+"body": [
+{
+"type": "SpecificResource",
+"format": "application/html",
+"creator": "https://montague.example.org/",
+"generator": "https://montague.example.org//nlp/",
+"purpose": "tagging",
+"source": "https://omeka.example.org/topic/virtual:person/matter"
+},
+{
+"type": "TextualBody",
+"format": "text/plain",
+"creator": "https://montague.example.org/",
+"value": "Matter",
+"generator": "https://montague.example.org/",
+"purpose": "tagging"
+},
+{
+"creator": "https://montague.example.org/",
+"value": "entity:person",
+"generator": "https://montague.example.org/",
+"purpose": "tagging"
+}
+],
+"target": {
+"type": "SpecificResource",
+"creator": "https://montague.example.org/",
+"dcterms:isPartOf": {
+"id": "http://waylon.example.org/work/AVT",
+"type": "sc:Manifest"
+},
+"generator": "https://montague.example.org/",
+"selector": {
+"type": "FragmentSelector",
+"conformsTo": "http://www.w3.org/TR/media-frags/",
+"value": "xywh=277,1500,154,56"
+},
+"source": "http://waylon.example.org/work/AVT/canvas/118"
+},
+"motivation": "tagging"
+},
+{
+"id": "https://elucidate.example.org/annotation/w3c/13853dfee8858a19036e41e4f4f0523f/12ffb10b-b9c3-4157-a024-b6a131a22a00",
+"type": "Annotation",
+"creator": "https://montague.example.org/",
+"generator": "https://montague.example.org/",
+"body": [
+{
+"type": "SpecificResource",
+"format": "application/html",
+"creator": "https://montague.example.org/",
+"generator": "https://montague.example.org//nlp/",
+"purpose": "tagging",
+"source": "https://omeka.example.org/topic/virtual:person/matter"
+},
+{
+"type": "TextualBody",
+"format": "text/plain",
+"creator": "https://montague.example.org/",
+"value": "Matter",
+"generator": "https://montague.example.org/",
+"purpose": "tagging"
+},
+{
+"creator": "https://montague.example.org/",
+"value": "entity:person",
+"generator": "https://montague.example.org/",
+"purpose": "tagging"
+}
+],
+"target": {
+"type": "SpecificResource",
+"creator": "https://montague.example.org/",
+"dcterms:isPartOf": {
+"id": "http://waylon.example.org/work/AVT",
+"type": "sc:Manifest"
+},
+"generator": "https://montague.example.org/",
+"selector": {
+"type": "FragmentSelector",
+"conformsTo": "http://www.w3.org/TR/media-frags/",
+"value": "xywh=969,1773,161,67"
+},
+"source": "http://waylon.example.org/work/AVT/canvas/237"
+},
+"motivation": "tagging"
+},
+{
+"id": "https://elucidate.example.org/annotation/w3c/369e31b1699c7e6e0af96faf11232600/5a2abf22-d543-40fd-a4f4-50bcc0f2dfba",
+"type": "Annotation",
+"creator": "https://montague.example.org/",
+"generator": "https://montague.example.org/",
+"body": [
+{
+"type": "SpecificResource",
+"format": "application/html",
+"creator": "https://montague.example.org/",
+"generator": "https://montague.example.org//nlp/",
+"purpose": "tagging",
+"source": "https://omeka.example.org/topic/virtual:person/matter"
+},
+{
+"type": "TextualBody",
+"format": "text/plain",
+"creator": "https://montague.example.org/",
+"value": "Matter",
+"generator": "https://montague.example.org/",
+"purpose": "tagging"
+},
+{
+"creator": "https://montague.example.org/",
+"value": "entity:person",
+"generator": "https://montague.example.org/",
+"purpose": "tagging"
+}
+],
+"target": {
+"type": "SpecificResource",
+"creator": "https://montague.example.org/",
+"dcterms:isPartOf": {
+"id": "http://waylon.example.org/work/AVT",
+"type": "sc:Manifest"
+},
+"generator": "https://montague.example.org/",
+"selector": {
+"type": "FragmentSelector",
+"conformsTo": "http://www.w3.org/TR/media-frags/",
+"value": "xywh=1162,1618,159,58"
+},
+"source": "http://waylon.example.org/work/AVT/canvas/273"
+},
+"motivation": "tagging"
+}
+],
+"partOf": "https://elucidate.example.org/annotation/w3c/services/search/body?fields=id%2Csource&value=https%3A%2F%2Fomeka.example.org%2Ftopic%2Fvirtual%3Aperson%2Fmatter",
+"startIndex": 0
+}

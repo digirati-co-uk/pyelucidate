@@ -1,0 +1,28 @@
+{
+  "id": "https://elucidate.glam-dev.org/annotation/w3c/foo/bar",
+  "type": "Annotation",
+  "body": [
+    {
+      "creator": "https://montague.glam-dev.org/",
+      "value": "entity:person",
+      "generator": "https://montague.glam-dev.org/",
+      "purpose": "tagging"
+    }
+  ],
+  "target": {
+    "type": "SpecificResource",
+    "creator": "https://montague.glam-dev.org/",
+    "dcterms:isPartOf": {
+      "id": "http://example.org/manifest/foo/manifest.json",
+      "type": "sc:Manifest"
+    },
+    "generator": "https://montague.glam-dev.org/",
+    "selector": {
+      "type": "FragmentSelector",
+      "conformsTo": "http://www.w3.org/TR/media-frags/",
+      "value": "xywh=659,1646,174,62"
+    },
+    "source": "http://example.org/manifest/foo/canvas/274"
+  },
+  "motivation": "tagging"
+}

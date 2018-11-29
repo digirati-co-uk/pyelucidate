@@ -1,0 +1,4298 @@
+{
+  "@context": [
+    "http://www.w3.org/ns/anno.jsonld",
+    "http://www.w3.org/ns/ldp.jsonld"
+  ],
+  "id": "https://elucidate.example.org/annotation/w3c/services/search/body?fields=source&value=https%3A%2F%2Fomeka.example.org%2Fs%2Fexample%2Fpage%2Ftopics%2Fschool%2F",
+  "type": "AnnotationCollection",
+  "first": {
+    "type": "AnnotationPage",
+    "items": [
+      {
+        "id": "https://elucidate.example.org/annotation/w3c/7745f62c-b3db-4aef-991b-700696cbaf46/4084be81-ef83-4b95-8cef-070c7dd23b87",
+        "type": "Annotation",
+        "created": "2018-01-05T04:08:48.924Z",
+        "generator": "https://omeka.example.org/s/example/ner/open/",
+        "body": [
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "santa fe indian school",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "generator": "https://omeka.example.org/s/example/ner/open/topicmanager/",
+            "purpose": "tagging",
+            "source": "https://omeka.example.org/s/example/page/topics/school/santa+fe+indian+school"
+          },
+          {
+            "value": "entity:school",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": {
+            "id": "https://presley.example.org/iiif/example/_roll_M-1070_46_cvs-932-1132/manifest",
+            "type": "sc:Manifest"
+          },
+          "generator": "https://omeka.example.org/s/example/ner/open",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=1223,1826,486,54"
+          },
+          "source": "https://presley.example.org/iiif/example/_roll_M-1070_46_cvs-932-1132/canvas/c1102"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.example.org/annotation/w3c/26b1b57d-40a2-4a5c-9a42-7e4e75117327/4ce0c997-9118-4981-a04f-a943b9a7fa5b",
+        "type": "Annotation",
+        "created": "2017-10-08T10:13:45.303Z",
+        "generator": "/",
+        "body": [
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "generator": "./",
+            "purpose": "tagging",
+            "source": "https://omeka.example.org/s/example/page/topics/school/14"
+          },
+          {
+            "value": "entity:school",
+            "generator": "/",
+            "purpose": "tagging"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "14",
+            "generator": "/",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": {
+            "id": "https://presley.example.org/iiif/example/_roll_M-1070_01_cvs-659-687/manifest",
+            "type": "sc:Manifest"
+          },
+          "generator": "/",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=946,900,61,62"
+          },
+          "source": "https://presley.example.org/iiif/example/_roll_M-1070_01_cvs-659-687/canvas/c672"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.example.org/annotation/w3c/0dc8cde1-9ac1-463f-9f4e-e2834458b863/d38e58af-c815-4db7-8455-3033f862eea1",
+        "type": "Annotation",
+        "created": "2017-10-14T02:25:23.177Z",
+        "generator": "https://omeka.example.org/s/example/ner/open/",
+        "body": [
+          {
+            "value": "entity:school",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "generator": "https://omeka.example.org/s/example/ner/open/topicmanager/",
+            "purpose": "tagging",
+            "source": "https://omeka.example.org/s/example/page/topics/school/14"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "14",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": {
+            "id": "https://presley.example.org/iiif/example/_roll_PLB_02AB_cvs-42-172/manifest",
+            "type": "sc:Manifest"
+          },
+          "generator": "https://omeka.example.org/s/example/ner/open",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=1696,4162,95,45"
+          },
+          "source": "https://presley.example.org/iiif/example/_roll_PLB_02AB_cvs-42-172/canvas/c119"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.example.org/annotation/w3c/7245f47f-3470-4506-90ed-9ef46b2a1867/001866bb-1e27-4421-be8f-fd5ceaa6c5d0",
+        "type": "Annotation",
+        "created": "2017-10-07T01:56:30.271Z",
+        "generator": "/",
+        "body": [
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "san juan boarding school",
+            "generator": "/",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "generator": "./",
+            "purpose": "tagging",
+            "source": "https://omeka.example.org/s/example/page/topics/school/san+juan+boarding+school"
+          },
+          {
+            "value": "entity:school",
+            "generator": "/",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": {
+            "id": "https://presley.example.org/iiif/example/_roll_M-1011_127_cvs-219-282/manifest",
+            "type": "sc:Manifest"
+          },
+          "generator": "/",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=1024,995,614,38"
+          },
+          "source": "https://presley.example.org/iiif/example/_roll_M-1011_127_cvs-219-282/canvas/c229"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.example.org/annotation/w3c/8ef09138-1a1e-4966-be6b-290865dc4fe5/ed32c2ae-d8ec-4c5c-951e-5d35c13664f5",
+        "type": "Annotation",
+        "created": "2017-12-25T04:15:47.189Z",
+        "generator": "https://omeka.example.org/s/example/ner/open/",
+        "body": [
+          {
+            "value": "entity:school",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "generator": "https://omeka.example.org/s/example/ner/open/topicmanager/",
+            "purpose": "tagging",
+            "source": "https://omeka.example.org/s/example/page/topics/school/14"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "14",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": {
+            "id": "https://presley.example.org/iiif/example/_roll_M-1011_174_cvs-1191-1209/manifest",
+            "type": "sc:Manifest"
+          },
+          "generator": "https://omeka.example.org/s/example/ner/open",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=631,2336,55,55"
+          },
+          "source": "https://presley.example.org/iiif/example/_roll_M-1011_174_cvs-1191-1209/canvas/c1193"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.example.org/annotation/w3c/5b5048a6-00b2-4114-8af8-aef0309ef735/f90171c0-9796-4982-982d-c81717ecee46",
+        "type": "Annotation",
+        "created": "2018-03-12T15:12:51.435Z",
+        "generator": "https://omeka.example.org/s/example/ner/open/",
+        "body": [
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "44",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "generator": "https://omeka.example.org/s/example/ner/open/topicmanager/",
+            "purpose": "tagging",
+            "source": "https://omeka.example.org/s/example/page/topics/school/44"
+          },
+          {
+            "value": "entity:school",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": {
+            "id": "https://presley.example.org/iiif/example/_roll_PLB_01_cvs-0-353/manifest",
+            "type": "sc:Manifest"
+          },
+          "generator": "https://omeka.example.org/s/example/ner/open",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=2244,3050,48,96"
+          },
+          "source": "https://presley.example.org/iiif/example/_roll_PLB_01_cvs-0-353/canvas/c222"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.example.org/annotation/w3c/509eaed2-9c17-42cd-be80-305f16e81c68/4501e55d-7ac9-49ec-aa70-3ebeaeb564aa",
+        "type": "Annotation",
+        "created": "2017-10-07T02:54:50.817Z",
+        "generator": "/",
+        "body": [
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "generator": "./",
+            "purpose": "tagging",
+            "source": "https://omeka.example.org/s/example/page/topics/school/44"
+          },
+          {
+            "value": "entity:school",
+            "generator": "/",
+            "purpose": "tagging"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "44",
+            "generator": "/",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": {
+            "id": "https://presley.example.org/iiif/example/_roll_M-1011_09_cvs-69-110/manifest",
+            "type": "sc:Manifest"
+          },
+          "generator": "/",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=1417,1546,35,22"
+          },
+          "source": "https://presley.example.org/iiif/example/_roll_M-1011_09_cvs-69-110/canvas/c110"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.example.org/annotation/w3c/e3562ac5-260e-47ed-a34d-06226755ab9f/c10816fe-4379-477d-8938-8ace43c6a2de",
+        "type": "Annotation",
+        "created": "2017-10-07T10:03:14.123Z",
+        "generator": "/",
+        "body": [
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "generator": "./",
+            "purpose": "tagging",
+            "source": "https://omeka.example.org/s/example/page/topics/school/44"
+          },
+          {
+            "value": "entity:school",
+            "generator": "/",
+            "purpose": "tagging"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "44",
+            "generator": "/",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": {
+            "id": "https://presley.example.org/iiif/example/_roll_PLB_01D_cvs-602-703/manifest",
+            "type": "sc:Manifest"
+          },
+          "generator": "/",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=2646,2156,49,39"
+          },
+          "source": "https://presley.example.org/iiif/example/_roll_PLB_01D_cvs-602-703/canvas/c676"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.example.org/annotation/w3c/cc295d84-3dae-450e-bfc6-8e7356b1e45f/65ee46a7-8924-4acd-b41f-9615615d3483",
+        "type": "Annotation",
+        "created": "2017-12-25T04:23:08.229Z",
+        "generator": "https://omeka.example.org/s/example/ner/open/",
+        "body": [
+          {
+            "value": "entity:school",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "generator": "https://omeka.example.org/s/example/ner/open/topicmanager/",
+            "purpose": "tagging",
+            "source": "https://omeka.example.org/s/example/page/topics/school/14"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "14",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": {
+            "id": "https://presley.example.org/iiif/example/_roll_M-1011_128_cvs-32-148/manifest",
+            "type": "sc:Manifest"
+          },
+          "generator": "https://omeka.example.org/s/example/ner/open",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=1086,2643,109,51"
+          },
+          "source": "https://presley.example.org/iiif/example/_roll_M-1011_128_cvs-32-148/canvas/c79"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.example.org/annotation/w3c/acf506b2-2fb2-4bc0-a710-9bd01acc300b/f70b16ca-a991-44b1-874c-4daedb0de2df",
+        "type": "Annotation",
+        "created": "2017-10-07T12:45:47.319Z",
+        "generator": "/",
+        "body": [
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "generator": "./",
+            "purpose": "tagging",
+            "source": "https://omeka.example.org/s/example/page/topics/school/14"
+          },
+          {
+            "value": "entity:school",
+            "generator": "/",
+            "purpose": "tagging"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "14",
+            "generator": "/",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": {
+            "id": "https://presley.example.org/iiif/example/_roll_PLB_01D_cvs-513-601/manifest",
+            "type": "sc:Manifest"
+          },
+          "generator": "/",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=2702,2746,45,40"
+          },
+          "source": "https://presley.example.org/iiif/example/_roll_PLB_01D_cvs-513-601/canvas/c567"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.example.org/annotation/w3c/b2efbc21-deb9-41f8-9002-ab7b5ecac4e5/811cf2eb-aa25-48c9-bd5c-a7f376a438f8",
+        "type": "Annotation",
+        "created": "2018-03-12T15:25:43.849Z",
+        "generator": "https://omeka.example.org/s/example/ner/open/",
+        "body": [
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "44",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "generator": "https://omeka.example.org/s/example/ner/open/topicmanager/",
+            "purpose": "tagging",
+            "source": "https://omeka.example.org/s/example/page/topics/school/44"
+          },
+          {
+            "value": "entity:school",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": {
+            "id": "https://presley.example.org/iiif/example/_roll_PLB_01_cvs-0-353/manifest",
+            "type": "sc:Manifest"
+          },
+          "generator": "https://omeka.example.org/s/example/ner/open",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=1881,3467,101,93"
+          },
+          "source": "https://presley.example.org/iiif/example/_roll_PLB_01_cvs-0-353/canvas/c68"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.example.org/annotation/w3c/c122a3de-c1b7-4893-bab5-b1a3c2c01a82/01981db5-8c3a-4845-8e93-7dcc981eb4e0",
+        "type": "Annotation",
+        "created": "2017-10-18T09:05:21.100Z",
+        "generator": "https://omeka.example.org/s/example/ner/open/",
+        "body": [
+          {
+            "value": "entity:school",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "generator": "https://omeka.example.org/s/example/ner/open/topicmanager/",
+            "purpose": "tagging",
+            "source": "https://omeka.example.org/s/example/page/topics/school/14"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "14",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": {
+            "id": "https://presley.example.org/iiif/example/_roll_PLB_02AB_cvs-380-412/manifest",
+            "type": "sc:Manifest"
+          },
+          "generator": "https://omeka.example.org/s/example/ner/open",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=2055,3567,71,46"
+          },
+          "source": "https://presley.example.org/iiif/example/_roll_PLB_02AB_cvs-380-412/canvas/c393"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.example.org/annotation/w3c/6ca3bda0-9419-4159-b092-fc85c6f367f9/c7117ef4-2ea8-4390-91b7-49faf81a1a35",
+        "type": "Annotation",
+        "created": "2017-10-07T01:08:30.998Z",
+        "generator": "/",
+        "body": [
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "generator": "./",
+            "purpose": "tagging",
+            "source": "https://omeka.example.org/s/example/page/topics/school/14"
+          },
+          {
+            "value": "entity:school",
+            "generator": "/",
+            "purpose": "tagging"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "14",
+            "generator": "/",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": {
+            "id": "https://presley.example.org/iiif/example/_roll_M-1011_127_cvs-93-218/manifest",
+            "type": "sc:Manifest"
+          },
+          "generator": "/",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=1141,751,59,33"
+          },
+          "source": "https://presley.example.org/iiif/example/_roll_M-1011_127_cvs-93-218/canvas/c108"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.example.org/annotation/w3c/c58c73e6-697a-4b19-b547-d7b4011506c9/f60148e0-5601-4c4d-847d-f563650d9bb7",
+        "type": "Annotation",
+        "created": "2017-10-07T11:38:47.503Z",
+        "generator": "/",
+        "body": [
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "generator": "./",
+            "purpose": "tagging",
+            "source": "https://omeka.example.org/s/example/page/topics/school/14"
+          },
+          {
+            "value": "entity:school",
+            "generator": "/",
+            "purpose": "tagging"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "14",
+            "generator": "/",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": {
+            "id": "https://presley.example.org/iiif/example/_roll_PLB_01D_cvs-166-257/manifest",
+            "type": "sc:Manifest"
+          },
+          "generator": "/",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=3348,4758,43,48"
+          },
+          "source": "https://presley.example.org/iiif/example/_roll_PLB_01D_cvs-166-257/canvas/c189"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.example.org/annotation/w3c/2b333bc5-28df-4207-b722-c0428f5df32c/1beb5234-a41c-4ec0-8593-de146e697695",
+        "type": "Annotation",
+        "created": "2017-10-14T10:23:16.929Z",
+        "generator": "https://omeka.example.org/s/example/ner/open/",
+        "body": [
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "44",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "generator": "https://omeka.example.org/s/example/ner/open/topicmanager/",
+            "purpose": "tagging",
+            "source": "https://omeka.example.org/s/example/page/topics/school/44"
+          },
+          {
+            "value": "entity:school",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": {
+            "id": "https://presley.example.org/iiif/example/_roll_PLB_02D_cvs-5-644/manifest",
+            "type": "sc:Manifest"
+          },
+          "generator": "https://omeka.example.org/s/example/ner/open",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=1440,4750,40,37"
+          },
+          "source": "https://presley.example.org/iiif/example/_roll_PLB_02D_cvs-5-644/canvas/c631"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.example.org/annotation/w3c/34099e6f-bbb4-4bfe-8239-54009d9285ff/5fd6b70d-26b4-4fde-8efe-9ea3d95d13f4",
+        "type": "Annotation",
+        "created": "2017-10-08T04:17:44.225Z",
+        "generator": "/",
+        "body": [
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "generator": "./",
+            "purpose": "tagging",
+            "source": "https://omeka.example.org/s/example/page/topics/school/14"
+          },
+          {
+            "value": "entity:school",
+            "generator": "/",
+            "purpose": "tagging"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "14",
+            "generator": "/",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": {
+            "id": "https://presley.example.org/iiif/example/_roll_M-1070_01_cvs-131-367/manifest",
+            "type": "sc:Manifest"
+          },
+          "generator": "/",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=2038,1977,72,61"
+          },
+          "source": "https://presley.example.org/iiif/example/_roll_M-1070_01_cvs-131-367/canvas/c338"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.example.org/annotation/w3c/47cb5706-a253-44da-8efb-da33eddd0459/dd52d49b-7e27-4d0b-a0cc-cd5f22fe64f5",
+        "type": "Annotation",
+        "created": "2017-12-15T18:55:50.870Z",
+        "generator": "https://omeka.example.org/s/example/ner/open/",
+        "body": [
+          {
+            "value": "entity:school",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "generator": "https://omeka.example.org/s/example/ner/open/topicmanager/",
+            "purpose": "tagging",
+            "source": "https://omeka.example.org/s/example/page/topics/school/14"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "14",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": {
+            "id": "https://presley.example.org/iiif/example/_roll_M-1011_079_cvs-345-407/manifest",
+            "type": "sc:Manifest"
+          },
+          "generator": "https://omeka.example.org/s/example/ner/open",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=361,1449,36,42"
+          },
+          "source": "https://presley.example.org/iiif/example/_roll_M-1011_079_cvs-345-407/canvas/c366"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.example.org/annotation/w3c/772c47f1-2070-47d7-bff0-8b66c242d33e/44d155b5-a042-4bf9-b7e6-0cc5925744d4",
+        "type": "Annotation",
+        "created": "2018-03-13T02:10:33.740Z",
+        "generator": "https://omeka.example.org/s/example/ner/open/",
+        "body": [
+          {
+            "value": "entity:school",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "generator": "https://omeka.example.org/s/example/ner/open/topicmanager/",
+            "purpose": "tagging",
+            "source": "https://omeka.example.org/s/example/page/topics/school/14"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "14",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": {
+            "id": "https://presley.example.org/iiif/example/_roll_M-1011_089_cvs-921-1012/manifest",
+            "type": "sc:Manifest"
+          },
+          "generator": "https://omeka.example.org/s/example/ner/open",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=958,1290,66,46"
+          },
+          "source": "https://presley.example.org/iiif/example/_roll_M-1011_089_cvs-921-1012/canvas/c968"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.example.org/annotation/w3c/03a06478-41d8-45fa-8286-89f2610c90ae/d606d628-615d-4032-976f-6da1cea9fa5f",
+        "type": "Annotation",
+        "created": "2017-12-15T18:45:53.666Z",
+        "generator": "https://omeka.example.org/s/example/ner/open/",
+        "body": [
+          {
+            "value": "entity:school",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "generator": "https://omeka.example.org/s/example/ner/open/topicmanager/",
+            "purpose": "tagging",
+            "source": "https://omeka.example.org/s/example/page/topics/school/14"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "14",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": {
+            "id": "https://presley.example.org/iiif/example/_roll_M-1011_079_cvs-190-269/manifest",
+            "type": "sc:Manifest"
+          },
+          "generator": "https://omeka.example.org/s/example/ner/open",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=1205,1818,74,49"
+          },
+          "source": "https://presley.example.org/iiif/example/_roll_M-1011_079_cvs-190-269/canvas/c192"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.example.org/annotation/w3c/beb7e36c-cb00-45bc-899e-b9e5a9dfbeb9/177b2de0-f893-4b83-b6cf-163dbeba938b",
+        "type": "Annotation",
+        "created": "2017-10-07T18:27:05.593Z",
+        "generator": "/",
+        "body": [
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "Zuni Boarding",
+            "generator": "/",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "generator": "./",
+            "purpose": "tagging",
+            "source": "https://omeka.example.org/s/example/page/topics/virtual:person/zuni+boarding"
+          },
+          {
+            "value": "entity:PERSON",
+            "generator": "/",
+            "purpose": "tagging"
+          },
+          {
+            "value": "entity:school",
+            "generator": "/",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "generator": "./",
+            "purpose": "tagging",
+            "source": "https://omeka.example.org/s/example/page/topics/school/zuni+indian+school"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "zuni indian school",
+            "generator": "/",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": {
+            "id": "https://presley.example.org/iiif/example/_roll_M-1011_174_cvs-30-52/manifest",
+            "type": "sc:Manifest"
+          },
+          "generator": "/",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=1012,452,316,41"
+          },
+          "source": "https://presley.example.org/iiif/example/_roll_M-1011_174_cvs-30-52/canvas/c31"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.example.org/annotation/w3c/ae508e97-8dd8-4929-91f1-58f4237479e6/4e958244-f0a3-42cb-b572-190381af38e8",
+        "type": "Annotation",
+        "created": "2017-10-14T13:40:28.050Z",
+        "generator": "https://omeka.example.org/s/example/ner/open/",
+        "body": [
+          {
+            "value": "entity:school",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "generator": "https://omeka.example.org/s/example/ner/open/topicmanager/",
+            "purpose": "tagging",
+            "source": "https://omeka.example.org/s/example/page/topics/school/14"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "14",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": {
+            "id": "https://presley.example.org/iiif/example/_roll_PLB_02AB_cvs-173-379/manifest",
+            "type": "sc:Manifest"
+          },
+          "generator": "https://omeka.example.org/s/example/ner/open",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=1518,1192,46,58"
+          },
+          "source": "https://presley.example.org/iiif/example/_roll_PLB_02AB_cvs-173-379/canvas/c337"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.example.org/annotation/w3c/cc048c65-839c-475d-b726-cf69c43d3747/2b3e1faa-642b-483f-b766-6114e7d61693",
+        "type": "Annotation",
+        "created": "2017-10-07T01:19:31.841Z",
+        "generator": "/",
+        "body": [
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "generator": "./",
+            "purpose": "tagging",
+            "source": "https://omeka.example.org/s/example/page/topics/school/san+juan+school"
+          },
+          {
+            "value": "entity:school",
+            "generator": "/",
+            "purpose": "tagging"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "san juan school",
+            "generator": "/",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": {
+            "id": "https://presley.example.org/iiif/example/_roll_M-1011_127_cvs-372-421/manifest",
+            "type": "sc:Manifest"
+          },
+          "generator": "/",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=720,2671,382,37"
+          },
+          "source": "https://presley.example.org/iiif/example/_roll_M-1011_127_cvs-372-421/canvas/c384"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.example.org/annotation/w3c/16a57aac-7841-4169-8db2-bee3054d8921/bbee2d0b-6363-4d7e-91da-afa97504e912",
+        "type": "Annotation",
+        "created": "2017-12-25T14:58:04.818Z",
+        "generator": "https://omeka.example.org/s/example/ner/open/",
+        "body": [
+          {
+            "value": "entity:school",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "generator": "https://omeka.example.org/s/example/ner/open/topicmanager/",
+            "purpose": "tagging",
+            "source": "https://omeka.example.org/s/example/page/topics/school/14"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "14",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": {
+            "id": "https://presley.example.org/iiif/example/_roll_M-1011_128_cvs-1175-1207/manifest",
+            "type": "sc:Manifest"
+          },
+          "generator": "https://omeka.example.org/s/example/ner/open",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=268,867,60,55"
+          },
+          "source": "https://presley.example.org/iiif/example/_roll_M-1011_128_cvs-1175-1207/canvas/c1186"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.example.org/annotation/w3c/0b6040dc-b1ec-4acb-b2ba-b404ce80a479/4ebeb6f0-e594-4642-81e3-b0f7f47216b7",
+        "type": "Annotation",
+        "created": "2017-12-25T04:50:47.242Z",
+        "generator": "https://omeka.example.org/s/example/ner/open/",
+        "body": [
+          {
+            "value": "entity:school",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "generator": "https://omeka.example.org/s/example/ner/open/topicmanager/",
+            "purpose": "tagging",
+            "source": "https://omeka.example.org/s/example/page/topics/school/14"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "14",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": {
+            "id": "https://presley.example.org/iiif/example/_roll_M-1011_128_cvs-387-644/manifest",
+            "type": "sc:Manifest"
+          },
+          "generator": "https://omeka.example.org/s/example/ner/open",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=1201,2782,50,39"
+          },
+          "source": "https://presley.example.org/iiif/example/_roll_M-1011_128_cvs-387-644/canvas/c509"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.example.org/annotation/w3c/235c47a5-6bb9-4065-b25a-752816070c07/17793aa7-4e82-4270-9a59-b498823dd623",
+        "type": "Annotation",
+        "created": "2017-10-14T02:42:08.439Z",
+        "generator": "https://omeka.example.org/s/example/ner/open/",
+        "body": [
+          {
+            "value": "entity:school",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "generator": "https://omeka.example.org/s/example/ner/open/topicmanager/",
+            "purpose": "tagging",
+            "source": "https://omeka.example.org/s/example/page/topics/school/14"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "14",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": {
+            "id": "https://presley.example.org/iiif/example/_roll_PLB_02D_cvs-5-644/manifest",
+            "type": "sc:Manifest"
+          },
+          "generator": "https://omeka.example.org/s/example/ner/open",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=2530,2501,43,40"
+          },
+          "source": "https://presley.example.org/iiif/example/_roll_PLB_02D_cvs-5-644/canvas/c116"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.example.org/annotation/w3c/e31206b1-d7cb-4b09-b9a2-563174428b1b/cd346eb8-16cd-45b9-adf4-e2a717a15bec",
+        "type": "Annotation",
+        "created": "2017-12-25T03:17:45.795Z",
+        "generator": "https://omeka.example.org/s/example/ner/open/",
+        "body": [
+          {
+            "value": "entity:school",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "generator": "https://omeka.example.org/s/example/ner/open/topicmanager/",
+            "purpose": "tagging",
+            "source": "https://omeka.example.org/s/example/page/topics/school/14"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "14",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": {
+            "id": "https://presley.example.org/iiif/example/_roll_M-1011_174_cvs-293-391/manifest",
+            "type": "sc:Manifest"
+          },
+          "generator": "https://omeka.example.org/s/example/ner/open",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=267,1954,32,32"
+          },
+          "source": "https://presley.example.org/iiif/example/_roll_M-1011_174_cvs-293-391/canvas/c338"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.example.org/annotation/w3c/48b2f0fd-a662-4815-9de9-6fce93e8cf34/1f15deac-4c58-46f3-83e6-aabdb6504c4d",
+        "type": "Annotation",
+        "created": "2017-10-06T20:37:57.848Z",
+        "generator": "/",
+        "body": [
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "generator": "./",
+            "purpose": "tagging",
+            "source": "https://omeka.example.org/s/example/page/topics/school/san+juan+school"
+          },
+          {
+            "value": "entity:school",
+            "generator": "/",
+            "purpose": "tagging"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "san juan school",
+            "generator": "/",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": {
+            "id": "https://presley.example.org/iiif/example/_roll_M-1011_127_cvs-2-26/manifest",
+            "type": "sc:Manifest"
+          },
+          "generator": "/",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=459,968,365,35"
+          },
+          "source": "https://presley.example.org/iiif/example/_roll_M-1011_127_cvs-2-26/canvas/c21"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.example.org/annotation/w3c/e5ad7fe4-dc84-46b1-b56c-7a0d70bf8508/aa63f7d1-8176-4941-8d9e-04168bb607ea",
+        "type": "Annotation",
+        "created": "2018-03-13T01:50:22.493Z",
+        "generator": "https://omeka.example.org/s/example/ner/open/",
+        "body": [
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "44",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "generator": "https://omeka.example.org/s/example/ner/open/topicmanager/",
+            "purpose": "tagging",
+            "source": "https://omeka.example.org/s/example/page/topics/school/44"
+          },
+          {
+            "value": "entity:school",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": {
+            "id": "https://presley.example.org/iiif/example/_roll_M-1011_089_cvs-663-689/manifest",
+            "type": "sc:Manifest"
+          },
+          "generator": "https://omeka.example.org/s/example/ner/open",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=1632,1159,48,38"
+          },
+          "source": "https://presley.example.org/iiif/example/_roll_M-1011_089_cvs-663-689/canvas/c680"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.example.org/annotation/w3c/4958adf9-5606-47ac-ab5c-042045cbcafb/47136975-c1aa-4da7-9a0c-bca74ef5d9bc",
+        "type": "Annotation",
+        "created": "2017-10-07T15:09:38.455Z",
+        "generator": "/",
+        "body": [
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "generator": "./",
+            "purpose": "tagging",
+            "source": "https://omeka.example.org/s/example/page/topics/school/14"
+          },
+          {
+            "value": "entity:school",
+            "generator": "/",
+            "purpose": "tagging"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "14",
+            "generator": "/",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": {
+            "id": "https://presley.example.org/iiif/example/_roll_PLB_01D_cvs-363-507/manifest",
+            "type": "sc:Manifest"
+          },
+          "generator": "/",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=3099,640,93,57"
+          },
+          "source": "https://presley.example.org/iiif/example/_roll_PLB_01D_cvs-363-507/canvas/c454"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.example.org/annotation/w3c/b06062e0-f370-47b7-93c6-291e6206dada/5a3d26b2-4f3a-452f-94f7-5e8fbef49aa9",
+        "type": "Annotation",
+        "created": "2017-12-25T11:19:48.296Z",
+        "generator": "https://omeka.example.org/s/example/ner/open/",
+        "body": [
+          {
+            "value": "entity:school",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "generator": "https://omeka.example.org/s/example/ner/open/topicmanager/",
+            "purpose": "tagging",
+            "source": "https://omeka.example.org/s/example/page/topics/school/14"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "14",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": {
+            "id": "https://presley.example.org/iiif/example/_roll_M-1011_128_cvs-149-386/manifest",
+            "type": "sc:Manifest"
+          },
+          "generator": "https://omeka.example.org/s/example/ner/open",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=2137,878,134,57"
+          },
+          "source": "https://presley.example.org/iiif/example/_roll_M-1011_128_cvs-149-386/canvas/c378"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.example.org/annotation/w3c/387073d7-a819-4404-b98f-a27b1fc50680/e1ea7809-cc98-44c8-986c-758523c0ac5f",
+        "type": "Annotation",
+        "created": "2017-10-08T16:45:36.078Z",
+        "generator": "/",
+        "body": [
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "generator": "./",
+            "purpose": "tagging",
+            "source": "https://omeka.example.org/s/example/page/topics/school/14"
+          },
+          {
+            "value": "entity:school",
+            "generator": "/",
+            "purpose": "tagging"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "14",
+            "generator": "/",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": {
+            "id": "https://presley.example.org/iiif/example/_roll_PLB_02D_cvs-73-220/manifest",
+            "type": "sc:Manifest"
+          },
+          "generator": "/",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=1941,4383,64,61"
+          },
+          "source": "https://presley.example.org/iiif/example/_roll_PLB_02D_cvs-73-220/canvas/c168"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.example.org/annotation/w3c/1dddfb01-3e26-47dd-bab7-f6ed60225ed1/572b5d15-1606-4836-afdc-75441bcc5e14",
+        "type": "Annotation",
+        "created": "2017-10-14T02:37:41.029Z",
+        "generator": "https://omeka.example.org/s/example/ner/open/",
+        "body": [
+          {
+            "value": "entity:school",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "generator": "https://omeka.example.org/s/example/ner/open/topicmanager/",
+            "purpose": "tagging",
+            "source": "https://omeka.example.org/s/example/page/topics/school/14"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "14",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": {
+            "id": "https://presley.example.org/iiif/example/_roll_PLB_02D_cvs-5-644/manifest",
+            "type": "sc:Manifest"
+          },
+          "generator": "https://omeka.example.org/s/example/ner/open",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=2055,3207,78,54"
+          },
+          "source": "https://presley.example.org/iiif/example/_roll_PLB_02D_cvs-5-644/canvas/c65"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.example.org/annotation/w3c/f03edfbd-3321-43fc-b921-f4fbbdeb5769/afc9b536-51e7-48a8-9228-56c0d5230be9",
+        "type": "Annotation",
+        "created": "2017-10-07T07:25:27.366Z",
+        "generator": "/",
+        "body": [
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "generator": "./",
+            "purpose": "tagging",
+            "source": "https://omeka.example.org/s/example/page/topics/school/44"
+          },
+          {
+            "value": "entity:school",
+            "generator": "/",
+            "purpose": "tagging"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "44",
+            "generator": "/",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": {
+            "id": "https://presley.example.org/iiif/example/_roll_PLB_01_cvs-0-353/manifest",
+            "type": "sc:Manifest"
+          },
+          "generator": "/",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=2194,1014,96,71"
+          },
+          "source": "https://presley.example.org/iiif/example/_roll_PLB_01_cvs-0-353/canvas/c306"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.example.org/annotation/w3c/4027766b-0d82-45f8-9e37-4d60f05ea79b/ce598c2c-5e6d-4075-96cd-a7c326ce0d37",
+        "type": "Annotation",
+        "created": "2018-03-13T02:11:31.072Z",
+        "generator": "https://omeka.example.org/s/example/ner/open/",
+        "body": [
+          {
+            "value": "entity:school",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "generator": "https://omeka.example.org/s/example/ner/open/topicmanager/",
+            "purpose": "tagging",
+            "source": "https://omeka.example.org/s/example/page/topics/school/14"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "14",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": {
+            "id": "https://presley.example.org/iiif/example/_roll_M-1011_089_cvs-921-1012/manifest",
+            "type": "sc:Manifest"
+          },
+          "generator": "https://omeka.example.org/s/example/ner/open",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=355,1146,39,35"
+          },
+          "source": "https://presley.example.org/iiif/example/_roll_M-1011_089_cvs-921-1012/canvas/c989"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.example.org/annotation/w3c/fd75f4a3-b4cb-4fdb-b7c1-d53ad19ddc51/8cbcdbea-2aa6-4a8e-9d46-d658767bf62f",
+        "type": "Annotation",
+        "created": "2017-10-07T02:20:02.020Z",
+        "generator": "/",
+        "body": [
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "generator": "./",
+            "purpose": "tagging",
+            "source": "https://omeka.example.org/s/example/page/topics/school/santa+fe+indian+school"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "santa fe indian school",
+            "generator": "/",
+            "purpose": "tagging"
+          },
+          {
+            "value": "entity:school",
+            "generator": "/",
+            "purpose": "tagging"
+          }
+        ],
+        "target": [
+          {
+            "type": "SpecificResource",
+            "dcterms:isPartOf": {
+              "id": "https://presley.example.org/iiif/example/_roll_M-1011_127_cvs-656-731/manifest",
+              "type": "sc:Manifest"
+            },
+            "selector": {
+              "type": "FragmentSelector",
+              "conformsTo": "http://www.w3.org/TR/media-frags/",
+              "value": "xywh=1578,810,187,30"
+            },
+            "source": "https://presley.example.org/iiif/example/_roll_M-1011_127_cvs-656-731/canvas/c700"
+          },
+          {
+            "type": "SpecificResource",
+            "dcterms:isPartOf": {
+              "id": "https://presley.example.org/iiif/example/_roll_M-1011_127_cvs-656-731/manifest",
+              "type": "sc:Manifest"
+            },
+            "selector": {
+              "type": "FragmentSelector",
+              "conformsTo": "http://www.w3.org/TR/media-frags/",
+              "value": "xywh=1872,830,184,23"
+            },
+            "source": "https://presley.example.org/iiif/example/_roll_M-1011_127_cvs-656-731/canvas/c700"
+          }
+        ],
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.example.org/annotation/w3c/5fb9597e-d084-4472-931c-c623b5afbd15/e29d3b29-9439-4486-b8ff-bf83856ca641",
+        "type": "Annotation",
+        "created": "2017-10-07T07:01:59.985Z",
+        "generator": "/",
+        "body": [
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "generator": "./",
+            "purpose": "tagging",
+            "source": "https://omeka.example.org/s/example/page/topics/school/14"
+          },
+          {
+            "value": "entity:school",
+            "generator": "/",
+            "purpose": "tagging"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "14",
+            "generator": "/",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": {
+            "id": "https://presley.example.org/iiif/example/_roll_PLB_01_cvs-0-353/manifest",
+            "type": "sc:Manifest"
+          },
+          "generator": "/",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=1759,2468,245,58"
+          },
+          "source": "https://presley.example.org/iiif/example/_roll_PLB_01_cvs-0-353/canvas/c172"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.example.org/annotation/w3c/d77e16cc-5ed6-4017-87d7-30281d91ac6d/d1af372e-b87b-4ca6-a042-7ccad53fef09",
+        "type": "Annotation",
+        "created": "2017-10-07T02:04:14.546Z",
+        "generator": "/",
+        "body": [
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "generator": "./",
+            "purpose": "tagging",
+            "source": "https://omeka.example.org/s/example/page/topics/school/14"
+          },
+          {
+            "value": "entity:school",
+            "generator": "/",
+            "purpose": "tagging"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "14",
+            "generator": "/",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": {
+            "id": "https://presley.example.org/iiif/example/_roll_M-1011_127_cvs-562-601/manifest",
+            "type": "sc:Manifest"
+          },
+          "generator": "/",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=1626,1064,58,34"
+          },
+          "source": "https://presley.example.org/iiif/example/_roll_M-1011_127_cvs-562-601/canvas/c590"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.example.org/annotation/w3c/ef9f54fe-7a83-41a7-ac11-bfc2e92acf83/8ceabbc3-b8c3-4355-9e15-207ee33fb0fa",
+        "type": "Annotation",
+        "created": "2017-10-08T16:08:35.406Z",
+        "generator": "/",
+        "body": [
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "generator": "./",
+            "purpose": "tagging",
+            "source": "https://omeka.example.org/s/example/page/topics/school/14"
+          },
+          {
+            "value": "entity:school",
+            "generator": "/",
+            "purpose": "tagging"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "14",
+            "generator": "/",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": {
+            "id": "https://presley.example.org/iiif/example/_roll_M-1011_174_cvs-894-947/manifest",
+            "type": "sc:Manifest"
+          },
+          "generator": "/",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=700,417,47,35"
+          },
+          "source": "https://presley.example.org/iiif/example/_roll_M-1011_174_cvs-894-947/canvas/c915"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.example.org/annotation/w3c/e7f2a0ba-2e88-40e6-9da0-ecd0bda39c72/b3e48ebf-ce16-4e47-b10c-63f38851bf2a",
+        "type": "Annotation",
+        "created": "2017-12-25T15:25:27.692Z",
+        "generator": "https://omeka.example.org/s/example/ner/open/",
+        "body": [
+          {
+            "value": "entity:school",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "generator": "https://omeka.example.org/s/example/ner/open/topicmanager/",
+            "purpose": "tagging",
+            "source": "https://omeka.example.org/s/example/page/topics/school/14"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "14",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": {
+            "id": "https://presley.example.org/iiif/example/_roll_M-1011_128_cvs-1175-1207/manifest",
+            "type": "sc:Manifest"
+          },
+          "generator": "https://omeka.example.org/s/example/ner/open",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=264,1783,65,48"
+          },
+          "source": "https://presley.example.org/iiif/example/_roll_M-1011_128_cvs-1175-1207/canvas/c1205"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.example.org/annotation/w3c/74c1d8aa-2599-4f6a-92d3-227653790b63/b891d34e-d24a-46a5-8e4e-6b3a1f8ae4b0",
+        "type": "Annotation",
+        "created": "2018-03-12T15:43:11.535Z",
+        "generator": "https://omeka.example.org/s/example/ner/open/",
+        "body": [
+          {
+            "value": "entity:school",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "generator": "https://omeka.example.org/s/example/ner/open/topicmanager/",
+            "purpose": "tagging",
+            "source": "https://omeka.example.org/s/example/page/topics/school/14"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "14",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": {
+            "id": "https://presley.example.org/iiif/example/_roll_PLB_01_cvs-0-353/manifest",
+            "type": "sc:Manifest"
+          },
+          "generator": "https://omeka.example.org/s/example/ner/open",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=1749,2231,108,100"
+          },
+          "source": "https://presley.example.org/iiif/example/_roll_PLB_01_cvs-0-353/canvas/c336"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.example.org/annotation/w3c/75ca608d-e424-45fe-a8a6-77d6e9b2d4cc/45b20895-5e68-4af0-831d-128178bd2cc4",
+        "type": "Annotation",
+        "created": "2017-10-07T03:44:16.331Z",
+        "generator": "/",
+        "body": [
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "generator": "./",
+            "purpose": "tagging",
+            "source": "https://omeka.example.org/s/example/page/topics/school/14"
+          },
+          {
+            "value": "entity:school",
+            "generator": "/",
+            "purpose": "tagging"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "14",
+            "generator": "/",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": {
+            "id": "https://presley.example.org/iiif/example/_roll_M-1011_09_cvs-111-180/manifest",
+            "type": "sc:Manifest"
+          },
+          "generator": "/",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=1266,1448,30,21"
+          },
+          "source": "https://presley.example.org/iiif/example/_roll_M-1011_09_cvs-111-180/canvas/c142"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.example.org/annotation/w3c/ae3e0e87-52cb-4021-881c-1b2c47057312/aed03be5-0062-4d58-8766-f6d8e9fe48aa",
+        "type": "Annotation",
+        "created": "2017-10-07T19:20:17.879Z",
+        "generator": "/",
+        "body": [
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "zuni indian school",
+            "generator": "/",
+            "purpose": "tagging"
+          },
+          {
+            "value": "entity:school",
+            "generator": "/",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "generator": "./",
+            "purpose": "tagging",
+            "source": "https://omeka.example.org/s/example/page/topics/school/zuni+indian+school"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": {
+            "id": "https://presley.example.org/iiif/example/_roll_M-1011_174_cvs-53-78/manifest",
+            "type": "sc:Manifest"
+          },
+          "generator": "/",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=1390,229,434,38"
+          },
+          "source": "https://presley.example.org/iiif/example/_roll_M-1011_174_cvs-53-78/canvas/c75"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.example.org/annotation/w3c/0b46d22d-1b54-4e64-acac-75c4da455eab/440423ae-6030-4c8e-98fb-3fec89473f1e",
+        "type": "Annotation",
+        "created": "2017-10-14T02:47:34.717Z",
+        "generator": "https://omeka.example.org/s/example/ner/open/",
+        "body": [
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "44",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "generator": "https://omeka.example.org/s/example/ner/open/topicmanager/",
+            "purpose": "tagging",
+            "source": "https://omeka.example.org/s/example/page/topics/school/44"
+          },
+          {
+            "value": "entity:school",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": {
+            "id": "https://presley.example.org/iiif/example/_roll_PLB_02D_cvs-5-644/manifest",
+            "type": "sc:Manifest"
+          },
+          "generator": "https://omeka.example.org/s/example/ner/open",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=1938,1462,135,61"
+          },
+          "source": "https://presley.example.org/iiif/example/_roll_PLB_02D_cvs-5-644/canvas/c174"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.example.org/annotation/w3c/c8e5b141-029a-4cd5-822a-9f5cb00f9bb4/9f4a483e-ad51-4419-a214-b12f47b2057d",
+        "type": "Annotation",
+        "created": "2017-10-29T04:20:04.508Z",
+        "generator": "https://omeka.example.org/s/example/ner/open/",
+        "body": [
+          {
+            "value": "entity:school",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "generator": "https://omeka.example.org/s/example/ner/open/topicmanager/",
+            "purpose": "tagging",
+            "source": "https://omeka.example.org/s/example/page/topics/school/zuni+indian+school"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "zuni indian school",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          }
+        ],
+        "target": [
+          {
+            "type": "SpecificResource",
+            "dcterms:isPartOf": {
+              "id": "https://presley.example.org/iiif/example/_roll_M-1011_174_cvs-894-947/manifest",
+              "type": "sc:Manifest"
+            },
+            "selector": {
+              "type": "FragmentSelector",
+              "conformsTo": "http://www.w3.org/TR/media-frags/",
+              "value": "xywh=1505,536,266,34"
+            },
+            "source": "https://presley.example.org/iiif/example/_roll_M-1011_174_cvs-894-947/canvas/c947"
+          },
+          {
+            "type": "SpecificResource",
+            "dcterms:isPartOf": {
+              "id": "https://presley.example.org/iiif/example/_roll_M-1011_174_cvs-894-947/manifest",
+              "type": "sc:Manifest"
+            },
+            "selector": {
+              "type": "FragmentSelector",
+              "conformsTo": "http://www.w3.org/TR/media-frags/",
+              "value": "xywh=1078,600,93,32"
+            },
+            "source": "https://presley.example.org/iiif/example/_roll_M-1011_174_cvs-894-947/canvas/c947"
+          }
+        ],
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.example.org/annotation/w3c/fcf355be-5107-4d19-abc6-df1a06006104/ead98617-fdbb-4705-a804-da17e8ba54d7",
+        "type": "Annotation",
+        "created": "2018-03-12T16:28:46.629Z",
+        "generator": "https://omeka.example.org/s/example/ner/open/",
+        "body": [
+          {
+            "value": "entity:school",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "generator": "https://omeka.example.org/s/example/ner/open/topicmanager/",
+            "purpose": "tagging",
+            "source": "https://omeka.example.org/s/example/page/topics/school/14"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "14",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": {
+            "id": "https://presley.example.org/iiif/example/_roll_PLB_01_cvs-0-353/manifest",
+            "type": "sc:Manifest"
+          },
+          "generator": "https://omeka.example.org/s/example/ner/open",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=2024,1802,106,83"
+          },
+          "source": "https://presley.example.org/iiif/example/_roll_PLB_01_cvs-0-353/canvas/c280"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.example.org/annotation/w3c/d7a364f3-f8d7-4f15-b368-dc991afad5a2/1f5a8c90-c78b-4e42-a60f-d0a28cd35bc7",
+        "type": "Annotation",
+        "created": "2018-03-13T02:17:51.910Z",
+        "generator": "https://omeka.example.org/s/example/ner/open/",
+        "body": [
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "44",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "generator": "https://omeka.example.org/s/example/ner/open/topicmanager/",
+            "purpose": "tagging",
+            "source": "https://omeka.example.org/s/example/page/topics/school/44"
+          },
+          {
+            "value": "entity:school",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": {
+            "id": "https://presley.example.org/iiif/example/_roll_M-1011_089_cvs-1085-1156/manifest",
+            "type": "sc:Manifest"
+          },
+          "generator": "https://omeka.example.org/s/example/ner/open",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=886,1200,107,44"
+          },
+          "source": "https://presley.example.org/iiif/example/_roll_M-1011_089_cvs-1085-1156/canvas/c1114"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.example.org/annotation/w3c/77e9cd2a-340d-42cc-af1e-c3f992a95907/aa2df2d4-d923-4344-8eda-d45d6d60caf0",
+        "type": "Annotation",
+        "created": "2017-10-11T21:19:50.465Z",
+        "generator": "https://omeka.example.org/s/example/ner/open/",
+        "body": [
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "44",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "generator": "https://omeka.example.org/s/example/ner/open/topicmanager/",
+            "purpose": "tagging",
+            "source": "https://omeka.example.org/s/example/page/topics/school/44"
+          },
+          {
+            "value": "entity:school",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": {
+            "id": "https://presley.example.org/iiif/example/_roll_M-1011_066_cvs-28-70/manifest",
+            "type": "sc:Manifest"
+          },
+          "generator": "https://omeka.example.org/s/example/ner/open",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=1868,1027,44,44"
+          },
+          "source": "https://presley.example.org/iiif/example/_roll_M-1011_066_cvs-28-70/canvas/c46"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.example.org/annotation/w3c/b1197f27-4bb3-4352-ad6b-c3fe40841f56/1416d032-9154-4f5b-abcb-deca6054bb4d",
+        "type": "Annotation",
+        "created": "2017-12-25T15:26:09.841Z",
+        "generator": "https://omeka.example.org/s/example/ner/open/",
+        "body": [
+          {
+            "value": "entity:school",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "generator": "https://omeka.example.org/s/example/ner/open/topicmanager/",
+            "purpose": "tagging",
+            "source": "https://omeka.example.org/s/example/page/topics/school/14"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "14",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": {
+            "id": "https://presley.example.org/iiif/example/_roll_M-1011_128_cvs-645-877/manifest",
+            "type": "sc:Manifest"
+          },
+          "generator": "https://omeka.example.org/s/example/ner/open",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=1161,2818,36,39"
+          },
+          "source": "https://presley.example.org/iiif/example/_roll_M-1011_128_cvs-645-877/canvas/c769"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.example.org/annotation/w3c/b2f5ad49-b456-4a00-8e18-c17e3da23c42/79566037-f06d-4599-a104-db265db8ac57",
+        "type": "Annotation",
+        "created": "2017-12-15T19:02:36.997Z",
+        "generator": "https://omeka.example.org/s/example/ner/open/",
+        "body": [
+          {
+            "value": "entity:school",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "generator": "https://omeka.example.org/s/example/ner/open/topicmanager/",
+            "purpose": "tagging",
+            "source": "https://omeka.example.org/s/example/page/topics/school/14"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "14",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": {
+            "id": "https://presley.example.org/iiif/example/_roll_M-1011_079_cvs-408-471/manifest",
+            "type": "sc:Manifest"
+          },
+          "generator": "https://omeka.example.org/s/example/ner/open",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=1403,1640,46,41"
+          },
+          "source": "https://presley.example.org/iiif/example/_roll_M-1011_079_cvs-408-471/canvas/c413"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.example.org/annotation/w3c/a2826f63-5c35-4b9f-b3aa-6cb44dcd375b/92e3cf25-1ee5-49b8-96f6-0d5d22184216",
+        "type": "Annotation",
+        "created": "2017-12-25T06:47:12.927Z",
+        "generator": "https://omeka.example.org/s/example/ner/open/",
+        "body": [
+          {
+            "value": "entity:school",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "generator": "https://omeka.example.org/s/example/ner/open/topicmanager/",
+            "purpose": "tagging",
+            "source": "https://omeka.example.org/s/example/page/topics/school/14"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "14",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": {
+            "id": "https://presley.example.org/iiif/example/_roll_M-1011_128_cvs-878-1174/manifest",
+            "type": "sc:Manifest"
+          },
+          "generator": "https://omeka.example.org/s/example/ner/open",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=1614,2098,50,45"
+          },
+          "source": "https://presley.example.org/iiif/example/_roll_M-1011_128_cvs-878-1174/canvas/c986"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.example.org/annotation/w3c/f77699ca-cf7c-4dd3-af52-6883160f23cd/b333e075-06fe-40c8-b63c-677ce320bcb9",
+        "type": "Annotation",
+        "created": "2018-03-12T15:59:54.733Z",
+        "generator": "https://omeka.example.org/s/example/ner/open/",
+        "body": [
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "44",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "generator": "https://omeka.example.org/s/example/ner/open/topicmanager/",
+            "purpose": "tagging",
+            "source": "https://omeka.example.org/s/example/page/topics/school/44"
+          },
+          {
+            "value": "entity:school",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": {
+            "id": "https://presley.example.org/iiif/example/_roll_PLB_01_cvs-0-353/manifest",
+            "type": "sc:Manifest"
+          },
+          "generator": "https://omeka.example.org/s/example/ner/open",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=1854,1900,83,85"
+          },
+          "source": "https://presley.example.org/iiif/example/_roll_PLB_01_cvs-0-353/canvas/c249"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.example.org/annotation/w3c/1c1a2b00-923c-4fde-b23e-ef551a30d74c/34684ecb-bb99-4b38-b8e1-22cf13ba27e2",
+        "type": "Annotation",
+        "created": "2017-10-08T16:26:55.878Z",
+        "generator": "/",
+        "body": [
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "generator": "./",
+            "purpose": "tagging",
+            "source": "https://omeka.example.org/s/example/page/topics/school/14"
+          },
+          {
+            "value": "entity:school",
+            "generator": "/",
+            "purpose": "tagging"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "14",
+            "generator": "/",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": {
+            "id": "https://presley.example.org/iiif/example/_roll_PLB_01D_cvs-704-746/manifest",
+            "type": "sc:Manifest"
+          },
+          "generator": "/",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=2505,3512,58,43"
+          },
+          "source": "https://presley.example.org/iiif/example/_roll_PLB_01D_cvs-704-746/canvas/c708"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.example.org/annotation/w3c/98d061cc-e7d7-4527-b500-f085ead44679/3002cf34-b618-42d4-b3ab-273a31223743",
+        "type": "Annotation",
+        "created": "2017-10-08T16:20:59.015Z",
+        "generator": "/",
+        "body": [
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "generator": "./",
+            "purpose": "tagging",
+            "source": "https://omeka.example.org/s/example/page/topics/school/44"
+          },
+          {
+            "value": "entity:school",
+            "generator": "/",
+            "purpose": "tagging"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "44",
+            "generator": "/",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": {
+            "id": "https://presley.example.org/iiif/example/_roll_PLB_02D_cvs-6-72/manifest",
+            "type": "sc:Manifest"
+          },
+          "generator": "/",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=1224,1551,39,44"
+          },
+          "source": "https://presley.example.org/iiif/example/_roll_PLB_02D_cvs-6-72/canvas/c44"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.example.org/annotation/w3c/71771977-8025-4739-94a3-fa36833cc378/6421d12f-4360-4134-acbe-6d3a18591020",
+        "type": "Annotation",
+        "created": "2017-10-08T03:15:48.808Z",
+        "generator": "/",
+        "body": [
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "generator": "./",
+            "purpose": "tagging",
+            "source": "https://omeka.example.org/s/example/page/topics/school/44"
+          },
+          {
+            "value": "entity:school",
+            "generator": "/",
+            "purpose": "tagging"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "44",
+            "generator": "/",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": {
+            "id": "https://presley.example.org/iiif/example/_roll_M-1070_01_cvs-131-367/manifest",
+            "type": "sc:Manifest"
+          },
+          "generator": "/",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=1024,907,16,32"
+          },
+          "source": "https://presley.example.org/iiif/example/_roll_M-1070_01_cvs-131-367/canvas/c304"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.example.org/annotation/w3c/cb8cced2-f50b-47a6-bfe9-3f8cedb304ad/1dc5e8db-9cff-4254-b3d3-902021ebdfb6",
+        "type": "Annotation",
+        "created": "2018-03-12T16:12:01.939Z",
+        "generator": "https://omeka.example.org/s/example/ner/open/",
+        "body": [
+          {
+            "value": "entity:school",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "generator": "https://omeka.example.org/s/example/ner/open/topicmanager/",
+            "purpose": "tagging",
+            "source": "https://omeka.example.org/s/example/page/topics/school/14"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "14",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": {
+            "id": "https://presley.example.org/iiif/example/_roll_PLB_01_cvs-0-353/manifest",
+            "type": "sc:Manifest"
+          },
+          "generator": "https://omeka.example.org/s/example/ner/open",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=2134,2374,71,95"
+          },
+          "source": "https://presley.example.org/iiif/example/_roll_PLB_01_cvs-0-353/canvas/c54"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.example.org/annotation/w3c/28edfe81-c55d-499f-8ae7-50f5ce91214f/158dc8c9-2554-42a2-83c0-de17639ccac7",
+        "type": "Annotation",
+        "created": "2017-10-14T06:58:13.184Z",
+        "generator": "https://omeka.example.org/s/example/ner/open/",
+        "body": [
+          {
+            "value": "entity:school",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "generator": "https://omeka.example.org/s/example/ner/open/topicmanager/",
+            "purpose": "tagging",
+            "source": "https://omeka.example.org/s/example/page/topics/school/14"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "14",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": {
+            "id": "https://presley.example.org/iiif/example/_roll_PLB_02D_cvs-5-644/manifest",
+            "type": "sc:Manifest"
+          },
+          "generator": "https://omeka.example.org/s/example/ner/open",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=1738,1652,56,53"
+          },
+          "source": "https://presley.example.org/iiif/example/_roll_PLB_02D_cvs-5-644/canvas/c390"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.example.org/annotation/w3c/c38a7203-8eca-4526-90e6-54e0cc4cc7d5/03dc3695-9cf3-4fad-a345-25d615305508",
+        "type": "Annotation",
+        "created": "2017-12-15T18:56:31.245Z",
+        "generator": "https://omeka.example.org/s/example/ner/open/",
+        "body": [
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "44",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "generator": "https://omeka.example.org/s/example/ner/open/topicmanager/",
+            "purpose": "tagging",
+            "source": "https://omeka.example.org/s/example/page/topics/school/44"
+          },
+          {
+            "value": "entity:school",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": {
+            "id": "https://presley.example.org/iiif/example/_roll_M-1011_079_cvs-345-407/manifest",
+            "type": "sc:Manifest"
+          },
+          "generator": "https://omeka.example.org/s/example/ner/open",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=1463,2231,25,26"
+          },
+          "source": "https://presley.example.org/iiif/example/_roll_M-1011_079_cvs-345-407/canvas/c395"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.example.org/annotation/w3c/f389b6dc-c36d-4304-920a-aae6bab91cc6/fbe16600-638e-44ca-a9b2-101eaf6f38e9",
+        "type": "Annotation",
+        "created": "2017-10-14T02:18:34.303Z",
+        "generator": "https://omeka.example.org/s/example/ner/open/",
+        "body": [
+          {
+            "value": "entity:school",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "generator": "https://omeka.example.org/s/example/ner/open/topicmanager/",
+            "purpose": "tagging",
+            "source": "https://omeka.example.org/s/example/page/topics/school/14"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "14",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": {
+            "id": "https://presley.example.org/iiif/example/_roll_PLB_02AB_cvs-42-172/manifest",
+            "type": "sc:Manifest"
+          },
+          "generator": "https://omeka.example.org/s/example/ner/open",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=2333,1724,97,60"
+          },
+          "source": "https://presley.example.org/iiif/example/_roll_PLB_02AB_cvs-42-172/canvas/c44"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.example.org/annotation/w3c/3bfdbd27-e1e3-4334-828e-34cac773931b/a5872505-9348-4666-ba66-b211943e11c5",
+        "type": "Annotation",
+        "created": "2018-03-12T15:22:47.681Z",
+        "generator": "https://omeka.example.org/s/example/ner/open/",
+        "body": [
+          {
+            "value": "entity:school",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "generator": "https://omeka.example.org/s/example/ner/open/topicmanager/",
+            "purpose": "tagging",
+            "source": "https://omeka.example.org/s/example/page/topics/school/14"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "14",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": {
+            "id": "https://presley.example.org/iiif/example/_roll_PLB_01_cvs-0-353/manifest",
+            "type": "sc:Manifest"
+          },
+          "generator": "https://omeka.example.org/s/example/ner/open",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=1892,2747,103,95"
+          },
+          "source": "https://presley.example.org/iiif/example/_roll_PLB_01_cvs-0-353/canvas/c16"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.example.org/annotation/w3c/47a703f6-b870-4a9e-b8c4-1c6a09b727f2/bd06f49e-96fd-4ee7-bbb2-d9ce11f156be",
+        "type": "Annotation",
+        "created": "2017-10-29T04:19:32.833Z",
+        "generator": "https://omeka.example.org/s/example/ner/open/",
+        "body": [
+          {
+            "value": "entity:school",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "generator": "https://omeka.example.org/s/example/ner/open/topicmanager/",
+            "purpose": "tagging",
+            "source": "https://omeka.example.org/s/example/page/topics/school/14"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "14",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": {
+            "id": "https://presley.example.org/iiif/example/_roll_M-1011_174_cvs-894-947/manifest",
+            "type": "sc:Manifest"
+          },
+          "generator": "https://omeka.example.org/s/example/ner/open",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=1405,2402,32,57"
+          },
+          "source": "https://presley.example.org/iiif/example/_roll_M-1011_174_cvs-894-947/canvas/c940"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.example.org/annotation/w3c/70d3c705-de5f-43e8-bf20-5c938f1e5552/3b593c97-1f9f-4907-b4a5-cb504c757a62",
+        "type": "Annotation",
+        "created": "2017-10-07T19:30:42.153Z",
+        "generator": "/",
+        "body": [
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "zuni indian school",
+            "generator": "/",
+            "purpose": "tagging"
+          },
+          {
+            "value": "entity:school",
+            "generator": "/",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "generator": "./",
+            "purpose": "tagging",
+            "source": "https://omeka.example.org/s/example/page/topics/school/zuni+indian+school"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": {
+            "id": "https://presley.example.org/iiif/example/_roll_M-1011_174_cvs-53-78/manifest",
+            "type": "sc:Manifest"
+          },
+          "generator": "/",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=330,1124,312,38"
+          },
+          "source": "https://presley.example.org/iiif/example/_roll_M-1011_174_cvs-53-78/canvas/c78"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.example.org/annotation/w3c/a527c91d-0030-415b-9ae7-cb8f757b1ffe/4cec6656-1be3-4abd-a101-c98997bb3eac",
+        "type": "Annotation",
+        "created": "2017-10-14T11:01:35.008Z",
+        "generator": "https://omeka.example.org/s/example/ner/open/",
+        "body": [
+          {
+            "value": "entity:school",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "generator": "https://omeka.example.org/s/example/ner/open/topicmanager/",
+            "purpose": "tagging",
+            "source": "https://omeka.example.org/s/example/page/topics/school/14"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "14",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": {
+            "id": "https://presley.example.org/iiif/example/_roll_PLB_02D_cvs-5-644/manifest",
+            "type": "sc:Manifest"
+          },
+          "generator": "https://omeka.example.org/s/example/ner/open",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=1155,4361,24,46"
+          },
+          "source": "https://presley.example.org/iiif/example/_roll_PLB_02D_cvs-5-644/canvas/c632"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.example.org/annotation/w3c/dd869c07-4227-4863-a9c5-4229e3ed65ac/d45aeb9f-31ed-4dfc-a7c8-63a13468d23d",
+        "type": "Annotation",
+        "created": "2017-10-07T01:59:26.592Z",
+        "generator": "/",
+        "body": [
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "generator": "./",
+            "purpose": "tagging",
+            "source": "https://omeka.example.org/s/example/page/topics/school/san+juan+school"
+          },
+          {
+            "value": "entity:school",
+            "generator": "/",
+            "purpose": "tagging"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "san juan school",
+            "generator": "/",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": {
+            "id": "https://presley.example.org/iiif/example/_roll_M-1011_127_cvs-219-282/manifest",
+            "type": "sc:Manifest"
+          },
+          "generator": "/",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=698,2303,382,42"
+          },
+          "source": "https://presley.example.org/iiif/example/_roll_M-1011_127_cvs-219-282/canvas/c259"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.example.org/annotation/w3c/1f3a6269-d8cb-4399-bca1-82d9c03551e4/6a0b4f63-1a6c-4492-8ca4-68c10f641b4a",
+        "type": "Annotation",
+        "created": "2017-10-07T03:37:28.063Z",
+        "generator": "/",
+        "body": [
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "generator": "./",
+            "purpose": "tagging",
+            "source": "https://omeka.example.org/s/example/page/topics/school/14"
+          },
+          {
+            "value": "entity:school",
+            "generator": "/",
+            "purpose": "tagging"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "14",
+            "generator": "/",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": {
+            "id": "https://presley.example.org/iiif/example/_roll_M-1011_127_cvs-1199-1229/manifest",
+            "type": "sc:Manifest"
+          },
+          "generator": "/",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=1265,671,44,39"
+          },
+          "source": "https://presley.example.org/iiif/example/_roll_M-1011_127_cvs-1199-1229/canvas/c1221"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.example.org/annotation/w3c/69ae07b2-7820-4243-a4fb-17e748fe43f5/ff1e1ece-ca3b-4abd-93a8-51b44b6e4ce7",
+        "type": "Annotation",
+        "created": "2017-10-07T02:22:33.568Z",
+        "generator": "/",
+        "body": [
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "generator": "./",
+            "purpose": "tagging",
+            "source": "https://omeka.example.org/s/example/page/topics/school/14"
+          },
+          {
+            "value": "entity:school",
+            "generator": "/",
+            "purpose": "tagging"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "14",
+            "generator": "/",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": {
+            "id": "https://presley.example.org/iiif/example/_roll_M-1011_127_cvs-656-731/manifest",
+            "type": "sc:Manifest"
+          },
+          "generator": "/",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=1331,2721,37,21"
+          },
+          "source": "https://presley.example.org/iiif/example/_roll_M-1011_127_cvs-656-731/canvas/c726"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.example.org/annotation/w3c/0b2f975e-2ecd-4623-a229-8843b24069e0/1280c6e0-eb37-4954-93bb-109fc9e52dde",
+        "type": "Annotation",
+        "created": "2018-03-12T15:00:40.338Z",
+        "generator": "https://omeka.example.org/s/example/ner/open/",
+        "body": [
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "44",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "generator": "https://omeka.example.org/s/example/ner/open/topicmanager/",
+            "purpose": "tagging",
+            "source": "https://omeka.example.org/s/example/page/topics/school/44"
+          },
+          {
+            "value": "entity:school",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": {
+            "id": "https://presley.example.org/iiif/example/_roll_PLB_01_cvs-0-353/manifest",
+            "type": "sc:Manifest"
+          },
+          "generator": "https://omeka.example.org/s/example/ner/open",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=2145,1168,45,96"
+          },
+          "source": "https://presley.example.org/iiif/example/_roll_PLB_01_cvs-0-353/canvas/c47"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.example.org/annotation/w3c/ee596c57-b84b-45e9-900a-64429a99790b/70d06223-5974-4f4d-b191-c03c10d934b9",
+        "type": "Annotation",
+        "created": "2017-12-25T11:20:28.515Z",
+        "generator": "https://omeka.example.org/s/example/ner/open/",
+        "body": [
+          {
+            "value": "entity:school",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "generator": "https://omeka.example.org/s/example/ner/open/topicmanager/",
+            "purpose": "tagging",
+            "source": "https://omeka.example.org/s/example/page/topics/school/14"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "14",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": {
+            "id": "https://presley.example.org/iiif/example/_roll_M-1011_128_cvs-149-386/manifest",
+            "type": "sc:Manifest"
+          },
+          "generator": "https://omeka.example.org/s/example/ner/open",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=935,2326,101,50"
+          },
+          "source": "https://presley.example.org/iiif/example/_roll_M-1011_128_cvs-149-386/canvas/c386"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.example.org/annotation/w3c/5393be2d-31cd-4ce5-96c7-e075ae003847/8d2de389-2c0d-422f-b4d1-e9fe48a6b0a3",
+        "type": "Annotation",
+        "created": "2018-03-12T15:05:34.169Z",
+        "generator": "https://omeka.example.org/s/example/ner/open/",
+        "body": [
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "44",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "generator": "https://omeka.example.org/s/example/ner/open/topicmanager/",
+            "purpose": "tagging",
+            "source": "https://omeka.example.org/s/example/page/topics/school/44"
+          },
+          {
+            "value": "entity:school",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": {
+            "id": "https://presley.example.org/iiif/example/_roll_PLB_01_cvs-0-353/manifest",
+            "type": "sc:Manifest"
+          },
+          "generator": "https://omeka.example.org/s/example/ner/open",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=1866,3068,40,103"
+          },
+          "source": "https://presley.example.org/iiif/example/_roll_PLB_01_cvs-0-353/canvas/c115"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.example.org/annotation/w3c/e7034410-71fd-459e-9cf8-cebfb5e60988/ef37ee78-b9e0-454b-a64a-db7568443c43",
+        "type": "Annotation",
+        "created": "2018-03-12T15:19:42.347Z",
+        "generator": "https://omeka.example.org/s/example/ner/open/",
+        "body": [
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "44",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "generator": "https://omeka.example.org/s/example/ner/open/topicmanager/",
+            "purpose": "tagging",
+            "source": "https://omeka.example.org/s/example/page/topics/school/44"
+          },
+          {
+            "value": "entity:school",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": {
+            "id": "https://presley.example.org/iiif/example/_roll_PLB_01_cvs-0-353/manifest",
+            "type": "sc:Manifest"
+          },
+          "generator": "https://omeka.example.org/s/example/ner/open",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=2290,2404,62,105"
+          },
+          "source": "https://presley.example.org/iiif/example/_roll_PLB_01_cvs-0-353/canvas/c325"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.example.org/annotation/w3c/82f04df7-3037-4e57-b306-994d30fbe195/2ebd0a0a-b2c7-468c-bbb3-bea8fad8ec6d",
+        "type": "Annotation",
+        "created": "2017-10-29T03:58:50.455Z",
+        "generator": "https://omeka.example.org/s/example/ner/open/",
+        "body": [
+          {
+            "value": "entity:school",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "generator": "https://omeka.example.org/s/example/ner/open/topicmanager/",
+            "purpose": "tagging",
+            "source": "https://omeka.example.org/s/example/page/topics/school/14"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "14",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": {
+            "id": "https://presley.example.org/iiif/example/_roll_M-1011_174_cvs-102-123/manifest",
+            "type": "sc:Manifest"
+          },
+          "generator": "https://omeka.example.org/s/example/ner/open",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=389,813,40,27"
+          },
+          "source": "https://presley.example.org/iiif/example/_roll_M-1011_174_cvs-102-123/canvas/c117"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.example.org/annotation/w3c/cc63abb3-6a87-45aa-ac19-b74c273de2c9/c654dd6a-eaa6-4202-bb47-76c7f194cbc8",
+        "type": "Annotation",
+        "created": "2017-10-07T20:18:50.805Z",
+        "generator": "/",
+        "body": [
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "generator": "./",
+            "purpose": "tagging",
+            "source": "https://omeka.example.org/s/example/page/topics/school/14"
+          },
+          {
+            "value": "entity:school",
+            "generator": "/",
+            "purpose": "tagging"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "14",
+            "generator": "/",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": {
+            "id": "https://presley.example.org/iiif/example/_roll_M-1011_174_cvs-259-292/manifest",
+            "type": "sc:Manifest"
+          },
+          "generator": "/",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=395,241,40,36"
+          },
+          "source": "https://presley.example.org/iiif/example/_roll_M-1011_174_cvs-259-292/canvas/c274"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.example.org/annotation/w3c/b32be450-3f1e-432f-9aa1-565b9eba3757/35eaa755-4690-4704-86f4-70ac79822bc5",
+        "type": "Annotation",
+        "created": "2017-12-15T19:24:22.358Z",
+        "generator": "https://omeka.example.org/s/example/ner/open/",
+        "body": [
+          {
+            "value": "entity:school",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "generator": "https://omeka.example.org/s/example/ner/open/topicmanager/",
+            "purpose": "tagging",
+            "source": "https://omeka.example.org/s/example/page/topics/school/14"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "14",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": {
+            "id": "https://presley.example.org/iiif/example/_roll_M-1011_079_cvs-892-967/manifest",
+            "type": "sc:Manifest"
+          },
+          "generator": "https://omeka.example.org/s/example/ner/open",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=1101,2578,47,51"
+          },
+          "source": "https://presley.example.org/iiif/example/_roll_M-1011_079_cvs-892-967/canvas/c905"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.example.org/annotation/w3c/0c5dbb71-6814-4f67-95d6-9b180413850d/b06e2a34-b544-49b3-921a-c8134e45db57",
+        "type": "Annotation",
+        "created": "2018-01-19T05:39:22.211Z",
+        "generator": "https://omeka.example.org/s/example/ner/open/",
+        "body": [
+          {
+            "value": "entity:school",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "generator": "https://omeka.example.org/s/example/ner/open/topicmanager/",
+            "purpose": "tagging",
+            "source": "https://omeka.example.org/s/example/page/topics/school/14"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "14",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": {
+            "id": "https://presley.example.org/iiif/example/_roll_M-1473_38_cvs-239-432/manifest",
+            "type": "sc:Manifest"
+          },
+          "generator": "https://omeka.example.org/s/example/ner/open",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=1664,1834,47,64"
+          },
+          "source": "https://presley.example.org/iiif/example/_roll_M-1473_38_cvs-239-432/canvas/c391"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.example.org/annotation/w3c/5922d39e-a61b-40b2-8b0f-8441dd3eb6b1/86c4a532-8e60-4791-8e42-64eae90d76d6",
+        "type": "Annotation",
+        "created": "2018-01-21T03:58:43.239Z",
+        "generator": "https://omeka.example.org/s/example/ner/open/",
+        "body": [
+          {
+            "value": "entity:school",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "generator": "https://omeka.example.org/s/example/ner/open/topicmanager/",
+            "purpose": "tagging",
+            "source": "https://omeka.example.org/s/example/page/topics/school/14"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "14",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": {
+            "id": "https://presley.example.org/iiif/example/_roll_M-1473_38_cvs-570-712/manifest",
+            "type": "sc:Manifest"
+          },
+          "generator": "https://omeka.example.org/s/example/ner/open",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=270,2137,199,139"
+          },
+          "source": "https://presley.example.org/iiif/example/_roll_M-1473_38_cvs-570-712/canvas/c621"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.example.org/annotation/w3c/0a435539-0ccd-4f0c-9262-6ffa71bc7544/42659646-8114-439f-b52a-3fcc5433b7de",
+        "type": "Annotation",
+        "created": "2017-10-07T15:03:35.897Z",
+        "generator": "/",
+        "body": [
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "generator": "./",
+            "purpose": "tagging",
+            "source": "https://omeka.example.org/s/example/page/topics/school/44"
+          },
+          {
+            "value": "entity:school",
+            "generator": "/",
+            "purpose": "tagging"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "44",
+            "generator": "/",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": {
+            "id": "https://presley.example.org/iiif/example/_roll_PLB_01D_cvs-166-257/manifest",
+            "type": "sc:Manifest"
+          },
+          "generator": "/",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=2846,2008,120,37"
+          },
+          "source": "https://presley.example.org/iiif/example/_roll_PLB_01D_cvs-166-257/canvas/c176"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.example.org/annotation/w3c/ea338c25-8678-4f03-8ed7-3480dd0aa5f8/7cbde702-11dd-4349-a0be-6c50cf6154af",
+        "type": "Annotation",
+        "created": "2018-03-12T15:08:36.894Z",
+        "generator": "https://omeka.example.org/s/example/ner/open/",
+        "body": [
+          {
+            "value": "entity:school",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "generator": "https://omeka.example.org/s/example/ner/open/topicmanager/",
+            "purpose": "tagging",
+            "source": "https://omeka.example.org/s/example/page/topics/school/14"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "14",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": {
+            "id": "https://presley.example.org/iiif/example/_roll_PLB_01_cvs-0-353/manifest",
+            "type": "sc:Manifest"
+          },
+          "generator": "https://omeka.example.org/s/example/ner/open",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=1797,2386,102,91"
+          },
+          "source": "https://presley.example.org/iiif/example/_roll_PLB_01_cvs-0-353/canvas/c156"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.example.org/annotation/w3c/8eaba787-21f7-4261-88ca-4678792fa7fd/7d2c9032-0c3d-4647-b77e-5c8d76d129b8",
+        "type": "Annotation",
+        "created": "2017-10-07T05:59:13.942Z",
+        "generator": "/",
+        "body": [
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "generator": "./",
+            "purpose": "tagging",
+            "source": "https://omeka.example.org/s/example/page/topics/school/14"
+          },
+          {
+            "value": "entity:school",
+            "generator": "/",
+            "purpose": "tagging"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "14",
+            "generator": "/",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": {
+            "id": "https://presley.example.org/iiif/example/_roll_PLB_01_cvs-0-353/manifest",
+            "type": "sc:Manifest"
+          },
+          "generator": "/",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=1738,2860,59,111"
+          },
+          "source": "https://presley.example.org/iiif/example/_roll_PLB_01_cvs-0-353/canvas/c111"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.example.org/annotation/w3c/fd249a05-41a1-4e53-8af1-9d856a63250e/1c17bc86-8395-42c0-9f31-0fbbbe06c35f",
+        "type": "Annotation",
+        "created": "2017-10-08T16:24:28.022Z",
+        "generator": "/",
+        "body": [
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "generator": "./",
+            "purpose": "tagging",
+            "source": "https://omeka.example.org/s/example/page/topics/school/14"
+          },
+          {
+            "value": "entity:school",
+            "generator": "/",
+            "purpose": "tagging"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "14",
+            "generator": "/",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": {
+            "id": "https://presley.example.org/iiif/example/_roll_PLB_02D_cvs-73-220/manifest",
+            "type": "sc:Manifest"
+          },
+          "generator": "/",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=2472,4488,198,55"
+          },
+          "source": "https://presley.example.org/iiif/example/_roll_PLB_02D_cvs-73-220/canvas/c171"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.example.org/annotation/w3c/79d91a7d-6127-4c9b-860c-ec6ba7c56987/5ab24398-faed-47ed-bde1-cb4f8e888f59",
+        "type": "Annotation",
+        "created": "2017-12-25T03:23:29.474Z",
+        "generator": "https://omeka.example.org/s/example/ner/open/",
+        "body": [
+          {
+            "value": "entity:school",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "generator": "https://omeka.example.org/s/example/ner/open/topicmanager/",
+            "purpose": "tagging",
+            "source": "https://omeka.example.org/s/example/page/topics/school/14"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "14",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": {
+            "id": "https://presley.example.org/iiif/example/_roll_M-1011_174_cvs-562-648/manifest",
+            "type": "sc:Manifest"
+          },
+          "generator": "https://omeka.example.org/s/example/ner/open",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=263,2188,37,48"
+          },
+          "source": "https://presley.example.org/iiif/example/_roll_M-1011_174_cvs-562-648/canvas/c587"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.example.org/annotation/w3c/8393e457-8302-43f2-9824-c6d81e60f4db/42d87cd0-226c-4d47-85e9-093590211761",
+        "type": "Annotation",
+        "created": "2017-12-25T04:28:42.925Z",
+        "generator": "https://omeka.example.org/s/example/ner/open/",
+        "body": [
+          {
+            "value": "entity:school",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "generator": "https://omeka.example.org/s/example/ner/open/topicmanager/",
+            "purpose": "tagging",
+            "source": "https://omeka.example.org/s/example/page/topics/school/14"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "14",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": {
+            "id": "https://presley.example.org/iiif/example/_roll_M-1011_174_cvs-1191-1209/manifest",
+            "type": "sc:Manifest"
+          },
+          "generator": "https://omeka.example.org/s/example/ner/open",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=1645,868,72,58"
+          },
+          "source": "https://presley.example.org/iiif/example/_roll_M-1011_174_cvs-1191-1209/canvas/c1204"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.example.org/annotation/w3c/2fb3ef49-6100-4c15-a502-1735eca20f38/88b6ea1a-6e75-4e95-93da-9f18991b9566",
+        "type": "Annotation",
+        "created": "2018-01-22T09:47:07.678Z",
+        "generator": "https://omeka.example.org/s/example/ner/open/",
+        "body": [
+          {
+            "value": "entity:school",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "generator": "https://omeka.example.org/s/example/ner/open/topicmanager/",
+            "purpose": "tagging",
+            "source": "https://omeka.example.org/s/example/page/topics/school/14"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "14",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": {
+            "id": "https://presley.example.org/iiif/example/_roll_M-1473_24_cvs-670-744/manifest",
+            "type": "sc:Manifest"
+          },
+          "generator": "https://omeka.example.org/s/example/ner/open",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=2164,885,101,74"
+          },
+          "source": "https://presley.example.org/iiif/example/_roll_M-1473_24_cvs-670-744/canvas/c688"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.example.org/annotation/w3c/7addcb02-12c9-40cf-8d84-7e89f9512bff/579f5fc5-90b6-4100-8eee-70815fe3bdb4",
+        "type": "Annotation",
+        "created": "2017-10-07T12:23:06.847Z",
+        "generator": "/",
+        "body": [
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "generator": "./",
+            "purpose": "tagging",
+            "source": "https://omeka.example.org/s/example/page/topics/school/14"
+          },
+          {
+            "value": "entity:school",
+            "generator": "/",
+            "purpose": "tagging"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "14",
+            "generator": "/",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": {
+            "id": "https://presley.example.org/iiif/example/_roll_PLB_01D_cvs-513-601/manifest",
+            "type": "sc:Manifest"
+          },
+          "generator": "/",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=2582,2245,52,40"
+          },
+          "source": "https://presley.example.org/iiif/example/_roll_PLB_01D_cvs-513-601/canvas/c564"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.example.org/annotation/w3c/d6225df8-3a29-4d98-a380-6520132d75db/39da0418-f9aa-41cf-8142-bf536762baf3",
+        "type": "Annotation",
+        "created": "2017-12-15T19:00:45.528Z",
+        "generator": "https://omeka.example.org/s/example/ner/open/",
+        "body": [
+          {
+            "value": "entity:school",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "generator": "https://omeka.example.org/s/example/ner/open/topicmanager/",
+            "purpose": "tagging",
+            "source": "https://omeka.example.org/s/example/page/topics/school/14"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "14",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": {
+            "id": "https://presley.example.org/iiif/example/_roll_M-1011_079_cvs-558-607/manifest",
+            "type": "sc:Manifest"
+          },
+          "generator": "https://omeka.example.org/s/example/ner/open",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=280,2078,60,44"
+          },
+          "source": "https://presley.example.org/iiif/example/_roll_M-1011_079_cvs-558-607/canvas/c589"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.example.org/annotation/w3c/d51a3303-c774-41f3-b7bb-2da9735edf3c/7474b50a-088a-434a-be58-4b13951c11b2",
+        "type": "Annotation",
+        "created": "2017-10-14T01:39:34.644Z",
+        "generator": "https://omeka.example.org/s/example/ner/open/",
+        "body": [
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "44",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "generator": "https://omeka.example.org/s/example/ner/open/topicmanager/",
+            "purpose": "tagging",
+            "source": "https://omeka.example.org/s/example/page/topics/school/44"
+          },
+          {
+            "value": "entity:school",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": {
+            "id": "https://presley.example.org/iiif/example/_roll_M-1070_03_cvs-682-706/manifest",
+            "type": "sc:Manifest"
+          },
+          "generator": "https://omeka.example.org/s/example/ner/open",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=1299,292,47,64"
+          },
+          "source": "https://presley.example.org/iiif/example/_roll_M-1070_03_cvs-682-706/canvas/c703"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.example.org/annotation/w3c/35bf9b5f-40ad-43d0-9647-b743c2445043/00d82edb-33f4-4355-915f-ab86f4a6c2f4",
+        "type": "Annotation",
+        "created": "2017-10-08T16:23:55.052Z",
+        "generator": "/",
+        "body": [
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "generator": "./",
+            "purpose": "tagging",
+            "source": "https://omeka.example.org/s/example/page/topics/school/14"
+          },
+          {
+            "value": "entity:school",
+            "generator": "/",
+            "purpose": "tagging"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "14",
+            "generator": "/",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": {
+            "id": "https://presley.example.org/iiif/example/_roll_PLB_02D_cvs-73-220/manifest",
+            "type": "sc:Manifest"
+          },
+          "generator": "/",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=1698,2751,66,61"
+          },
+          "source": "https://presley.example.org/iiif/example/_roll_PLB_02D_cvs-73-220/canvas/c162"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.example.org/annotation/w3c/9b221140-494d-4e67-bc6e-2ef56eeaa04f/bf100ea8-c66f-48e0-b5e3-3bc2e47a0f5b",
+        "type": "Annotation",
+        "created": "2017-10-29T04:20:00.723Z",
+        "generator": "https://omeka.example.org/s/example/ner/open/",
+        "body": [
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "generator": "https://omeka.example.org/s/example/ner/open/nlp/",
+            "purpose": "tagging",
+            "source": "https://omeka.example.org/s/example/page/topics/virtual:org/zuni+indian+school"
+          },
+          {
+            "value": "entity:school",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          },
+          {
+            "value": "entity:ORG",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "Zuni Indian School",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "generator": "https://omeka.example.org/s/example/ner/open/topicmanager/",
+            "purpose": "tagging",
+            "source": "https://omeka.example.org/s/example/page/topics/school/zuni+indian+school"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "zuni indian school",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          }
+        ],
+        "target": [
+          {
+            "type": "SpecificResource",
+            "dcterms:isPartOf": {
+              "id": "https://presley.example.org/iiif/example/_roll_M-1011_174_cvs-894-947/manifest",
+              "type": "sc:Manifest"
+            },
+            "selector": {
+              "type": "FragmentSelector",
+              "conformsTo": "http://www.w3.org/TR/media-frags/",
+              "value": "xywh=1060,554,87,30"
+            },
+            "source": "https://presley.example.org/iiif/example/_roll_M-1011_174_cvs-894-947/canvas/c946"
+          },
+          {
+            "type": "SpecificResource",
+            "dcterms:isPartOf": {
+              "id": "https://presley.example.org/iiif/example/_roll_M-1011_174_cvs-894-947/manifest",
+              "type": "sc:Manifest"
+            },
+            "selector": {
+              "type": "FragmentSelector",
+              "conformsTo": "http://www.w3.org/TR/media-frags/",
+              "value": "xywh=1509,559,280,36"
+            },
+            "source": "https://presley.example.org/iiif/example/_roll_M-1011_174_cvs-894-947/canvas/c946"
+          }
+        ],
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.example.org/annotation/w3c/240d5a76-1975-4323-913c-24aaf02e0b10/e0259c2b-5232-4ead-93d3-5a517d0ba24e",
+        "type": "Annotation",
+        "created": "2017-12-15T19:18:20.486Z",
+        "generator": "https://omeka.example.org/s/example/ner/open/",
+        "body": [
+          {
+            "value": "entity:school",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "generator": "https://omeka.example.org/s/example/ner/open/topicmanager/",
+            "purpose": "tagging",
+            "source": "https://omeka.example.org/s/example/page/topics/school/14"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "14",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": {
+            "id": "https://presley.example.org/iiif/example/_roll_M-1011_079_cvs-892-967/manifest",
+            "type": "sc:Manifest"
+          },
+          "generator": "https://omeka.example.org/s/example/ner/open",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=1992,1031,49,45"
+          },
+          "source": "https://presley.example.org/iiif/example/_roll_M-1011_079_cvs-892-967/canvas/c910"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.example.org/annotation/w3c/04fdd3a8-fa63-48a8-84c2-3bb767c50d36/e9e2a204-9096-4853-a611-9065e8f3866e",
+        "type": "Annotation",
+        "created": "2017-10-14T06:16:53.906Z",
+        "generator": "https://omeka.example.org/s/example/ner/open/",
+        "body": [
+          {
+            "value": "entity:school",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "generator": "https://omeka.example.org/s/example/ner/open/topicmanager/",
+            "purpose": "tagging",
+            "source": "https://omeka.example.org/s/example/page/topics/school/14"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "14",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": {
+            "id": "https://presley.example.org/iiif/example/_roll_PLB_02D_cvs-5-644/manifest",
+            "type": "sc:Manifest"
+          },
+          "generator": "https://omeka.example.org/s/example/ner/open",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=2489,1434,37,47"
+          },
+          "source": "https://presley.example.org/iiif/example/_roll_PLB_02D_cvs-5-644/canvas/c406"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.example.org/annotation/w3c/7f9e307f-ad1b-4931-aade-2fcf02a75fc2/279cf7d6-b822-4d37-b2fa-f1cad640b749",
+        "type": "Annotation",
+        "created": "2018-03-12T15:27:20.443Z",
+        "generator": "https://omeka.example.org/s/example/ner/open/",
+        "body": [
+          {
+            "value": "entity:school",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "generator": "https://omeka.example.org/s/example/ner/open/topicmanager/",
+            "purpose": "tagging",
+            "source": "https://omeka.example.org/s/example/page/topics/school/14"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "14",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": {
+            "id": "https://presley.example.org/iiif/example/_roll_PLB_01_cvs-0-353/manifest",
+            "type": "sc:Manifest"
+          },
+          "generator": "https://omeka.example.org/s/example/ner/open",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=1901,1228,108,97"
+          },
+          "source": "https://presley.example.org/iiif/example/_roll_PLB_01_cvs-0-353/canvas/c95"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.example.org/annotation/w3c/c023b8d1-1854-4387-9ea1-7a16526dda91/6504d932-d5ef-4293-a990-c836c2c7e7b3",
+        "type": "Annotation",
+        "created": "2018-03-12T15:52:52.440Z",
+        "generator": "https://omeka.example.org/s/example/ner/open/",
+        "body": [
+          {
+            "value": "entity:school",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "generator": "https://omeka.example.org/s/example/ner/open/topicmanager/",
+            "purpose": "tagging",
+            "source": "https://omeka.example.org/s/example/page/topics/school/14"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "14",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": {
+            "id": "https://presley.example.org/iiif/example/_roll_PLB_01_cvs-0-353/manifest",
+            "type": "sc:Manifest"
+          },
+          "generator": "https://omeka.example.org/s/example/ner/open",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=1817,2602,101,93"
+          },
+          "source": "https://presley.example.org/iiif/example/_roll_PLB_01_cvs-0-353/canvas/c135"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.example.org/annotation/w3c/c2a4bdd7-7bcd-4c5c-a29f-9a1906a3b6f2/133e10e0-abbd-4212-9b48-37d1fb493e90",
+        "type": "Annotation",
+        "created": "2017-10-08T16:26:35.049Z",
+        "generator": "/",
+        "body": [
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "generator": "./",
+            "purpose": "tagging",
+            "source": "https://omeka.example.org/s/example/page/topics/school/14"
+          },
+          {
+            "value": "entity:school",
+            "generator": "/",
+            "purpose": "tagging"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "14",
+            "generator": "/",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": {
+            "id": "https://presley.example.org/iiif/example/_roll_PLB_02D_cvs-73-220/manifest",
+            "type": "sc:Manifest"
+          },
+          "generator": "/",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=2382,4006,65,46"
+          },
+          "source": "https://presley.example.org/iiif/example/_roll_PLB_02D_cvs-73-220/canvas/c218"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.example.org/annotation/w3c/f7eb30d3-0faa-49b3-bb98-269448a7cb85/50ec7610-f5ad-455f-b65f-9fe144a364cf",
+        "type": "Annotation",
+        "created": "2017-10-07T04:39:22.651Z",
+        "generator": "/",
+        "body": [
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "generator": "./",
+            "purpose": "tagging",
+            "source": "https://omeka.example.org/s/example/page/topics/school/14"
+          },
+          {
+            "value": "entity:school",
+            "generator": "/",
+            "purpose": "tagging"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "14",
+            "generator": "/",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": {
+            "id": "https://presley.example.org/iiif/example/_roll_PLB_01_cvs-0-353/manifest",
+            "type": "sc:Manifest"
+          },
+          "generator": "/",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=2451,1412,95,51"
+          },
+          "source": "https://presley.example.org/iiif/example/_roll_PLB_01_cvs-0-353/canvas/c7"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.example.org/annotation/w3c/c5b8c58a-5e3d-415f-a77c-383d35963a8b/d2c61834-498b-4e94-a998-168a98868bc9",
+        "type": "Annotation",
+        "created": "2017-12-15T19:14:50.033Z",
+        "generator": "https://omeka.example.org/s/example/ner/open/",
+        "body": [
+          {
+            "value": "entity:school",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "generator": "https://omeka.example.org/s/example/ner/open/topicmanager/",
+            "purpose": "tagging",
+            "source": "https://omeka.example.org/s/example/page/topics/school/14"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "14",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": {
+            "id": "https://presley.example.org/iiif/example/_roll_M-1011_079_cvs-608-658/manifest",
+            "type": "sc:Manifest"
+          },
+          "generator": "https://omeka.example.org/s/example/ner/open",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=1572,2028,72,66"
+          },
+          "source": "https://presley.example.org/iiif/example/_roll_M-1011_079_cvs-608-658/canvas/c646"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.example.org/annotation/w3c/f06328f5-e976-4873-a861-493d0e1c1c79/b1a67078-493e-44fd-9b0d-012585c979aa",
+        "type": "Annotation",
+        "created": "2017-12-15T19:11:50.414Z",
+        "generator": "https://omeka.example.org/s/example/ner/open/",
+        "body": [
+          {
+            "value": "entity:school",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "generator": "https://omeka.example.org/s/example/ner/open/topicmanager/",
+            "purpose": "tagging",
+            "source": "https://omeka.example.org/s/example/page/topics/school/14"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "14",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": {
+            "id": "https://presley.example.org/iiif/example/_roll_M-1011_079_cvs-892-967/manifest",
+            "type": "sc:Manifest"
+          },
+          "generator": "https://omeka.example.org/s/example/ner/open",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=1749,1362,50,28"
+          },
+          "source": "https://presley.example.org/iiif/example/_roll_M-1011_079_cvs-892-967/canvas/c901"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.example.org/annotation/w3c/d114fb70-929c-4c37-97aa-65a856a0b8f5/e05458c1-a761-4885-a5b5-0624515e5e08",
+        "type": "Annotation",
+        "created": "2017-10-07T15:39:17.570Z",
+        "generator": "/",
+        "body": [
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "generator": "./",
+            "purpose": "tagging",
+            "source": "https://omeka.example.org/s/example/page/topics/school/44"
+          },
+          {
+            "value": "entity:school",
+            "generator": "/",
+            "purpose": "tagging"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "44",
+            "generator": "/",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": {
+            "id": "https://presley.example.org/iiif/example/_roll_PLB_01D_cvs-602-703/manifest",
+            "type": "sc:Manifest"
+          },
+          "generator": "/",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=2271,4629,50,40"
+          },
+          "source": "https://presley.example.org/iiif/example/_roll_PLB_01D_cvs-602-703/canvas/c622"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.example.org/annotation/w3c/fa03518a-fbdb-419d-9c64-23b3df140f92/a23ed42f-fd3e-431f-8fde-797f9ad0b740",
+        "type": "Annotation",
+        "created": "2017-10-07T18:39:01.437Z",
+        "generator": "/",
+        "body": [
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "zuni indian school",
+            "generator": "/",
+            "purpose": "tagging"
+          },
+          {
+            "value": "entity:school",
+            "generator": "/",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "generator": "./",
+            "purpose": "tagging",
+            "source": "https://omeka.example.org/s/example/page/topics/school/zuni+indian+school"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": {
+            "id": "https://presley.example.org/iiif/example/_roll_M-1011_174_cvs-30-52/manifest",
+            "type": "sc:Manifest"
+          },
+          "generator": "/",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=998,511,306,43"
+          },
+          "source": "https://presley.example.org/iiif/example/_roll_M-1011_174_cvs-30-52/canvas/c37"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.example.org/annotation/w3c/c2486fb0-5a3f-4068-86ce-0a357d3c6a53/a3cdee87-1c72-423e-a9cd-e6bc2bbefbe0",
+        "type": "Annotation",
+        "created": "2017-10-08T16:19:03.020Z",
+        "generator": "/",
+        "body": [
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "generator": "./",
+            "purpose": "tagging",
+            "source": "https://omeka.example.org/s/example/page/topics/school/14"
+          },
+          {
+            "value": "entity:school",
+            "generator": "/",
+            "purpose": "tagging"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "14",
+            "generator": "/",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": {
+            "id": "https://presley.example.org/iiif/example/_roll_PLB_02D_cvs-73-220/manifest",
+            "type": "sc:Manifest"
+          },
+          "generator": "/",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=1173,2220,63,45"
+          },
+          "source": "https://presley.example.org/iiif/example/_roll_PLB_02D_cvs-73-220/canvas/c145"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.example.org/annotation/w3c/602870cc-48b6-4255-81c1-128218811e18/701c6250-2c11-4f43-b299-afafc4820d53",
+        "type": "Annotation",
+        "created": "2018-03-12T16:26:42.264Z",
+        "generator": "https://omeka.example.org/s/example/ner/open/",
+        "body": [
+          {
+            "value": "entity:school",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "generator": "https://omeka.example.org/s/example/ner/open/topicmanager/",
+            "purpose": "tagging",
+            "source": "https://omeka.example.org/s/example/page/topics/school/14"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "14",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": {
+            "id": "https://presley.example.org/iiif/example/_roll_PLB_01_cvs-0-353/manifest",
+            "type": "sc:Manifest"
+          },
+          "generator": "https://omeka.example.org/s/example/ner/open",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=3002,2088,108,99"
+          },
+          "source": "https://presley.example.org/iiif/example/_roll_PLB_01_cvs-0-353/canvas/c247"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.example.org/annotation/w3c/16f6e742-096c-4822-8f4b-2a8b725e69bf/d1990e33-06ac-4153-b653-968edc1a9bdc",
+        "type": "Annotation",
+        "created": "2018-03-13T02:15:09.928Z",
+        "generator": "https://omeka.example.org/s/example/ner/open/",
+        "body": [
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "44",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "generator": "https://omeka.example.org/s/example/ner/open/topicmanager/",
+            "purpose": "tagging",
+            "source": "https://omeka.example.org/s/example/page/topics/school/44"
+          },
+          {
+            "value": "entity:school",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": {
+            "id": "https://presley.example.org/iiif/example/_roll_M-1011_089_cvs-1013-1084/manifest",
+            "type": "sc:Manifest"
+          },
+          "generator": "https://omeka.example.org/s/example/ner/open",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=1712,2467,27,28"
+          },
+          "source": "https://presley.example.org/iiif/example/_roll_M-1011_089_cvs-1013-1084/canvas/c1063"
+        },
+        "motivation": "tagging"
+      },
+      {
+        "id": "https://elucidate.example.org/annotation/w3c/0f068b65-25fb-487e-9ed4-00867b0ac213/e55659f9-20d3-42f3-9c0b-d93201a334fc",
+        "type": "Annotation",
+        "created": "2017-10-14T02:32:56.970Z",
+        "generator": "https://omeka.example.org/s/example/ner/open/",
+        "body": [
+          {
+            "value": "entity:school",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          },
+          {
+            "type": "SpecificResource",
+            "format": "application/html",
+            "generator": "https://omeka.example.org/s/example/ner/open/topicmanager/",
+            "purpose": "tagging",
+            "source": "https://omeka.example.org/s/example/page/topics/school/14"
+          },
+          {
+            "type": "TextualBody",
+            "format": "text/plain",
+            "value": "14",
+            "generator": "https://omeka.example.org/s/example/ner/open",
+            "purpose": "tagging"
+          }
+        ],
+        "target": {
+          "type": "SpecificResource",
+          "dcterms:isPartOf": {
+            "id": "https://presley.example.org/iiif/example/_roll_PLB_02D_cvs-5-644/manifest",
+            "type": "sc:Manifest"
+          },
+          "generator": "https://omeka.example.org/s/example/ner/open",
+          "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=1319,4168,37,43"
+          },
+          "source": "https://presley.example.org/iiif/example/_roll_PLB_02D_cvs-5-644/canvas/c19"
+        },
+        "motivation": "tagging"
+      }
+    ],
+    "next": "https://elucidate.example.org/annotation/w3c/services/search/body?page=1&fields=source&value=https%3A%2F%2Fomeka.example.org%2Fs%2Fexample%2Fpage%2Ftopics%2Fschool%2F&desc=1",
+    "partOf": "https://elucidate.example.org/annotation/w3c/services/search/body?fields=source&value=https%3A%2F%2Fomeka.example.org%2Fs%2Fexample%2Fpage%2Ftopics%2Fschool%2F",
+    "startIndex": 0
+  },
+  "last": "https://elucidate.example.org/annotation/w3c/services/search/body?page=31&fields=source&value=https%3A%2F%2Fomeka.example.org%2Fs%2Fexample%2Fpage%2Ftopics%2Fschool%2F&desc=1",
+  "total": 3174
+}

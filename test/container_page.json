@@ -1,0 +1,383 @@
+{
+  "@context": [
+    "http://www.w3.org/ns/anno.jsonld",
+    "http://www.w3.org/ns/ldp.jsonld"
+  ],
+  "id": "https://elucidate.example.org/annotation/w3c/6913ae2c2f5a7b6e59bc1d88192be0f6/",
+  "type": "AnnotationPage",
+  "label": "http://iiif.io/api/presentation/2.0/example/fixtures/canvas/19/c1.json",
+  "items": [
+    {
+      "id": "https://elucidate.example.org/annotation/w3c/6913ae2c2f5a7b6e59bc1d88192be0f6/30cebc09-5fd5-4fa5-8c9c-ac55145aa6e1",
+      "type": "Annotation",
+      "creator" : {"id":"https://montague.example.org/"},
+      "generator": "https://montague.example.org/",
+      "body": [
+        {
+          "creator": "https://montague.example.org/",
+          "value": "entity:gpe",
+          "generator": "https://montague.example.org/",
+          "purpose": "tagging"
+        },
+        {
+          "type": "TextualBody",
+          "format": "text/plain",
+          "creator": "https://montague.example.org/",
+          "value": "Blinding",
+          "generator": "https://montague.example.org/",
+          "purpose": "tagging"
+        },
+        {
+          "type": "SpecificResource",
+          "format": "application/html",
+          "creator": "https://montague.example.org/",
+          "generator": "https://montague.example.org//nlp/",
+          "purpose": "tagging",
+          "source": "https://omeka.example.org/topic/virtual:gpe/blinding"
+        }
+      ],
+      "target": {
+        "type": "SpecificResource",
+        "creator": "https://montague.example.org/",
+        "dcterms:isPartOf": {
+          "id": "http://example.org/foo.json",
+          "type": "sc:Manifest"
+        },
+        "generator": "https://montague.example.org/",
+        "selector": {
+          "type": "FragmentSelector",
+          "conformsTo": "http://www.w3.org/TR/media-frags/",
+          "value": "xywh=598,2788,254,79"
+        },
+        "source": "http://iiif.io/api/presentation/2.0/example/fixtures/canvas/19/c1.json"
+      },
+      "motivation": "tagging"
+    },
+    {
+      "id": "https://elucidate.example.org/annotation/w3c/6913ae2c2f5a7b6e59bc1d88192be0f6/79567dd1-cf86-4393-b556-b8f6892a86bc",
+      "type": "Annotation",
+      "creator": "https://montague.example.org/",
+      "generator": "https://montague.example.org/",
+      "body": [
+        {
+          "type": "TextualBody",
+          "format": "text/plain",
+          "creator": "https://montague.example.org/",
+          "value": "Dad",
+          "generator": "https://montague.example.org/",
+          "purpose": "tagging"
+        },
+        {
+          "type": "SpecificResource",
+          "format": "application/html",
+          "creator": "https://montague.example.org/",
+          "generator": "https://montague.example.org//nlp/",
+          "purpose": "tagging",
+          "source": "https://omeka.example.org/topic/virtual:person/dad"
+        },
+        {
+          "creator": "https://montague.example.org/",
+          "value": "entity:person",
+          "generator": "https://montague.example.org/",
+          "purpose": "tagging"
+        }
+      ],
+      "target": {
+        "type": "SpecificResource",
+        "creator": "https://montague.example.org/",
+        "dcterms:isPartOf": {
+          "id": "http://example.org/foo.json",
+          "type": "sc:Manifest"
+        },
+        "generator": "https://montague.example.org/",
+        "selector": {
+          "type": "FragmentSelector",
+          "conformsTo": "http://www.w3.org/TR/media-frags/",
+          "value": "xywh=1273,3609,147,74"
+        },
+        "source": "http://iiif.io/api/presentation/2.0/example/fixtures/canvas/19/c1.json"
+      },
+      "motivation": "tagging"
+    },
+    {
+      "id": "https://elucidate.example.org/annotation/w3c/6913ae2c2f5a7b6e59bc1d88192be0f6/88293a03-431e-4a2e-8521-5b6fe45ca5e6",
+      "type": "Annotation",
+      "creator": "https://montague.example.org/",
+      "generator": "https://montague.example.org/",
+      "body": [
+        {
+          "type": "SpecificResource",
+          "format": "application/html",
+          "creator": "https://montague.example.org/",
+          "generator": "https://montague.example.org//nlp/",
+          "purpose": "tagging",
+          "source": "https://omeka.example.org/topic/virtual:date/the+days"
+        },
+        {
+          "creator": "https://montague.example.org/",
+          "value": "entity:date",
+          "generator": "https://montague.example.org/",
+          "purpose": "tagging"
+        },
+        {
+          "type": "TextualBody",
+          "format": "text/plain",
+          "creator": "https://montague.example.org/",
+          "value": "The Days",
+          "generator": "https://montague.example.org/",
+          "purpose": "tagging"
+        }
+      ],
+      "target": {
+        "type": "SpecificResource",
+        "creator": "https://montague.example.org/",
+        "dcterms:isPartOf": {
+          "id": "http://example.org/foo.json",
+          "type": "sc:Manifest"
+        },
+        "generator": "https://montague.example.org/",
+        "selector": {
+          "type": "FragmentSelector",
+          "conformsTo": "http://www.w3.org/TR/media-frags/",
+          "value": "xywh=738,781,248,65"
+        },
+        "source": "http://iiif.io/api/presentation/2.0/example/fixtures/canvas/19/c1.json"
+      },
+      "motivation": "tagging"
+    },
+    {
+      "id": "https://elucidate.example.org/annotation/w3c/6913ae2c2f5a7b6e59bc1d88192be0f6/f7a16ced-5004-4395-9272-ae9678efb108",
+      "type": "Annotation",
+      "creator": "https://montague.example.org/",
+      "generator": "https://montague.example.org/",
+      "body": [
+        {
+          "type": "SpecificResource",
+          "format": "application/html",
+          "creator": "https://montague.example.org/",
+          "generator": "https://montague.example.org//nlp/",
+          "purpose": "tagging",
+          "source": "https://omeka.example.org/topic/virtual:gpe/red"
+        },
+        {
+          "creator": "https://montague.example.org/",
+          "value": "entity:gpe",
+          "generator": "https://montague.example.org/",
+          "purpose": "tagging"
+        },
+        {
+          "type": "TextualBody",
+          "format": "text/plain",
+          "creator": "https://montague.example.org/",
+          "value": "Red",
+          "generator": "https://montague.example.org/",
+          "purpose": "tagging"
+        }
+      ],
+      "target": {
+        "type": "SpecificResource",
+        "creator": "https://montague.example.org/",
+        "dcterms:isPartOf": {
+          "id": "http://example.org/foo.json",
+          "type": "sc:Manifest"
+        },
+        "generator": "https://montague.example.org/",
+        "selector": {
+          "type": "FragmentSelector",
+          "conformsTo": "http://www.w3.org/TR/media-frags/",
+          "value": "xywh=602,2379,144,71"
+        },
+        "source": "http://iiif.io/api/presentation/2.0/example/fixtures/canvas/19/c1.json"
+      },
+      "motivation": "tagging"
+    },
+    {
+      "id": "https://elucidate.example.org/annotation/w3c/6913ae2c2f5a7b6e59bc1d88192be0f6/8fe4d33b-1d40-4af8-8390-3b79ac03a46b",
+      "type": "Annotation",
+      "creator": "https://montague.example.org/",
+      "generator": "https://montague.example.org/",
+      "body": [
+        {
+          "type": "TextualBody",
+          "format": "text/plain",
+          "creator": "https://montague.example.org/",
+          "value": "Clad",
+          "generator": "https://montague.example.org/",
+          "purpose": "tagging"
+        },
+        {
+          "type": "SpecificResource",
+          "format": "application/html",
+          "creator": "https://montague.example.org/",
+          "generator": "https://montague.example.org//nlp/",
+          "purpose": "tagging",
+          "source": "https://omeka.example.org/topic/virtual:person/clad"
+        },
+        {
+          "creator": "https://montague.example.org/",
+          "value": "entity:person",
+          "generator": "https://montague.example.org/",
+          "purpose": "tagging"
+        }
+      ],
+      "target": {
+        "type": "SpecificResource",
+        "creator": "https://montague.example.org/",
+        "dcterms:isPartOf": {
+          "id": "http://example.org/foo.json",
+          "type": "sc:Manifest"
+        },
+        "generator": "https://montague.example.org/",
+        "selector": {
+          "type": "FragmentSelector",
+          "conformsTo": "http://www.w3.org/TR/media-frags/",
+          "value": "xywh=614,1743,134,74"
+        },
+        "source": "http://iiif.io/api/presentation/2.0/example/fixtures/canvas/19/c1.json"
+      },
+      "motivation": "tagging"
+    },
+    {
+      "id": "https://elucidate.example.org/annotation/w3c/6913ae2c2f5a7b6e59bc1d88192be0f6/25065fab-94fc-4a75-b2bb-5f0b01aaa590",
+      "type": "Annotation",
+      "creator": "https://montague.example.org/",
+      "generator": "https://montague.example.org/",
+      "body": [
+        {
+          "type": "SpecificResource",
+          "format": "application/html",
+          "creator": "https://montague.example.org/",
+          "generator": "https://montague.example.org//nlp/",
+          "purpose": "tagging",
+          "source": "https://omeka.example.org/topic/virtual:date/the+last+year+or+so"
+        },
+        {
+          "creator": "https://montague.example.org/",
+          "value": "entity:date",
+          "generator": "https://montague.example.org/",
+          "purpose": "tagging"
+        },
+        {
+          "type": "TextualBody",
+          "format": "text/plain",
+          "creator": "https://montague.example.org/",
+          "value": "The Last Year Or So",
+          "generator": "https://montague.example.org/",
+          "purpose": "tagging"
+        }
+      ],
+      "target": {
+        "type": "SpecificResource",
+        "creator": "https://montague.example.org/",
+        "dcterms:isPartOf": {
+          "id": "http://example.org/foo.json",
+          "type": "sc:Manifest"
+        },
+        "generator": "https://montague.example.org/",
+        "selector": {
+          "type": "FragmentSelector",
+          "conformsTo": "http://www.w3.org/TR/media-frags/",
+          "value": "xywh=1475,422,581,73"
+        },
+        "source": "http://iiif.io/api/presentation/2.0/example/fixtures/canvas/19/c1.json"
+      },
+      "motivation": "tagging"
+    },
+    {
+      "id": "https://elucidate.example.org/annotation/w3c/6913ae2c2f5a7b6e59bc1d88192be0f6/274105bd-2431-4b85-89b2-38a4855f76e9",
+      "type": "Annotation",
+      "creator": "https://montague.example.org/",
+      "generator": "https://montague.example.org/",
+      "body": [
+        {
+          "type": "SpecificResource",
+          "format": "application/html",
+          "creator": "https://montague.example.org/",
+          "generator": "https://montague.example.org//nlp/",
+          "purpose": "tagging",
+          "source": "https://omeka.example.org/topic/virtual:person/waiting"
+        },
+        {
+          "creator": "https://montague.example.org/",
+          "value": "entity:person",
+          "generator": "https://montague.example.org/",
+          "purpose": "tagging"
+        },
+        {
+          "type": "TextualBody",
+          "format": "text/plain",
+          "creator": "https://montague.example.org/",
+          "value": "Waiting",
+          "generator": "https://montague.example.org/",
+          "purpose": "tagging"
+        }
+      ],
+      "target": {
+        "type": "SpecificResource",
+        "creator": "https://montague.example.org/",
+        "dcterms:isPartOf": {
+          "id": "http://example.org/foo.json",
+          "type": "sc:Manifest"
+        },
+        "generator": "https://montague.example.org/",
+        "selector": {
+          "type": "FragmentSelector",
+          "conformsTo": "http://www.w3.org/TR/media-frags/",
+          "value": "xywh=604,2174,255,67"
+        },
+        "source": "http://iiif.io/api/presentation/2.0/example/fixtures/canvas/19/c1.json"
+      },
+      "motivation": "tagging"
+    },
+    {
+      "id": "https://elucidate.example.org/annotation/w3c/6913ae2c2f5a7b6e59bc1d88192be0f6/408d9a20-d188-429d-9223-ca0a8ac1bf8d",
+      "type": "Annotation",
+      "creator": "https://montague.example.org/",
+      "generator": "https://montague.example.org/",
+      "body": [
+        {
+          "type": "TextualBody",
+          "format": "text/plain",
+          "creator": "https://montague.example.org/",
+          "value": "Superman",
+          "generator": "https://montague.example.org/",
+          "purpose": "tagging"
+        },
+        {
+          "type": "SpecificResource",
+          "format": "application/html",
+          "creator": "https://montague.example.org/",
+          "generator": "https://montague.example.org//nlp/",
+          "purpose": "tagging",
+          "source": "https://omeka.example.org/topic/virtual:person/superman"
+        },
+        {
+          "creator": "https://montague.example.org/",
+          "value": "entity:person",
+          "generator": "https://montague.example.org/",
+          "purpose": "tagging"
+        }
+      ],
+      "target": {
+        "type": "SpecificResource",
+        "creator": "https://montague.example.org/",
+        "dcterms:isPartOf": {
+          "id": "http://example.org/foo.json",
+          "type": "sc:Manifest"
+        },
+        "generator": "https://montague.example.org/",
+        "selector": {
+          "type": "FragmentSelector",
+          "conformsTo": "http://www.w3.org/TR/media-frags/",
+          "value": "xywh=613,1818,316,72"
+        },
+        "source": "http://iiif.io/api/presentation/2.0/example/fixtures/canvas/19/c1.json"
+      },
+      "motivation": "tagging"
+    }
+  ],
+  "partOf": "https://elucidate.example.org/annotation/w3c/6913ae2c2f5a7b6e59bc1d88192be0f6/",
+  "startIndex": 0,
+  "last": "https://elucidate.example.org/annotation/w3c/6913ae2c2f5a7b6e59bc1d88192be0f6/?page=0&desc=1",
+  "total": 8
+}

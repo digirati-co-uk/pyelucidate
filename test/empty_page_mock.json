@@ -1,0 +1,18 @@
+{
+  "@context": [
+    "http://www.w3.org/ns/anno.jsonld",
+    "http://www.w3.org/ns/ldp.jsonld"
+  ],
+  "id": "https://elucidate.example.org/annotation/w3c/services/search/body?fields=source&value=https%3A%2F%2Fomeka.example.org%2Fs%2Fexample%2Fpage%2Ftopics%2Fcollection%2Fmock",
+  "type": "AnnotationCollection",
+  "first": {
+    "type": "AnnotationPage",
+    "as:items": {
+      "@list": []
+    },
+    "partOf": "https://elucidate.example.org/annotation/w3c/services/search/body?fields=source&value=https%3A%2F%2Fomeka.example.org%2Fs%2Fexample%2Fpage%2Ftopics%2Fcollection%2Fmock",
+    "startIndex": 0
+  },
+  "last": "https://elucidate.example.org/annotation/w3c/services/search/body?fields=source&value=https%3A%2F%2Fomeka.example.org%2Fs%2Fexample%2Fpage%2Ftopics%2Fcollection%2Fmock&desc=1",
+  "total": 0
+}
