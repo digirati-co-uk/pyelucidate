@@ -1,0 +1,30 @@
+{
+    "id": "https://elucidate.example.org/annotation/w3c/fd8c7a22abcde179e30850b5d1f7c439/8cbec70c-e859-4624-b1e3-1bbec5bcca85",
+    "type": "Annotation",
+    "creator": "https://montague.example.org/",
+    "generator": "https://montague.example.org/",
+    "body": {
+        "type": "SpecificResource",
+        "format": "application/html",
+        "creator": "https://montague.example.org/",
+        "generator": "https://montague.example.org//nlp/",
+        "purpose": "tagging",
+        "source": "https://omeka.example.org/topic/virtual:person/matter"
+    },
+    "target": {
+        "type": "SpecificResource",
+        "creator": "https://montague.example.org/",
+        "dcterms:isPartOf": {
+            "id": "http://waylon.example.org/work/AVT",
+            "type": "sc:Manifest"
+        },
+        "generator": "https://montague.example.org/",
+        "selector": {
+            "type": "FragmentSelector",
+            "conformsTo": "http://www.w3.org/TR/media-frags/",
+            "value": "xywh=659,1646,174,62"
+        },
+        "source": "http://waylon.example.org/work/AVT/canvas/274"
+    },
+    "motivation": "tagging"
+}

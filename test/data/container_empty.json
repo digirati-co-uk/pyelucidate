@@ -1,0 +1,18 @@
+{
+  "@context": [
+    "http://www.w3.org/ns/anno.jsonld",
+    "http://www.w3.org/ns/ldp.jsonld"
+  ],
+  "id": "https://elucidate.example.org/annotation/w3c/113dde781fa18ee26e50bfee95a59bf0/",
+  "type": "AnnotationCollection",
+  "label": "http://2264f7a2-b6a7-11e8-be1f-8e5a0e62b072",
+  "first": {
+    "type": "AnnotationPage",
+    "items": [
+    ],
+    "partOf": "https://elucidate.example.org/annotation/w3c/113dde781fa18ee26e50bfee95a59bf0/",
+    "startIndex": 0
+  },
+  "last": "https://elucidate.example.org/annotation/w3c/113dde781fa18ee26e50bfee95a59bf0/?page=0&desc=1",
+  "total": 0
+}
