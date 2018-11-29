@@ -236,7 +236,7 @@ def test_items_by_target_container_none():
 
 @pytest.mark.datafiles(
     os.path.join(FIXTURE_DIR, "single_topic_page.json"),
-    os.path.join(FIXTURE_DIR, "single_topic_page0.json")
+    os.path.join(FIXTURE_DIR, "single_topic_page0.json"),
 )
 def test_manifests_by_topic(datafiles):
     path = str(datafiles)
