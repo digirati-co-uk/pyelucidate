@@ -5,7 +5,7 @@ PyElucidate
 .. image:: https://badge.fury.io/py/pyelucidate.png
     :target: http://badge.fury.io/py/pyelucidate
 
-.. image:: https://travis-ci.com/digirati-co-uk/pyelucidate.png?branch=master
+.. image:: https://travis-ci.com/digirati-co-uk/pyelucidate.svg?token=SQeW1amdJpFZbNJ175sQ&branch=master
     :target: https://travis-ci.com/digirati-co-uk/pyelucidate
 
 Open Source Python Tools for the Elucidate Annotation Server.
@@ -14,11 +14,17 @@ Open Source Python Tools for the Elucidate Annotation Server.
 Introduction
 ------------
 
-Simple helpers or tools for working with Elucidate.
+Simple Python helpers for working with Elucidate_, an Open Annotation and W3C Web Annotation annotation server.
 
-[https://github.com/digirati-co-uk/pyelucidate](https://github.com/digirati-co-uk/pyelucidate)
 
-Lightweight Python functions for interacting with an instance of the Elucidate W3C/OA annotation server.
+.. _Elucidate: https://github.com/dlcs/elucidate-server
+
+Elucidate uses the `W3C Web Annotation Protocol`__ but also has some useful additional service APIs. See Elucidate's
+usage_ documentation for further information.
+
+.. _W3CA:  https://www.w3.org/TR/annotation-protocol/
+__ W3CA_
+.. _usage: https://github.com/dlcs/elucidate-server/blob/master/USAGE.md
 
 
 Requirements
