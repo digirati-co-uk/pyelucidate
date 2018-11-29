@@ -82,7 +82,7 @@ To get tox, just pip install it.
 
 6. Submit a pull request through the GitHub website.
 
-.. _Fork: https://github.com/mattmcgrattan/pyelucidate/fork
+.. _Fork: https://github.com/digirati-co-uk/pyelucidate/fork
 
 Pull Request Guidelines
 -----------------------
@@ -94,7 +94,7 @@ Before you submit a pull request, check that it meets these guidelines:
    your new functionality into a function with a docstring, and add the
    feature to the list in README.rst.
 3. The pull request should work for Python 2.6, 2.7, and 3.3, and for PyPy.
-   Check https://travis-ci.org/mattmcgrattan/pyelucidate 
+   Check https://travis-ci.org/digirati-co-uk/pyelucidate
    under pull requests for active pull requests or run the ``tox`` command and
    make sure that the tests pass for all supported Python versions.
 

@@ -5,6 +5,11 @@ from pyelucidate import pyelucidate as elucidate
 import json
 import requests_mock
 import types
+import os
+import pytest
+
+
+FIXTURE_DIR = os.path.join(os.path.dirname(os.path.realpath(__file__)), "data")
 
 
 def test_set_query_field():
@@ -16,11 +21,16 @@ def test_set_query_field():
         "https://elucidate.example.org/annotation/w3c/services/search/target?fields=id&value="
         + "https%3A%2F%2Fwww.example.org%2Fiiif%2Fproj%2Fc1&desc=1&page=2"
     )
-    assert elucidate.set_query_field(test_uri, field="page", value=2, replace=True) == result_uri
+    assert (
+        elucidate.set_query_field(test_uri, field="page", value=2, replace=True)
+        == result_uri
+    )
 
 
-def test_annotation_pages():
-    with open("page_mock.json", "r") as f:
+@pytest.mark.datafiles(os.path.join(FIXTURE_DIR, "page_mock.json"))
+def test_annotation_pages(datafiles):
+    path = str(datafiles)
+    with open(os.path.join(path, "page_mock.json"), "r") as f:
         j = json.load(f)
         test_list = list(elucidate.annotation_pages(j))
         result_last = (
@@ -30,8 +40,10 @@ def test_annotation_pages():
         assert test_list[-1] == result_last
 
 
-def test_empty_annotation_pages():
-    with open("empty_page_mock.json", "r") as f:
+@pytest.mark.datafiles(os.path.join(FIXTURE_DIR, "empty_page_mock.json"))
+def test_empty_annotation_pages(datafiles):
+    path = str(datafiles)
+    with open(os.path.join(path, "empty_page_mock.json"), "r") as f:
         j = json.load(f)
         test_list = list(elucidate.annotation_pages(j))
         assert test_list == []
@@ -42,13 +54,19 @@ def test_no_annotation_pages():
     assert test_list == []
 
 
-def test_items_by_body_source():
+@pytest.mark.datafiles(
+    os.path.join(FIXTURE_DIR, "single_topic_page.json"),
+    os.path.join(FIXTURE_DIR, "single_topic_page0.json"),
+    os.path.join(FIXTURE_DIR, "single_anno.json"),
+)
+def test_items_by_body_source(datafiles):
+    path = str(datafiles)
     with requests_mock.Mocker() as mock:
-        with open("single_topic_page.json", "r") as f:
+        with open(os.path.join(path, "single_topic_page.json"), "r") as f:
             j = json.load(f)
-        with open("single_topic_page0.json", "r") as f:
+        with open(os.path.join(path, "single_topic_page0.json"), "r") as f:
             j0 = json.load(f)
-        with open("single_anno.json", "r") as f:
+        with open(os.path.join(path, "single_anno.json"), "r") as f:
             j1 = json.load(f)
         url = (
             "https://elucidate.example.org/annotation/w3c/services/search/body?fields=id,source&value="
@@ -58,8 +76,12 @@ def test_items_by_body_source():
             "https://elucidate.example.org/annotation/w3c/services/search/body?fields=id%2Csource&value="
             + "https%3A%2F%2Fomeka.example.org%2Ftopic%2Fvirtual%3Aperson%2Fmatter&desc=1&page=0"
         )
-        mock.register_uri("GET", url, json=j)  # mocking the http response within this context
-        mock.register_uri("GET", url2, json=j0)  # mocking the http response within this context
+        mock.register_uri(
+            "GET", url, json=j
+        )  # mocking the http response within this context
+        mock.register_uri(
+            "GET", url2, json=j0
+        )  # mocking the http response within this context
         response = elucidate.items_by_body_source(
             elucidate="https://elucidate.example.org",
             topic="https://omeka.example.org/topic/virtual:person/matter",
@@ -70,11 +92,16 @@ def test_items_by_body_source():
         assert anno_list[3] == j1
 
 
-def test_items_by_body_source_error():
+@pytest.mark.datafiles(
+    os.path.join(FIXTURE_DIR, "single_topic_page.json"),
+    os.path.join(FIXTURE_DIR, "single_topic_page0.json"),
+)
+def test_items_by_body_source_error(datafiles):
+    path = str(datafiles)
     with requests_mock.Mocker() as mock:
-        with open("single_topic_page.json", "r") as f:
+        with open(os.path.join(path, "single_topic_page.json"), "r") as f:
             j = json.load(f)
-        with open("single_topic_page0.json", "r") as f:
+        with open(os.path.join(path, "single_topic_page0.json"), "r") as f:
             j0 = json.load(f)
         url = (
             "https://elucidate.example.org/annotation/w3c/services/search/body?fields=id,source&value="
@@ -247,11 +274,16 @@ def test_parent_from_annotation():
     assert manifest is None  # not a manifest, but code has no way to know
 
 
-def test_manifest_by_topic():
+@pytest.mark.datafiles(
+    os.path.join(FIXTURE_DIR, "single_topic_page.json"),
+    os.path.join(FIXTURE_DIR, "single_topic_page0.json"),
+)
+def test_manifest_by_topic(datafiles):
+    path = str(datafiles)
     with requests_mock.Mocker() as mock:
-        with open("single_topic_page.json", "r") as f:
+        with open(os.path.join(path, "single_topic_page.json"), "r") as f:
             j = json.load(f)
-        with open("single_topic_page0.json", "r") as f:
+        with open(os.path.join(path, "single_topic_page0.json"), "r") as f:
             j0 = json.load(f)
         url = (
             "https://elucidate.example.org/annotation/w3c/services/search/body?fields=id,source&value="
@@ -261,8 +293,12 @@ def test_manifest_by_topic():
             "https://elucidate.example.org/annotation/w3c/services/search/body?fields=id%2Csource&value="
             + "https%3A%2F%2Fomeka.example.org%2Ftopic%2Fvirtual%3Aperson%2Fmatter&desc=1&page=0"
         )
-        mock.register_uri("GET", url, json=j)  # mocking the http response within this context
-        mock.register_uri("GET", url2, json=j0)  # mocking the http response within this context
+        mock.register_uri(
+            "GET", url, json=j
+        )  # mocking the http response within this context
+        mock.register_uri(
+            "GET", url2, json=j0
+        )  # mocking the http response within this context
         response = elucidate.parents_by_topic(
             elucidate="https://elucidate.example.org",
             topic="https://omeka.example.org/topic/virtual:person/matter",
@@ -304,7 +340,10 @@ def test_identify_target():
         "target": {
             "type": "SpecificResource",
             "creator": "https://montague.example.org/",
-            "dcterms:isPartOf": {"id": "http://waylon.example.org/work/AVT", "type": "sc:Manifest"},
+            "dcterms:isPartOf": {
+                "id": "http://waylon.example.org/work/AVT",
+                "type": "sc:Manifest",
+            },
             "generator": "https://montague.example.org/",
             "selector": {
                 "type": "FragmentSelector",
@@ -315,7 +354,9 @@ def test_identify_target():
         },
         "motivation": "tagging",
     }
-    assert elucidate.identify_target(j) == "http://waylon.example.org/work/AVT/canvas/274"
+    assert (
+        elucidate.identify_target(j) == "http://waylon.example.org/work/AVT/canvas/274"
+    )
     j = {
         "id": (
             "https://elucidate.example.org/annotation/w3c/fd8c7a22abcde179e30850b5d1f7c439/"
@@ -337,7 +378,9 @@ def test_identify_target():
         "target": "http://waylon.example.org/work/AVT/canvas/274#xywh=659,1646,174,62",
         "motivation": "tagging",
     }
-    assert elucidate.identify_target(j) == "http://waylon.example.org/work/AVT/canvas/274"
+    assert (
+        elucidate.identify_target(j) == "http://waylon.example.org/work/AVT/canvas/274"
+    )
     j = {
         "id": (
             "https://elucidate.example.org/annotation/w3c/fd8c7a22abcde179e30850b5d1f7c439/"
@@ -390,7 +433,9 @@ def test_identify_target():
         ],
         "motivation": "tagging",
     }
-    assert elucidate.identify_target(j) == "http://waylon.example.org/work/AVT/canvas/274"
+    assert (
+        elucidate.identify_target(j) == "http://waylon.example.org/work/AVT/canvas/274"
+    )
     j = {
         "id": (
             "https://elucidate.example.org/annotation/w3c/fd8c7a22abcde179e30850b5d1f7c439/"
@@ -522,7 +567,10 @@ def test_search_by_container():
         elucidate_base="https://elucidate.example.org",
         model="w3c",
     )
-    assert s == "https://elucidate.example.org/annotation/w3c/6a88457d6a00b19931cea2fbb3312c2e/"
+    assert (
+        s
+        == "https://elucidate.example.org/annotation/w3c/6a88457d6a00b19931cea2fbb3312c2e/"
+    )
 
 
 def test_search_by_container_none():
@@ -565,7 +613,10 @@ def test_item_ids():
         "target": {
             "type": "SpecificResource",
             "creator": "https://montague.example.org/",
-            "dcterms:isPartOf": {"id": "http://waylon.example.org/work/AVT", "type": "sc:Manifest"},
+            "dcterms:isPartOf": {
+                "id": "http://waylon.example.org/work/AVT",
+                "type": "sc:Manifest",
+            },
             "generator": "https://montague.example.org/",
             "selector": {
                 "type": "FragmentSelector",
@@ -582,9 +633,11 @@ def test_item_ids():
     ]
 
 
-def test_get_anno():
+@pytest.mark.datafiles(os.path.join(FIXTURE_DIR, "single_anno.json"))
+def test_get_anno(datafiles):
+    path = str(datafiles)
     with requests_mock.Mocker() as mock:
-        with open("single_anno.json", "r") as f:
+        with open(os.path.join(path, "single_anno.json"), "r") as f:
             j = json.load(f)
         url = (
             "https://elucidate.example.org/annotation/w3c/"
@@ -611,11 +664,16 @@ def test_get_anno_404():
         assert b is None
 
 
-def test_get_items():
+@pytest.mark.datafiles(
+    os.path.join(FIXTURE_DIR, "single_topic_page.json"),
+    os.path.join(FIXTURE_DIR, "single_topic_page0.json"),
+)
+def test_get_items(datafiles):
+    path = str(datafiles)
     with requests_mock.Mocker() as mock:
-        with open("single_topic_page.json", "r") as f:
+        with open(os.path.join(path, "single_topic_page.json"), "r") as f:
             j = json.load(f)
-        with open("single_topic_page0.json", "r") as f:
+        with open(os.path.join(path, "single_topic_page0.json"), "r") as f:
             j0 = json.load(f)
         url = (
             "https://elucidate.example.org/annotation/w3c/services/search/body?fields=id,source&value="
@@ -625,8 +683,12 @@ def test_get_items():
             "https://elucidate.example.org/annotation/w3c/services/search/body?fields=id%2Csource&value="
             + "https%3A%2F%2Fomeka.example.org%2Ftopic%2Fvirtual%3Aperson%2Fmatter&desc=1&page=0"
         )
-        mock.register_uri("GET", url, json=j)  # mocking the http response within this context
-        mock.register_uri("GET", url2, json=j0)  # mocking the http response within this context
+        mock.register_uri(
+            "GET", url, json=j
+        )  # mocking the http response within this context
+        mock.register_uri(
+            "GET", url2, json=j0
+        )  # mocking the http response within this context
         response = elucidate.get_items(uri=url)
         items = list(response)
         assert isinstance(response, types.GeneratorType)  # is True
@@ -638,11 +700,16 @@ def test_get_items():
         )
 
 
-def test_get_items_second():
+@pytest.mark.datafiles(
+    os.path.join(FIXTURE_DIR, "single_topic_page.json"),
+    os.path.join(FIXTURE_DIR, "single_topic_page0.json"),
+)
+def test_get_items_second(datafiles):
+    path = str(datafiles)
     with requests_mock.Mocker() as mock:
-        with open("single_topic_page.json", "r") as f:
+        with open(os.path.join(path, "single_topic_page.json"), "r") as f:
             j = json.load(f)
-        with open("single_topic_page0.json", "r") as f:
+        with open(os.path.join(path, "single_topic_page0.json"), "r") as f:
             j0 = json.load(f)
         url = (
             "https://elucidate.example.org/annotation/w3c/services/search/body?fields=id,source&value="
@@ -652,8 +719,12 @@ def test_get_items_second():
             "https://elucidate.example.org/annotation/w3c/services/search/body?fields=id%2Csource&value="
             + "https%3A%2F%2Fomeka.example.org%2Ftopic%2Fvirtual%3Aperson%2Fmatter&desc=1&page=0"
         )
-        mock.register_uri("GET", url, json=j)  # mocking the http response within this context
-        mock.register_uri("GET", url2, json=j0)  # mocking the http response within this context
+        mock.register_uri(
+            "GET", url, json=j
+        )  # mocking the http response within this context
+        mock.register_uri(
+            "GET", url2, json=j0
+        )  # mocking the http response within this context
         response = elucidate.get_items(uri=url2)
         items = list(response)
         assert isinstance(response, types.GeneratorType)  # is True
@@ -1260,7 +1331,9 @@ def test_batch_update_topics_dry_run():
 def test_batch_update_topics():
     with requests_mock.Mocker() as mock:
         e = "https://elucidate.example.org"
-        mock.register_uri("POST", url=e + "/annotation/w3c/services/batch/update", status_code=200)
+        mock.register_uri(
+            "POST", url=e + "/annotation/w3c/services/batch/update", status_code=200
+        )
         n = "https://omeka.example.org/topics/person/new"
         o = ["https://omeka.example.org/topics/person/old"]
         result_code, result_body = elucidate.batch_update_body(
@@ -1272,7 +1345,9 @@ def test_batch_update_topics():
 def test_batch_update_topics_error():
     with requests_mock.Mocker() as mock:
         e = "https://elucidate.example.org"
-        mock.register_uri("POST", url=e + "/annotation/w3c/services/batch/update", status_code=500)
+        mock.register_uri(
+            "POST", url=e + "/annotation/w3c/services/batch/update", status_code=500
+        )
         n = "https://omeka.example.org/topics/person/new"
         o = ["https://omeka.example.org/topics/person/old"]
         result_code, result_body = elucidate.batch_update_body(
@@ -1333,7 +1408,9 @@ def test_iterative_delete_by_manifest_dry():
             #     json={"id": anno_uri},
             # )
         status = elucidate.iiif_iterative_delete_by_manifest(
-            manifest_uri=m["@id"], elucidate_uri="https://elucidate.example.org", dry_run=True
+            manifest_uri=m["@id"],
+            elucidate_uri="https://elucidate.example.org",
+            dry_run=True,
         )
         assert status is True
 
@@ -1386,7 +1463,9 @@ def test_iterative_delete_by_manifest():
                 json={"id": anno_uri},
             )
         status = elucidate.iiif_iterative_delete_by_manifest(
-            manifest_uri=m["@id"], elucidate_uri="https://elucidate.example.org", dry_run=False
+            manifest_uri=m["@id"],
+            elucidate_uri="https://elucidate.example.org",
+            dry_run=False,
         )
         assert status is True
 
@@ -1401,7 +1480,9 @@ def test_iterative_delete_by_manifest_no_sequence():
             m = json.load(f)
         mock.register_uri("GET", url=m["@id"], json=m)
         status = elucidate.iiif_iterative_delete_by_manifest(
-            manifest_uri=m["@id"], elucidate_uri="https://elucidate.example.org", dry_run=True
+            manifest_uri=m["@id"],
+            elucidate_uri="https://elucidate.example.org",
+            dry_run=True,
         )
         assert status is False
 
@@ -1416,7 +1497,9 @@ def test_iterative_delete_by_manifest_no_canvases():
             m = json.load(f)
         mock.register_uri("GET", url=m["@id"], json=m)
         status = elucidate.iiif_iterative_delete_by_manifest(
-            manifest_uri=m["@id"], elucidate_uri="https://elucidate.example.org", dry_run=True
+            manifest_uri=m["@id"],
+            elucidate_uri="https://elucidate.example.org",
+            dry_run=True,
         )
         assert status is False
 
@@ -1492,7 +1575,9 @@ def test_batch_delete_by_manifest_dry():
             #     json={"id": anno_uri},
             # )
         status = elucidate.iiif_batch_delete_by_manifest(
-            manifest_uri=m["@id"], elucidate_uri="https://elucidate.example.org", dry_run=True
+            manifest_uri=m["@id"],
+            elucidate_uri="https://elucidate.example.org",
+            dry_run=True,
         )
         assert status is True
 
@@ -1507,7 +1592,9 @@ def test_batch_delete_by_manifest_no_sequence():
             m = json.load(f)
         mock.register_uri("GET", url=m["@id"], json=m)
         status = elucidate.iiif_batch_delete_by_manifest(
-            manifest_uri=m["@id"], elucidate_uri="https://elucidate.example.org", dry_run=True
+            manifest_uri=m["@id"],
+            elucidate_uri="https://elucidate.example.org",
+            dry_run=True,
         )
         assert status is False
 
@@ -1522,7 +1609,9 @@ def test_batch_delete_by_manifest_no_canvases():
             m = json.load(f)
         mock.register_uri("GET", url=m["@id"], json=m)
         status = elucidate.iiif_batch_delete_by_manifest(
-            manifest_uri=m["@id"], elucidate_uri="https://elucidate.example.org", dry_run=True
+            manifest_uri=m["@id"],
+            elucidate_uri="https://elucidate.example.org",
+            dry_run=True,
         )
         assert status is False
 
@@ -1565,7 +1654,9 @@ def test_batch_delete_topic_dry_run():
 def test_batch_delete_topic():
     with requests_mock.Mocker() as mock:
         e = "https://elucidate.example.org"
-        mock.register_uri("POST", url=e + "/annotation/w3c/services/batch/delete", status_code=200)
+        mock.register_uri(
+            "POST", url=e + "/annotation/w3c/services/batch/delete", status_code=200
+        )
         o = "https://omeka.example.org/topics/person/old"
         result_code, result_body = elucidate.batch_delete_topic(
             topic_id=o, elucidate_base=e, dry_run=False
@@ -1591,7 +1682,9 @@ def test_batch_delete_topic_error():
                 "source": {"id": "https://omeka.example.org/topics/person/old"},
             },
         }
-        mock.register_uri("POST", url=e + "/annotation/w3c/services/batch/delete", status_code=500)
+        mock.register_uri(
+            "POST", url=e + "/annotation/w3c/services/batch/delete", status_code=500
+        )
         o = "https://omeka.example.org/topics/person/old"
         result_code, result_body = elucidate.batch_delete_topic(
             topic_id=o, elucidate_base=e, dry_run=False

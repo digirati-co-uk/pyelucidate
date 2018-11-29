@@ -24,4 +24,4 @@ If you have any suggestions or questions about **PyElucidate** feel free to emai
 at matt.mcgrattan@digirati.com.
 
 If you encounter any errors or problems with **PyElucidate**, please let me know!
-Open an Issue at the GitHub http://github.com/mattmcgrattan/pyelucidate main repository.
+Open an Issue at the GitHub http://github.com/digirati-co-uk/pyelucidate main repository.

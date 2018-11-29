@@ -64,14 +64,13 @@ def annotation_pages(result: Optional[dict]) -> Optional[str]:
 
     Will yield:
 
-    | https://elucidate.example.org/annotation/w3c/services/search/body?fields=source&value=FOO
-    &desc=1&page=0
-    | https://elucidate.example.org/annotation/w3c/services/search/body?fields=source&value=FOO
-    &desc=1&page=1
-    | https://elucidate.example.org/annotation/w3c/services/search/body?fields=source&value=FOO
-    &desc=1&page=2
-    | https://elucidate.example.org/annotation/w3c/services/search/body?fields=source&value=FOO
-    &desc=1&page=3
+    https://elucidate.example.org/annotation/w3c/services/search/body?fields=source&value=FOO&desc=1&page=0
+
+    https://elucidate.example.org/annotation/w3c/services/search/body?fields=source&value=FOO&desc=1&page=1
+
+    https://elucidate.example.org/annotation/w3c/services/search/body?fields=source&value=FOO&desc=1&page=2
+
+    https://elucidate.example.org/annotation/w3c/services/search/body?fields=source&value=FOO&desc=1&page=3
 
 
     :param result: Activity Streams paged result set
@@ -1009,8 +1008,8 @@ def async_items_by_topic(elucidate: str, topic: str, **kwargs) -> dict:
     Does an asynchronous get for all the annotations, and then yields the annotations with
     optional transformation provided by the "trans_function" arg.
 
-    :param elucidate: Elucidate server, e.g. https://elucidate.example.com
-    :param topic: URI from body source, e.g. 'https://topics.example.com/people/mary+jones'
+    :param elucidate: Elucidate server, e.g. https://elucidate.example.org
+    :param topic: URI from body source, e.g. 'https://topics.example.org/people/mary+jones'
     :return: annotation object
     """
     t = quote_plus(topic)
@@ -1040,8 +1039,8 @@ def async_items_by_target(elucidate: str, target_uri: str, **kwargs) -> dict:
 
     Async requests all of the annotation pages before yielding.
 
-    :param elucidate: Elucidate server, e.g. https://elucidate.example.com
-    :param target_uri: URI from target source and id, e.g. 'https://manifest.example.com/manifest/1'
+    :param elucidate: Elucidate server, e.g. https://elucidate.example.org
+    :param target_uri: URI from target source and id, e.g. 'https://manifest.example.org/manifest/1'
     :return: annotation object
     """
     t = quote_plus(target_uri)
@@ -1119,8 +1118,8 @@ def async_items_by_container(
 
     Container can be hashed from target URI, or provided
 
-    :param elucidate: Elucidate server, e.g. https://elucidate.example.com
-    :param target_uri: URI from target source and id, e.g. 'https://manifest.example.com/manifest/1'
+    :param elucidate: Elucidate server, e.g. https://elucidate.example.org
+    :param target_uri: URI from target source and id, e.g. 'https://manifest.example.org/manifest/1'
     :param container: container path
     :param header_dict: dict of headers
     :return: annotation object
@@ -1198,8 +1197,8 @@ def async_manifests_by_topic(
     N.B. assumption, if passed a string for target, rather than an object,
     that manifest and canvas URI patterns follow old API DLCS/Presley model.
 
-    :param elucidate: URL for Elucidate server, e.g. https://elucidate.example.com
-    :param topic:  URL for body source, e.g. https://topics.example.com/people/mary+jones
+    :param elucidate: URL for Elucidate server, e.g. https://elucidate.example.org
+    :param topic:  URL for body source, e.g. https://topics.example.org/people/mary+jones
     :return: manifest URI
     """
     if topic:
@@ -1231,7 +1230,7 @@ def iterative_delete_by_target_async_get(
 
     :param dryrun: if True, will not actually delete, just logs and returns True (for success)
     :param target: target uri
-    :param elucidate_base: base URI for Elucidate, e.g. https://elucidate.example.com
+    :param elucidate_base: base URI for Elucidate, e.g. https://elucidate.example.org
     :return: boolean success or fail, True if no errors on _any_ request.
     """
     statuses = []

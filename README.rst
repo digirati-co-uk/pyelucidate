@@ -12,7 +12,7 @@ Open Source Python Tools for the Elucidate Annotation Server.
 
 
 Introduction
---------
+------------
 
 Simple helpers or tools for working with Elucidate.
 
@@ -21,20 +21,46 @@ Simple helpers or tools for working with Elucidate.
 Lightweight Python functions for interacting with an instance of the Elucidate W3C/OA annotation server.
 
 
-## Requirements
+Requirements
+------------
 
 Python 3.4+
 
 Required python packages are listed in `requirements.txt`.
 
-## Installation
 
-`pip install pyelucidate`
-
-## Usage
+.. include:: installation.rst
 
 
-# License
+Usage
+-----
+
+Placeholder
+
+
+.. include:: CONTRIBUTING.rst
+
+
+PyElucidate uses Python 3.x. No backwards compatibility with Python 2.x is provided.
+
+Feel free to raise Github issues.
+
+If you find an issue you are interested in fixing you can:
+
+
+* make sure the issue is small and atomic
+* Fork the repository
+* Clone the repository to your local machine
+* Create a new branch for your fix using `git checkout -b branch-name-here`.
+* Fix the issue.
+* Commit and push the code to your remote repository.
+* Submit a pull request to the `pyelucidate` repository, with a description of your fix and the issue number.
+* The PR will be reviewed by the maintainer_ and either merge the PR or response with comments.
+
+.. _maintainer: http://github.com/mattmcgrattan
+
+License
+-------
 
 MIT License
 
@@ -57,22 +83,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
-# Contribution Guidelines
-
-PyElucidate uses Python 3.x. No backwards compatibility with Python 2.x is provided.
-
-Feel free to raise Github issues.
-
-If you find an issue you are interested in fixing you can:
-
-
-* make sure the issue is small and atomic
-* Fork the repository
-* Clone the repository to your local machine
-* Create a new branch for your fix using `git checkout -b branch-name-here`.
-* Fix the issue.
-* Commit and push the code to your remote repository.
-* Submit a pull request to the `pyelucidate` repository, with a description of your fix and the issue number.
-* The PR will be reviewed by the maintainer [https://github.com/mattmcgrattan](https://github.com/mattmcgrattan) and either merge the PR or response with comments.
-
