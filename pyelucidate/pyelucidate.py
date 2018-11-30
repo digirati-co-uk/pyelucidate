@@ -53,6 +53,10 @@ def set_query_field(
 def annotation_pages(result: Optional[dict]) -> Optional[str]:
     """
     Generator which yields URLs for annotation pages from an Activity Streams paged result set.
+    Works by looking for the "last" page in the paged result set and incrementing between 0 and
+    last.
+
+    Does not request each page and examine "next" or "previous".
 
     For example, given an Activity Streams paged result set which contains:
 
@@ -74,7 +78,7 @@ def annotation_pages(result: Optional[dict]) -> Optional[str]:
 
 
     :param result: Activity Streams paged result set
-    :return: AS result page URI(s)
+    :return: Activity Streams page URIs.
     """
     if result:
         if result["total"] > 0:
@@ -110,9 +114,10 @@ def items_by_body_source(elucidate: str, topic: str, strict: bool = True) -> dic
                 }
             ]
 
-    Query Elucidate for all annotations with source: "https://www.example.org/themes/foo".
+    This function will query Elucidate for all annotations with body id or body source ==
+    "https://www.example.org/themes/foo".
 
-    If strict = False, this would match:
+    If strict = False, this would match both:
 
         https://www.example.org/themes/foo
 
@@ -125,7 +130,7 @@ def items_by_body_source(elucidate: str, topic: str, strict: bool = True) -> dic
     :param elucidate: URL for Elucidate server, e.g. https://elucidate.example.org
     :param topic:  URI for body source, e.g. https://www.example.org/themes/foo
     :param strict: if strict, use strict = True.
-    :return: annotation object
+    :return: annotation dict
     """
     t = quote_plus(topic)
     search_uri = "".join(
@@ -169,6 +174,10 @@ def parent_from_annotation(content: dict) -> Optional[str]:
 
     This assumption may not, and probably will not, hold for other sources.
 
+    If the annotation has a "dcterms:isPartOf" field within the target, the value of
+    "dcterms:isPartOf" will be returned. If there are a list of annotation targets, the first
+    parent will be returned.
+
     :param content: annotation object
     :return: target parent URI
     """
@@ -195,7 +204,8 @@ def parent_from_annotation(content: dict) -> Optional[str]:
 
 def parents_by_topic(elucidate: str, topic: str) -> Optional[str]:
     """
-    Parses results from an Elucidate topic search request, and yields parent/manifest URIs.
+    Generator parses results from an Elucidate topic search request, and yields parent/manifest
+    URIs.
 
     The code makes the assumption that, if passed a string for target, rather than an object,
     that manifest and canvas URI patterns follow the model used by the RESTful DLCS API model.
@@ -226,8 +236,7 @@ def batch_update_body(
 ) -> Tuple[int, dict]:
     """
     Use Elucidate's bulk update APIs to replace all instances of each of a list of body source or
-    id URIs
-    (aka a topic) with the new URI (aka topic).
+    id URIs (aka a topic) with the new URI (aka topic).
 
     https://github.com/dlcs/elucidate-server/blob/master/USAGE.md#batch-update
 
@@ -269,7 +278,7 @@ def batch_update_body(
 
 def batch_delete_topic(
     topic_id: str, elucidate_base: str, dry_run: bool = True
-) -> Tuple[int, dict]:
+) -> Tuple[int, str]:
     """
     Use Elucidate's batch update apis to delete all instances of a topic URI.
 
@@ -278,7 +287,7 @@ def batch_delete_topic(
     :param topic_id: topic id to delete
     :param elucidate_base: elucidate base URI, e.g. https://elucidate.example.org
     :param dry_run: if True, will simply log and then return a 200
-    :return: http POST status code
+    :return: tuple - http POST status code, JSON POSTed (as string)
     """
     post_uri = elucidate_base + "/annotation/w3c/services/batch/delete"
     post_data = json.dumps(
@@ -354,7 +363,7 @@ def gen_search_by_container_uri(
     elucidate_base: str, target_uri: Optional[str], model: str = "w3c"
 ) -> Optional[str]:
     """
-    Return the annotation container uri for a target. Assuming that the container URI
+    Return the annotation container uri for a target. Assumes that the container URI
     is an md5 hash of the target URI (as per current DLCS general practice).
 
     This URI can be passed to other functions to return the result of the query.
@@ -411,6 +420,7 @@ def get_items(uri: str) -> Optional[dict]:
 def item_ids(item: dict) -> Optional[str]:
     """
     Small helper function to yield identifier URI(s) for item from an Activity Streams item.
+    Will yield both '@id' and 'id' values.
 
 
     :param item: Item from an activity streams page
@@ -596,7 +606,7 @@ def create_anno(
 ) -> int:
     """
     POST an annotation to Elucidate, can be optionally passed a container, if container is None
-    will use the MD5 hash of the manifest or canvas target as the container.
+    will use the MD5 hash of the manifest or canvas target URI as the container name.
 
 
     :param elucidate_base: base URI for the annotation server, e.g. https://elucidate.example.org
@@ -761,8 +771,9 @@ def iiif_iterative_delete_by_manifest(
     IIIF Presentation API manifest itself.
 
     Requests annotations either by container or by target URI and iteratively deletes the
-    annotations by
-    id, one at a time, using HTTP DELETE. Does not use Elucidate's batch APIs.
+    annotations by id, one at a time, using HTTP DELETE.
+
+    Does not use Elucidate's batch delete APIs.
 
     :param dry_run: if True, will not actually delete
     :param method: identify the annotations to delete via container (hash) or search (Elucidate
@@ -813,9 +824,8 @@ def iiif_batch_delete_by_manifest(
 ) -> bool:
     """
     Provides a IIIF aware wrapper around the _batch_delete_by_target_ function. Requests a IIIF
-    Presentation API
-    manifest and deletes all of the annotations with the canvas or the manifest URIs as their
-    target.
+    Presentation API manifest and deletes all of the annotations with the canvas or the manifest
+    URIs as their target.
 
     Use Elucidate's batch delete API to delete everything with a given target id or target source
     URI.
@@ -862,7 +872,14 @@ def iiif_batch_delete_by_manifest(
     return all(statuses)
 
 
-def remove_keys(d, keys):
+def remove_keys(d: dict, keys: list) -> dict:
+    """
+    Remove keys from a dictionary.
+
+    :param d: dict to edit
+    :param keys: list of keys to remove
+    :return: dict with keys removed
+    """
     return {k: v for k, v in d.items() if k in (set(d.keys()) - set(keys))}
 
 
@@ -870,7 +887,8 @@ def target_extract(json_dict: dict, fake_selector: bool = False) -> Optional[str
     """
     Extract the target and turn into a simple 'on'.
 
-    Optionally, fake a selector (e.g. for whole canvas annotations)
+    Optionally, fake a selector, e.g. for whole canvas annotations, generate a target XYWH bounding
+    box at top left.
 
     :param fake_selector: if True, create a top left 50px box and associate with that.
     :param json_dict: annotation content as dictionary
@@ -893,7 +911,13 @@ def transform_annotation(
 ) -> Optional[dict]:
     """
     Transform an annotation given an arbitrary
-    function that is passed in. Assumes W3C to OA as the basic model.
+    function that is passed in.
+
+    For example, W3C to OA using "mirador_oa".
+
+    The function will remove keys not used in the Open Annotation model.
+
+    If no transform_function is provided the annotation will be returned unaltered.
 
     :param item: annotation
     :param flatten_at_ids: if True replace @id dict with simple "@id" : "foo"
@@ -933,7 +957,7 @@ def transform_annotation(
 def mirador_oa(w3c_body: dict) -> dict:
     """
     Transform a single W3C Web Annotation Body (e.g. as produced by Montague) and returns
-    formatted for Mirador.
+    formatted for Open Annotation in the  Mirador client.
 
     :param w3c_body: annotation body
     :return: transformed annotation body
