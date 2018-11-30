@@ -37,37 +37,32 @@ The code will insert the appropriate ``@context`` if no ``@context`` is provided
 
     from pyelucidate import pyelucidate
 
-
     anno = {
-       "@context": "http://www.w3.org/ns/anno.jsonld",
-      "type": "Annotation",
-      "body": [
-        {
-          "value": "Foo",
-          "purpose": "tagging"
-        }
-      ],
-      "target": {
-        "type": "SpecificResource",
-        "dcterms:isPartOf": {
-          "id": "http://example.org/manifest/foo/manifest.json",
-          "type": "sc:Manifest"
+        "@context": "http://www.w3.org/ns/anno.jsonld",
+        "type": "Annotation",
+        "body": [{"value": "Foo", "purpose": "tagging"}],
+        "target": {
+            "type": "SpecificResource",
+            "dcterms:isPartOf": {
+                "id": "http://example.org/manifest/foo/manifest.json",
+                "type": "sc:Manifest",
+            },
+            "selector": {
+                "type": "FragmentSelector",
+                "conformsTo": "http://www.w3.org/TR/media-frags/",
+                "value": "xywh=659,1646,174,62",
+            },
+            "source": "http://example.org/manifest/foo/canvas/274",
         },
-        "selector": {
-          "type": "FragmentSelector",
-          "conformsTo": "http://www.w3.org/TR/media-frags/",
-          "value": "xywh=659,1646,174,62"
-        },
-        "source": "http://example.org/manifest/foo/canvas/274"
-      },
-      "motivation": "tagging"
+        "motivation": "tagging",
     }
 
-
-    status_code, anno_id = pyelucidate.create_anno(elucidate_base="https://elucidate.example.org",
-                            model="w3c", annotation=anno)
+    status_code, anno_id = pyelucidate.create_anno(
+        elucidate_base="https://elucidate.example.org", model="w3c", annotation=anno
+    )
     assert status_code == 201
     assert anno_id is not None
+
 
 
 
@@ -109,3 +104,4 @@ The example below shows fetching an annotation, checking the purpose for the bod
         assert status == 204
 
 
+BBBB
