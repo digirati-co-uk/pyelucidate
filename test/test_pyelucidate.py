@@ -839,7 +839,8 @@ def test_create_container_error():
 
 
 def test_create_anno_no_elucidate():
-    assert elucidate.create_anno(elucidate_base="", annotation={"id": "foo"}) == 400
+    status_code, _ =  elucidate.create_anno(elucidate_base="", annotation={"id": "foo"})
+    assert status_code == 400
 
 
 @pytest.mark.datafiles(os.path.join(FIXTURE_DIR, "single_anno.json"))
@@ -851,17 +852,15 @@ def test_create_anno(datafiles):
         container = "foo/"
         elucidate_uri = "https://elucidate.example.org/annotation/w3c/"
         mock.register_uri("GET", elucidate_uri + container, status_code=200)
-        mock.register_uri("POST", elucidate_uri + "foo", status_code=201)
-        assert (
-            elucidate.create_anno(
+        mock.register_uri("POST", elucidate_uri + container, status_code=201, json=j1)
+        status_code, anno_return = elucidate.create_anno(
                 elucidate_base="https://elucidate.example.org",
                 model="w3c",
                 container="foo",
                 annotation=j1,
                 target="http://waylon.example.org/work/AVT/canvas/274",
             )
-            == 201
-        )
+        assert status_code == 201
 
 
 @pytest.mark.datafiles(os.path.join(FIXTURE_DIR, "single_anno.json"))
@@ -874,17 +873,15 @@ def test_create_anno_no_container(datafiles):
         elucidate_uri = "https://elucidate.example.org/annotation/w3c/"
         mock.register_uri("GET", elucidate_uri + container, status_code=404)
         mock.register_uri("POST", elucidate_uri, status_code=404)
-        mock.register_uri("POST", elucidate_uri + "foo")
-        assert (
-            elucidate.create_anno(
+        mock.register_uri("POST", elucidate_uri + container)
+        status_code, anno_id = elucidate.create_anno(
                 elucidate_base="https://elucidate.example.org",
                 model="w3c",
                 container="foo",
                 annotation=j1,
                 target="http://waylon.example.org/work/AVT/canvas/274",
             )
-            == 404
-        )
+        assert status_code == 404
 
 
 @pytest.mark.datafiles(os.path.join(FIXTURE_DIR, "single_anno.json"))
@@ -896,17 +893,15 @@ def test_create_anno_no_post(datafiles):
         container = "foo/"
         elucidate_uri = "https://elucidate.example.org/annotation/w3c/"
         mock.register_uri("GET", elucidate_uri + container, status_code=200)
-        mock.register_uri("POST", elucidate_uri + "foo", status_code=500)
-        assert (
-            elucidate.create_anno(
+        mock.register_uri("POST", elucidate_uri + container, status_code=500)
+        status_code, anno_id = elucidate.create_anno(
                 elucidate_base="https://elucidate.example.org",
                 model="w3c",
                 container="foo",
                 annotation=j1,
                 target="http://waylon.example.org/work/AVT/canvas/274",
             )
-            == 500
-        )
+        assert status_code == 500
 
 
 def test_create_anno_no_body():
@@ -915,16 +910,14 @@ def test_create_anno_no_body():
         elucidate_uri = "https://elucidate.example.org/annotation/w3c/"
         mock.register_uri("GET", elucidate_uri + container, status_code=200)
         mock.register_uri("POST", elucidate_uri + "foo", status_code=201)
-        assert (
-            elucidate.create_anno(
+        status_code, anno_id = elucidate.create_anno(
                 elucidate_base="https://elucidate.example.org",
                 model="w3c",
                 container="foo",
                 annotation={},
                 target="http://waylon.example.org/work/AVT/canvas/274",
             )
-            == 400
-        )
+        assert status_code == 400
 
 
 @pytest.mark.datafiles(os.path.join(FIXTURE_DIR, "single_anno.json"))
@@ -939,27 +932,26 @@ def test_create_anno_empty_container(datafiles):
             "POST",
             "https://elucidate.example.org/annotation/w3c/0c90f6a5254fcc667aa3b068c392aa97/",
             status_code=201,
+            json=j1
         )
         mock.register_uri(
             "GET",
             "https://elucidate.example.org/annotation/w3c/0c90f6a5254fcc667aa3b068c392aa97/",
-            status_code=200,
+            status_code=200
         )
         mock.register_uri(
             "POST",
             "https://elucidate.example.org/annotation/w3c/0c90f6a5254fcc667aa3b068c392aa97",
             status_code=201,
         )
-        assert (
-            elucidate.create_anno(
+        status_code, anno_id = elucidate.create_anno(
                 elucidate_base="https://elucidate.example.org",
                 model="w3c",
                 container=None,
                 annotation=j1,
                 target=None,
             )
-            == 201
-        )
+        assert status_code == 201
 
 
 def test_create_anno_empty_target():
@@ -999,16 +991,14 @@ def test_create_anno_empty_target():
         "target": "",
         "motivation": "tagging",
     }
-    assert (
-        elucidate.create_anno(
+    status_code, anno_id =  elucidate.create_anno(
             elucidate_base="https://elucidate.example.org",
             model="w3c",
             container=None,
             annotation=j1,
             target=None,
         )
-        == 400
-    )
+    assert status_code == 400
 
 
 def test_delete():

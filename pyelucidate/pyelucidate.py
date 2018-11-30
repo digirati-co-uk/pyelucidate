@@ -603,11 +603,12 @@ def create_anno(
     target: Optional[str] = None,
     container: Optional[str] = None,
     model: Optional[str] = "w3c",
-) -> int:
+) -> Tuple[int, Optional[str]]:
     """
     POST an annotation to Elucidate, can be optionally passed a container, if container is None
     will use the MD5 hash of the manifest or canvas target URI as the container name.
 
+    If no @context is provided, the code will insert the appropriate context based on the model.
 
     :param elucidate_base: base URI for the annotation server, e.g. https://elucidate.example.org
     :param target: target for the annotation (optional), will attempt to parse anno for target
@@ -615,7 +616,7 @@ def create_anno(
     :param annotation: annotation object
     :param container: container name (optional), will use hash of target uri if not present
     :param model: oa or w3c
-    :return: status code from Elucidate
+    :return: status code from Elucidate, annotation id (or none)
     """
     if elucidate_base:
         if annotation:
@@ -623,11 +624,12 @@ def create_anno(
             if not container:
                 if not target:
                     target = identify_target(annotation)
+                    print("Target", target)
                     if not target:
                         logging.error(
                             "Could not identify a target to hash for the container"
                         )
-                        return 400
+                        return 400, None
                 container = hashlib.md5(target.encode("utf-8")).hexdigest()
             elucidate = "/".join([elucidate_base, "annotation", model, ""])
             container_status = create_container(
@@ -638,23 +640,30 @@ def create_anno(
                     "Content-Type": "application/ld+json",
                     "Accept": 'application/ld+json;profile="http://www.w3.org/ns/anno.jsonld"',
                 }
-                post_uri = "/".join([elucidate_base, "annotation", model, container])
+                post_uri = "/".join([elucidate_base, "annotation", model, container, ""])
+                if not hasattr(annotation, "@context"):
+                    if model == "w3c":
+                        annotation["@context"] = "http://www.w3.org/ns/anno.jsonld"
+                    elif model == "oa":
+                        annotation["@context"] = "https://www.w3.org/ns/oa.jsonld"
                 anno_body = json.dumps(annotation, indent=4, sort_keys=True)
                 r = requests.post(post_uri, headers=anno_headers, data=anno_body)
                 if r.status_code in [200, 201]:
                     logging.debug("POST annotation at %s", post_uri)
+                    j = r.json()
+                    return r.status_code, j.get("id")
                 else:
                     logging.error("Could not POST annotation at %s", post_uri)
-                return r.status_code
+                return r.status_code, None
             else:
                 logging.error("No annotation container found")
-                return 404
+                return 404, None
         else:
             logging.error("No annotation body was provided")
-            return 400
+            return 400, None
     else:
         logging.error("No Elucidate URI was provided")
-        return 400
+        return 400, None
 
 
 def batch_delete_target(
