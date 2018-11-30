@@ -35,7 +35,7 @@ Full documentation at Readthedocs_.
 Requirements
 ------------
 
-Python 3.4+
+Python 3.5+
 
 Required python packages are listed in `requirements.txt`.
 
