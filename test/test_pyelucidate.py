@@ -842,9 +842,11 @@ def test_create_anno_no_elucidate():
     assert elucidate.create_anno(elucidate_base="", annotation={"id": "foo"}) == 400
 
 
-def test_create_anno():
+@pytest.mark.datafiles(os.path.join(FIXTURE_DIR, "single_anno.json"))
+def test_create_anno(datafiles):
+    path = str(datafiles)
     with requests_mock.Mocker() as mock:
-        with open("single_anno.json", "r") as f:
+        with open(os.path.join(path, "single_anno.json"), "r") as f:
             j1 = json.load(f)
         container = "foo/"
         elucidate_uri = "https://elucidate.example.org/annotation/w3c/"
@@ -862,9 +864,11 @@ def test_create_anno():
         )
 
 
-def test_create_anno_no_container():
+@pytest.mark.datafiles(os.path.join(FIXTURE_DIR, "single_anno.json"))
+def test_create_anno_no_container(datafiles):
+    path = str(datafiles)
     with requests_mock.Mocker() as mock:
-        with open("single_anno.json", "r") as f:
+        with open(os.path.join(path, "single_anno.json"), "r") as f:
             j1 = json.load(f)
         container = "foo/"
         elucidate_uri = "https://elucidate.example.org/annotation/w3c/"
@@ -883,9 +887,11 @@ def test_create_anno_no_container():
         )
 
 
-def test_create_anno_no_post():
+@pytest.mark.datafiles(os.path.join(FIXTURE_DIR, "single_anno.json"))
+def test_create_anno_no_post(datafiles):
+    path = str(datafiles)
     with requests_mock.Mocker() as mock:
-        with open("single_anno.json", "r") as f:
+        with open(os.path.join(path, "single_anno.json"), "r") as f:
             j1 = json.load(f)
         container = "foo/"
         elucidate_uri = "https://elucidate.example.org/annotation/w3c/"
@@ -921,9 +927,11 @@ def test_create_anno_no_body():
         )
 
 
-def test_create_anno_empty_container():
+@pytest.mark.datafiles(os.path.join(FIXTURE_DIR, "single_anno.json"))
+def test_create_anno_empty_container(datafiles):
+    path = str(datafiles)
     with requests_mock.Mocker() as mock:
-        with open("single_anno.json", "r") as f:
+        with open(os.path.join(path, "single_anno.json"), "r") as f:
             j1 = json.load(f)
         elucidate_uri = "https://elucidate.example.org/annotation/w3c/"
         mock.register_uri("GET", elucidate_uri, status_code=200)
@@ -955,8 +963,12 @@ def test_create_anno_empty_container():
 
 
 def test_create_anno_empty_target():
+    i = (
+        "https://elucidate.example.org/annotation/w3c/fd8c7a22abcde179e30850b5d1f7c439/"
+        + "8cbec70c-e859-4624-b1e3-1bbec5bcca85",
+    )
     j1 = {
-        "id": "https://elucidate.example.org/annotation/w3c/fd8c7a22abcde179e30850b5d1f7c439/8cbec70c-e859-4624-b1e3-1bbec5bcca85",
+        "id": i,
         "type": "Annotation",
         "creator": "https://montague.example.org/",
         "generator": "https://montague.example.org/",
@@ -1057,9 +1069,11 @@ def test_batch_delete_dry():
     )
 
 
-def test_iterative_delete_by_target_dryrun():
+@pytest.mark.datafiles(os.path.join(FIXTURE_DIR, "search_by_target.json"))
+def test_iterative_delete_by_target_dryrun(datafiles):
+    path = str(datafiles)
     with requests_mock.Mocker() as mock:
-        with open("search_by_target.json", "r") as f:
+        with open(os.path.join(path, "search_by_target.json"), "r") as f:
             search_by_target = json.load(f)
         t = "http%3A%2F%2Fiiif.io%2Fapi%2Fpresentation%2F2.0%2Fexample%2Ffixtures%2Fcanvas%2F19%2Fc1.json"
         u = (
@@ -1103,9 +1117,11 @@ def test_iterative_delete_by_target_dryrun():
         )
 
 
-def test_iterative_delete_by_target():
+@pytest.mark.datafiles(os.path.join(FIXTURE_DIR, "search_by_target.json"))
+def test_iterative_delete_by_target(datafiles):
+    path = str(datafiles)
     with requests_mock.Mocker() as mock:
-        with open("search_by_target.json", "r") as f:
+        with open(os.path.join(path, "search_by_target.json"), "r") as f:
             search_by_target = json.load(f)
         t = "http://iiif.io/api/presentation/2.0/example/fixtures/canvas/19/c1.json"
         u = (
@@ -1149,9 +1165,11 @@ def test_iterative_delete_by_target():
         )
 
 
-def test_iterative_delete_by_target_error():
+@pytest.mark.datafiles(os.path.join(FIXTURE_DIR, "search_by_target.json"))
+def test_iterative_delete_by_target_error(datafiles):
+    path = str(datafiles)
     with requests_mock.Mocker() as mock:
-        with open("search_by_target.json", "r") as f:
+        with open(os.path.join(path, "search_by_target.json"), "r") as f:
             search_by_target = json.load(f)
         t = "http%3A%2F%2Fiiif.io%2Fapi%2Fpresentation%2F2.0%2Fexample%2Ffixtures%2Fcanvas%2F19%2Fc1.json"
         u = (
@@ -1195,9 +1213,11 @@ def test_iterative_delete_by_target_error():
         )
 
 
-def test_iterative_delete_by_target_error_method():
+@pytest.mark.datafiles(os.path.join(FIXTURE_DIR, "search_by_target.json"))
+def test_iterative_delete_by_target_error_method(datafiles):
+    path = str(datafiles)
     with requests_mock.Mocker() as mock:
-        with open("search_by_target.json", "r") as f:
+        with open(os.path.join(path, "search_by_target.json"), "r") as f:
             search_by_target = json.load(f)
         t = "http%3A%2F%2Fiiif.io%2Fapi%2Fpresentation%2F2.0%2Fexample%2Ffixtures%2Fcanvas%2F19%2Fc1.json"
         u = (
@@ -1241,9 +1261,11 @@ def test_iterative_delete_by_target_error_method():
         )
 
 
-def test_iterative_delete_by_target_container():
+@pytest.mark.datafiles(os.path.join(FIXTURE_DIR, "container.json"))
+def test_iterative_delete_by_target_container(datafiles):
+    path = str(datafiles)
     with requests_mock.Mocker() as mock:
-        with open("container.json", "r") as f:
+        with open(os.path.join(path, "container.json"), "r") as f:
             container = json.load(f)
         t = "http://iiif.io/api/presentation/2.0/example/fixtures/canvas/19/c1.json"
         u = "https://elucidate.example.org/annotation/w3c/6913ae2c2f5a7b6e59bc1d88192be0f6/"
@@ -1284,9 +1306,11 @@ def test_iterative_delete_by_target_container():
         )
 
 
-def test_iterative_delete_by_target_empty_container():
+@pytest.mark.datafiles(os.path.join(FIXTURE_DIR, "container_empty.json"))
+def test_iterative_delete_by_target_empty_container(datafiles):
+    path = str(datafiles)
     with requests_mock.Mocker() as mock:
-        with open("container_empty.json", "r") as f:
+        with open(os.path.join(path, "container_empty.json"), "r") as f:
             container = json.load(f)
         t = "http://iiif.io/api/presentation/2.0/example/fixtures/canvas/19/c1.json"
         u = "https://elucidate.example.org/annotation/w3c/6913ae2c2f5a7b6e59bc1d88192be0f6/"
@@ -1356,15 +1380,20 @@ def test_batch_update_topics_error():
         assert result_code == 500
 
 
-def test_iterative_delete_by_manifest_dry():
+@pytest.mark.datafiles(
+    os.path.join(FIXTURE_DIR, "manifest_fixture.json"),
+    os.path.join(FIXTURE_DIR, "search_by_target.json"),
+)
+def test_iterative_delete_by_manifest_dry(datafiles):
     """
     Uses existing test JSON
     :return:
     """
+    path = str(datafiles)
     with requests_mock.Mocker() as mock:
-        with open("manifest_fixture.json", "r") as f:
+        with open(os.path.join(path, "manifest_fixture.json"), "r") as f:
             m = json.load(f)
-        with open("search_by_target.json", "r") as f1:
+        with open(os.path.join(path, "search_by_target.json"), "r") as f1:
             j = json.load(f1)
         uri0 = (
             "https://elucidate.example.org/annotation/w3c/services/search/target?fields=source,id&value="
@@ -1400,13 +1429,6 @@ def test_iterative_delete_by_manifest_dry():
                 headers={"ETag": 'W/"92d446c4402486f44b98c360c030b672'},
                 json={"id": anno_uri},
             )
-            # mock.register_uri(
-            #     "DELETE",
-            #     url=anno_uri,
-            #     status_code=204,
-            #     headers={"ETag": 'W/"92d446c4402486f44b98c360c030b672'},
-            #     json={"id": anno_uri},
-            # )
         status = elucidate.iiif_iterative_delete_by_manifest(
             manifest_uri=m["@id"],
             elucidate_uri="https://elucidate.example.org",
@@ -1415,11 +1437,16 @@ def test_iterative_delete_by_manifest_dry():
         assert status is True
 
 
-def test_iterative_delete_by_manifest():
+@pytest.mark.datafiles(
+    os.path.join(FIXTURE_DIR, "manifest_fixture.json"),
+    os.path.join(FIXTURE_DIR, "search_by_target.json"),
+)
+def test_iterative_delete_by_manifest(datafiles):
+    path = str(datafiles)
     with requests_mock.Mocker() as mock:
-        with open("manifest_fixture.json", "r") as f:
+        with open(os.path.join(path, "manifest_fixture.json"), "r") as f:
             m = json.load(f)
-        with open("search_by_target.json", "r") as f1:
+        with open(os.path.join(path, "search_by_target.json"), "r") as f1:
             j = json.load(f1)
         uri0 = (
             "https://elucidate.example.org/annotation/w3c/services/search/target?fields=source,id&value="
@@ -1470,13 +1497,15 @@ def test_iterative_delete_by_manifest():
         assert status is True
 
 
-def test_iterative_delete_by_manifest_no_sequence():
+@pytest.mark.datafiles(os.path.join(FIXTURE_DIR, "manifest_fixture_no_sequence.json"))
+def test_iterative_delete_by_manifest_no_sequence(datafiles):
     """
     Uses existing test JSON
     :return:
     """
+    path = str(datafiles)
     with requests_mock.Mocker() as mock:
-        with open("manifest_fixture_no_sequence.json", "r") as f:
+        with open(os.path.join(path, "manifest_fixture_no_sequence.json"), "r") as f:
             m = json.load(f)
         mock.register_uri("GET", url=m["@id"], json=m)
         status = elucidate.iiif_iterative_delete_by_manifest(
@@ -1487,13 +1516,15 @@ def test_iterative_delete_by_manifest_no_sequence():
         assert status is False
 
 
-def test_iterative_delete_by_manifest_no_canvases():
+@pytest.mark.datafiles(os.path.join(FIXTURE_DIR, "manifest_fixture_no_canvases.json"))
+def test_iterative_delete_by_manifest_no_canvases(datafiles):
     """
     Uses existing test JSON
     :return:
     """
+    path = str(datafiles)
     with requests_mock.Mocker() as mock:
-        with open("manifest_fixture_no_canvases.json", "r") as f:
+        with open(os.path.join(path, "manifest_fixture_no_canvases.json"), "r") as f:
             m = json.load(f)
         mock.register_uri("GET", url=m["@id"], json=m)
         status = elucidate.iiif_iterative_delete_by_manifest(
@@ -1523,15 +1554,20 @@ def test_iterative_delete_by_manifest_404():
         assert status is False
 
 
-def test_batch_delete_by_manifest_dry():
+@pytest.mark.datafiles(
+    os.path.join(FIXTURE_DIR, "manifest_fixture.json"),
+    os.path.join(FIXTURE_DIR, "search_by_target.json"),
+)
+def test_batch_delete_by_manifest_dry(datafiles):
     """
     Uses existing test JSON
     :return:
     """
+    path = str(datafiles)
     with requests_mock.Mocker() as mock:
-        with open("manifest_fixture.json", "r") as f:
+        with open(os.path.join(path, "manifest_fixture.json"), "r") as f:
             m = json.load(f)
-        with open("search_by_target.json", "r") as f1:
+        with open(os.path.join(path, "search_by_target.json"), "r") as f1:
             j = json.load(f1)
         uri0 = (
             "https://elucidate.example.org/annotation/w3c/services/search/target?fields=source,id&value="
@@ -1567,13 +1603,6 @@ def test_batch_delete_by_manifest_dry():
                 headers={"ETag": 'W/"92d446c4402486f44b98c360c030b672'},
                 json={"id": anno_uri},
             )
-            # mock.register_uri(
-            #     "DELETE",
-            #     url=anno_uri,
-            #     status_code=204,
-            #     headers={"ETag": 'W/"92d446c4402486f44b98c360c030b672'},
-            #     json={"id": anno_uri},
-            # )
         status = elucidate.iiif_batch_delete_by_manifest(
             manifest_uri=m["@id"],
             elucidate_uri="https://elucidate.example.org",
@@ -1582,13 +1611,15 @@ def test_batch_delete_by_manifest_dry():
         assert status is True
 
 
-def test_batch_delete_by_manifest_no_sequence():
+@pytest.mark.datafiles(os.path.join(FIXTURE_DIR, "manifest_fixture_no_sequence.json"))
+def test_batch_delete_by_manifest_no_sequence(datafiles):
     """
     Uses existing test JSON
     :return:
     """
+    path = str(datafiles)
     with requests_mock.Mocker() as mock:
-        with open("manifest_fixture_no_sequence.json", "r") as f:
+        with open(os.path.join(path, "manifest_fixture_no_sequence.json"), "r") as f:
             m = json.load(f)
         mock.register_uri("GET", url=m["@id"], json=m)
         status = elucidate.iiif_batch_delete_by_manifest(
@@ -1599,13 +1630,15 @@ def test_batch_delete_by_manifest_no_sequence():
         assert status is False
 
 
-def test_batch_delete_by_manifest_no_canvases():
+@pytest.mark.datafiles(os.path.join(FIXTURE_DIR, "manifest_fixture_no_canvases.json"))
+def test_batch_delete_by_manifest_no_canvases(datafiles):
     """
     Uses existing test JSON
     :return:
     """
+    path = str(datafiles)
     with requests_mock.Mocker() as mock:
-        with open("manifest_fixture_no_canvases.json", "r") as f:
+        with open(os.path.join(path, "manifest_fixture_no_canvases.json"), "r") as f:
             m = json.load(f)
         mock.register_uri("GET", url=m["@id"], json=m)
         status = elucidate.iiif_batch_delete_by_manifest(
