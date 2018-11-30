@@ -18,7 +18,7 @@ doclink = """
 Documentation
 -------------
 
-The full documentation is at http://pyelucidate.rtfd.org."""
+The full documentation is at https://pyelucidate.readthedocs.io."""
 history = open('HISTORY.rst').read().replace('.. :changelog:', '')
 
 setup(
