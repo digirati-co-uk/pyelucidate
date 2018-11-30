@@ -76,7 +76,7 @@ GET an annotation
 
 Will fetch the annotation and return annotation plus the ETag for the annotation.
 
-.. code-block::python
+.. code-block:: python
 
     from pyelucidate import pyelucidate
     import json
@@ -87,4 +87,25 @@ Will fetch the annotation and return annotation plus the ETag for the annotation
 
 DELETE an annotation
 --------------------
+
+The W3C Web Annotation Protocol requires an ``If-Match`` header with the ETag for the
+annotation. This function requires the ETag to be provided.
+
+If ``dry_run`` is ``True`` (the default), the function will return a 204 without deleting the annotation.
+
+The example below shows fetching an annotation, checking the purpose for the body, and deleting the annotation.
+
+
+.. code-block:: python
+
+    from pyelucidate import pyelucidate
+
+    annotation, etag = pyelucidate.read_anno("https://elucidate.glam-dev.org/annotation/w3c"
+                              "/36b74ab23429078e9a8631ed4a471095/0ef3db79-c6a0-4755-a0a1-8ba660f81e93")
+
+
+    if annotation["body"]["purpose"] == "tagging":
+        status = pyelucidate.delete_anno(anno_uri = annotation["id"], etag=etag, dry_run=False)
+        assert status == 204
+
 

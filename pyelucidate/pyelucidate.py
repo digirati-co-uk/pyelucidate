@@ -103,7 +103,7 @@ def items_by_body_source(elucidate: str, topic: str, strict: bool = True) -> dic
 
     .. code-block:: json
 
-      "body": [
+      {"body": [
                 {
                   "type": "SpecificResource",
                   "format": "application/html",
@@ -112,7 +112,7 @@ def items_by_body_source(elucidate: str, topic: str, strict: bool = True) -> dic
                   "purpose": "tagging",
                   "source": "https://www.example.org/themes/foo"
                 }
-            ]
+            ]}
 
     This function will query Elucidate for all annotations with body id or body source ==
     "https://www.example.org/themes/foo".
