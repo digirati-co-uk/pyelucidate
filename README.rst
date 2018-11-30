@@ -27,6 +27,11 @@ __ W3CA_
 .. _usage: https://github.com/dlcs/elucidate-server/blob/master/USAGE.md
 
 
+Full documentation at Readthedocs_.
+
+.. _Readthedocs: https://pyelucidate.readthedocs.io
+
+
 Requirements
 ------------
 
