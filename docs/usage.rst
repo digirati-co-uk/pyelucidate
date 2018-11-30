@@ -76,7 +76,7 @@ Will fetch the annotation and return annotation plus the ETag for the annotation
     from pyelucidate import pyelucidate
     import json
 
-    annotation, etag = pyelucidate.read_anno("https://elucidate.glam-dev.org/annotation/w3c"
+    annotation, etag = pyelucidate.read_anno("https://elucidate.example.org/annotation/w3c"
                               "/36b74ab23429078e9a8631ed4a471095/0ef3db79-c6a0-4755-a0a1-8ba660f81e93")
 
 
@@ -95,7 +95,7 @@ The example below shows fetching an annotation, checking the purpose for the bod
 
     from pyelucidate import pyelucidate
 
-    annotation, etag = pyelucidate.read_anno("https://elucidate.glam-dev.org/annotation/w3c"
+    annotation, etag = pyelucidate.read_anno("https://elucidate.example.org/annotation/w3c"
                               "/36b74ab23429078e9a8631ed4a471095/0ef3db79-c6a0-4755-a0a1-8ba660f81e93")
 
 
