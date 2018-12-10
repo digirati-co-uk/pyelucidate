@@ -195,3 +195,126 @@ The example below shows fetching an annotation, updating the body, and updating 
     assert annotation["body"]["value"] == "foo"
 
 
+Elucidate Services
+==================
+
+Elucidate provides a number of additional services which extend the W3C Web Annotation Protocol.
+
+
+Query by body source
+--------------------
+
+Query Elucidate for all annotations with a specified body source.
+
+Typical usage:
+
+    For tagging annotations, where the target is tagged with a particular topic URI, return all annotations
+    that have been tagged with that topic URI.
+
+For example, to find all annotations, tagged with `https://omeka.example.org/topic/virtual:person/mary+smith`:
+
+
+.. code-block:: python
+
+    from pyelucidate import pyelucidate
+
+
+    annotations = pyelucidate.items_by_body_source(elucidate="http://elucidate.example.org",
+                                                   strict=True,
+                                                   topic="https://omeka.example.org/topic/virtual:person/mary+smith")
+
+    # identifiers for annotations with body source
+    anno_ids = [a["id"] for a in annotations]
+
+
+This function is a generator that yields the annotations.
+
+The `strict` parameter sets whether Elucidate does a prefix style search or looks for an exact match.
+
+Query by target
+---------------
+
+Query Elucidate for all annotations with a specified target.
+
+Typical usage:
+
+    For a IIIF canvas, return all annotations with that canvas as target.
+
+
+PyElucidate provides a single asynchronous function (see below), but a non-asynchronous version can be done with
+PyElucidate's helper functions.
+
+Search by annotation target:
+
+.. code-block:: python
+
+    from pyelucidate import pyelucidate
+    import requests
+    import json
+
+    # generate a search to Elucidate, using Elucidate's search API to search target id and target source
+    search_uri = pyelucidate.gen_search_by_target_uri(elucidate_base="https://elucidate.example.org", model="w3c",
+                                                      target_uri="http://iiif.example.org/iiif/manfiest/1/canvas/4",
+                                                      field=["id", "source"])
+
+    r = requests.get(search_uri)
+
+    annotations = []
+
+    if r.status_code == requests.codes.ok:
+        for page in pyelucidate.annotation_pages(r.json()):  # PyElucidate helper for handling activity streams paging.
+            annotations.extend(requests.get(page).json()["items"])
+
+    print(json.dumps(annotations, indent=4))
+
+
+Search by container (assumes the container is an MD5 hash of the target URI):
+
+.. code-block:: python
+
+    from pyelucidate import pyelucidate
+    import requests
+    import json
+
+    # generate a search to Elucidate, using Elucidate's search API to request a container's contents
+    search_uri = pyelucidate.gen_search_by_container_uri(elucidate_base="https://elucidate.glam-dev.org", model="w3c",
+                                                         target_uri="http://iiif.example.org/iiif/manfiest/1/canvas/4")
+
+
+    r = requests.get(search_uri)
+
+    annotations = []
+
+    if r.status_code == requests.codes.ok:
+        for page in pyelucidate.annotation_pages(r.json()):  # PyElucidate helper for handling activity streams paging.
+            annotations.extend(requests.get(page).json()["items"])
+
+    print(json.dumps(annotations, indent=4))
+
+
+Parents by body source
+----------------------
+
+Query Elucidate for all annotations with a specified body source, and return a list of parents.
+
+Typical usage:
+
+    For tagging annotations, where the target is tagged with a particular topic URI, return all parent manifests for
+    canvases that have been tagged with that topic URI.
+
+
+Bulk update
+-----------
+
+Placeholder
+
+Bulk delete
+-----------
+
+Placeholder
+
+Asynchronous functions
+======================
+
+Elucidate provides a number of additional services which extend the W3C Web Annotation Protocol. PyElucidate provides
+asynchronous versions of these functions which can make parallel requests for efficient return of results.
