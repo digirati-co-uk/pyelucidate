@@ -630,6 +630,38 @@ def create_anno(
         return 400, None
 
 
+def update_anno(anno_uri: str,
+                anno_content: dict,
+                etag: str,
+                dry_run: bool = True) -> int:
+    """
+    Update an individual annotation, requires etag.
+
+    Optionally, can be run as a dry run which will not update the annotation but will return a 200.
+
+    :param anno_uri: URI for annotation
+    :param anno_content: the annotation content
+    :param etag: ETag
+    :param dry_run: if True, log and return a 200
+    :return: return PUT request status code
+    """
+    header_dict = {
+        "If-Match": etag,
+        "Accept": 'application/ld+json; profile="http://www.w3.org/ns/anno.jsonld"',
+        "Content-Type": 'application/ld+json; profile="http://www.w3.org/ns/anno.jsonld"',
+    }
+    if not dry_run:
+        r = requests.put(url=anno_uri, data=json.dumps(anno_content), headers=header_dict)
+        if r.status_code == 200:
+            logging.info("Update %s", anno_uri)
+        else:
+            logging.error("Failed to update %s server returned %s", anno_uri, r.status_code)
+        return r.status_code
+    else:  # log and return a 200
+        logging.debug("Dry run")
+        return 200
+
+
 def batch_delete_target(target_uri: str, elucidate_uri: str, dry_run: bool = True) -> int:
     """
     Use Elucidate's batch delete API to delete everything with a given target id or target source

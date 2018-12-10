@@ -23,7 +23,7 @@ history = open('HISTORY.rst').read().replace('.. :changelog:', '')
 
 setup(
     name='pyelucidate',
-    version='0.1.0',
+    version='0.2.0',
     description='Open Source Python Tools for the Elucidate Annotation Server.',
     long_description=readme + '\n\n' + doclink + '\n\n' + history,
     author='Matt McGrattan',
@@ -36,7 +36,8 @@ setup(
     tests_require=["pytest"],
     package_dir={'pyelucidate': 'pyelucidate'},
     include_package_data=True,
-    install_requires=[
+    install_requires=['aiohttp>=3.4.4',
+                      'requests>=2.20.1'
     ],
     license='MIT',
     zip_safe=False,
