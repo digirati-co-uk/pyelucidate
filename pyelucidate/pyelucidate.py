@@ -214,7 +214,7 @@ def parents_by_topic(elucidate: str, topic: str) -> Optional[str]:
     :return: manifest URI
     """
     if topic:
-        for count, anno in enumerate(items_by_body_source(elucidate, topic)):
+        for count, anno in enumerate(items_by_body_source(elucidate, topic, strict=True)):
             m = parent_from_annotation(anno)
             if m:
                 yield m
@@ -1066,43 +1066,44 @@ def async_items_by_target(elucidate: str, target_uri: str, **kwargs) -> dict:
         )  # tasks to do
         pages = loop.run_until_complete(future)  # loop until done
         for page in pages:
-            for item in page["items"]:
-                # will not return if the annotation doesn't have the
-                # filter property, e.g. {"creator": ["id": "https://example.org/users/foo"]}
-                # if the value of they is a simple string, e.g. if the annotation has
-                # "creator" : ""https://example.org/users/foo"
-                # the code will ignore the "id" key, and check that all values match,
-                # irresepctive of
-                # the key.
-                if filter_by:
-                    for filter_key, filter_value_list in filter_by.items():
-                        for filter_value in filter_value_list:
-                            if item.get(filter_key):
-                                if isinstance(item.get(filter_key), dict):
-                                    if all(
-                                        [item[filter_key][k] == v for k, v in filter_value.items()]
-                                    ):
-                                        yield transform_annotation(
-                                            item=item,
-                                            flatten_at_ids=kwargs.get("flatten_ids"),
-                                            transform_function=kwargs.get("trans_function"),
-                                        )
-                                elif isinstance(item.get(filter_key), str):
-                                    if all(
-                                        [item[filter_key] == v for k, v in filter_value.items()]
-                                    ):
-                                        yield transform_annotation(
-                                            item=item,
-                                            flatten_at_ids=kwargs.get("flatten_ids"),
-                                            transform_function=kwargs.get("trans_function"),
-                                        )
+            if page.get("items"):
+                for item in page["items"]:
+                    # will not return if the annotation doesn't have the
+                    # filter property, e.g. {"creator": ["id": "https://example.org/users/foo"]}
+                    # if the value of they is a simple string, e.g. if the annotation has
+                    # "creator" : ""https://example.org/users/foo"
+                    # the code will ignore the "id" key, and check that all values match,
+                    # irresepctive of
+                    # the key.
+                    if filter_by:
+                        for filter_key, filter_value_list in filter_by.items():
+                            for filter_value in filter_value_list:
+                                if item.get(filter_key):
+                                    if isinstance(item.get(filter_key), dict):
+                                        if all(
+                                            [item[filter_key][k] == v for k, v in filter_value.items()]
+                                        ):
+                                            yield transform_annotation(
+                                                item=item,
+                                                flatten_at_ids=kwargs.get("flatten_ids"),
+                                                transform_function=kwargs.get("trans_function"),
+                                            )
+                                    elif isinstance(item.get(filter_key), str):
+                                        if all(
+                                            [item[filter_key] == v for k, v in filter_value.items()]
+                                        ):
+                                            yield transform_annotation(
+                                                item=item,
+                                                flatten_at_ids=kwargs.get("flatten_ids"),
+                                                transform_function=kwargs.get("trans_function"),
+                                            )
 
-                else:
-                    yield transform_annotation(
-                        item=item,
-                        flatten_at_ids=kwargs.get("flatten_ids"),
-                        transform_function=kwargs.get("trans_function"),
-                    )
+                    else:
+                        yield transform_annotation(
+                            item=item,
+                            flatten_at_ids=kwargs.get("flatten_ids"),
+                            transform_function=kwargs.get("trans_function"),
+                        )
 
 
 def async_items_by_container(
@@ -1139,39 +1140,40 @@ def async_items_by_container(
             )  # tasks to do
             pages = loop.run_until_complete(future)  # loop until done
             for page in pages:
-                for item in page["items"]:
-                    if filter_by:
-                        for filter_key, filter_value_list in filter_by.items():
-                            for filter_value in filter_value_list:
-                                if item.get(filter_key):
-                                    if isinstance(item.get(filter_key), dict):
-                                        if all(
-                                            [
-                                                item[filter_key][k] == v
-                                                for k, v in filter_value.items()
-                                            ]
-                                        ):
-                                            yield transform_annotation(
-                                                item=item,
-                                                flatten_at_ids=kwargs.get("flatten_ids"),
-                                                transform_function=kwargs.get("trans_function"),
-                                            )
-                                    elif isinstance(item.get(filter_key), str):
-                                        if all(
-                                            [item[filter_key] == v for k, v in filter_value.items()]
-                                        ):
-                                            yield transform_annotation(
-                                                item=item,
-                                                flatten_at_ids=kwargs.get("flatten_ids"),
-                                                transform_function=kwargs.get("trans_function"),
-                                            )
+                if page.get("items"):
+                    for item in page["items"]:
+                        if filter_by:
+                            for filter_key, filter_value_list in filter_by.items():
+                                for filter_value in filter_value_list:
+                                    if item.get(filter_key):
+                                        if isinstance(item.get(filter_key), dict):
+                                            if all(
+                                                [
+                                                    item[filter_key][k] == v
+                                                    for k, v in filter_value.items()
+                                                ]
+                                            ):
+                                                yield transform_annotation(
+                                                    item=item,
+                                                    flatten_at_ids=kwargs.get("flatten_ids"),
+                                                    transform_function=kwargs.get("trans_function"),
+                                                )
+                                        elif isinstance(item.get(filter_key), str):
+                                            if all(
+                                                [item[filter_key] == v for k, v in filter_value.items()]
+                                            ):
+                                                yield transform_annotation(
+                                                    item=item,
+                                                    flatten_at_ids=kwargs.get("flatten_ids"),
+                                                    transform_function=kwargs.get("trans_function"),
+                                                )
 
-                    else:
-                        yield transform_annotation(
-                            item=item,
-                            flatten_at_ids=kwargs.get("flatten_ids"),
-                            transform_function=kwargs.get("trans_function"),
-                        )
+                        else:
+                            yield transform_annotation(
+                                item=item,
+                                flatten_at_ids=kwargs.get("flatten_ids"),
+                                transform_function=kwargs.get("trans_function"),
+                            )
     else:
         return
 
