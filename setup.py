@@ -23,7 +23,7 @@ history = open("HISTORY.rst").read().replace(".. :changelog:", "")
 
 setup(
     name="pyelucidate",
-    version="0.2.1",
+    version="0.2.2",
     description="Open Source Python Tools for the Elucidate Annotation Server.",
     long_description=readme + "\n\n" + doclink + "\n\n" + history,
     author="Matt McGrattan",
