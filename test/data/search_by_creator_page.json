@@ -1,0 +1,2679 @@
+{
+  "@context" : [ "http://www.w3.org/ns/anno.jsonld", "http://www.w3.org/ns/ldp.jsonld" ],
+  "type" : "AnnotationPage",
+  "items" : [ {
+    "id" : "https://elucidate.example.org/annotation/w3c/a1183ac2ac312f7414aecfc0445330b5/7e2fb4ad-3dd6-4676-bad2-88e8d3d344d9",
+    "type" : "Annotation",
+    "created" : "2018-12-07T12:09:26+00:00",
+    "creator" : {
+      "id" : "https://omeka.example.org/admin/user/65",
+      "type" : "Person",
+      "email_sha1" : "20c7467091102bee73352e97a925c411107c8e8b",
+      "name" : "Digirati",
+      "nickname" : "Digirati"
+    },
+    "label" : "san ildefonso",
+    "generator" : "https://omeka.example.org/s/ida/annotation-studio/open/tagging/725",
+    "body" : [ {
+      "type" : "SpecificResource",
+      "format" : "application/html",
+      "purpose" : "tagging",
+      "source" : "https://omeka.example.org/s/ida/page/topics/tribe/san+ildefonso"
+    }, {
+      "type" : "Text",
+      "format" : "text/plain",
+      "value" : "san ildefonso",
+      "purpose" : "tagging"
+    }, {
+      "value" : "entity:tribe",
+      "purpose" : "tagging"
+    } ],
+    "target" : {
+      "id" : "https://presley.example.org/iiif/idatest01/_roll_M-1011_127_cvs-562-601/canvas/c600#xywh=1746,2091,184,57",
+      "type" : "Canvas",
+      "dcterms:isPartOf" : {
+        "id" : "https://presley.example.org/iiif/idatest01/_roll_M-1011_127_cvs-562-601/manifest",
+        "type" : "Manifest",
+        "label" : "Santa Fe School Annual Report, 1914"
+      }
+    },
+    "motivation" : {
+      "id" : "oa:tagging",
+      "label" : "Tagging"
+    }
+  }, {
+    "id" : "https://elucidate.example.org/annotation/w3c/d6bb6f214973958bd77e47fd2b38bc46/73870b0f-8695-42c6-b765-f256ce7a04d7",
+    "type" : "Annotation",
+    "created" : "2018-10-16T11:04:11+00:00",
+    "creator" : {
+      "id" : "https://omeka.example.org/admin/user/65",
+      "type" : "Person",
+      "email_sha1" : "20c7467091102bee73352e97a925c411107c8e8b",
+      "name" : "Digirati",
+      "nickname" : "Digirati"
+    },
+    "label" : "jemez",
+    "generator" : "https://omeka.example.org/s/ida/annotation-studio/open/tagging/725",
+    "body" : [ {
+      "type" : "SpecificResource",
+      "format" : "application/html",
+      "purpose" : "tagging",
+      "source" : "https://omeka.example.org/s/ida/page/topics/tribe/jemez"
+    }, {
+      "type" : "Text",
+      "format" : "text/plain",
+      "value" : "jemez",
+      "purpose" : "tagging"
+    }, {
+      "value" : "entity:tribe",
+      "purpose" : "tagging"
+    } ],
+    "target" : {
+      "id" : "https://presley.example.org/iiif/idatest01/_roll_M-1473_38_cvs-939-1012/canvas/c988#xywh=431,840,209,61",
+      "type" : "Canvas",
+      "dcterms:isPartOf" : {
+        "id" : "https://presley.example.org/iiif/idatest01/_roll_M-1473_38_cvs-939-1012/manifest",
+        "type" : "Manifest",
+        "label" : "Santa Fe Superintendent General Records, 1887-1913"
+      }
+    },
+    "motivation" : {
+      "id" : "oa:tagging",
+      "label" : "Tagging"
+    }
+  }, {
+    "id" : "https://elucidate.example.org/annotation/w3c/0f0b7c6071a5f4b1b15f4d407c30df11/9b2cb589-5a9a-4e14-9573-c20c4e773195",
+    "type" : "Annotation",
+    "created" : "2018-10-12T14:23:07+00:00",
+    "creator" : {
+      "id" : "https://omeka.example.org/admin/user/65",
+      "type" : "Person",
+      "email_sha1" : "20c7467091102bee73352e97a925c411107c8e8b",
+      "name" : "Digirati",
+      "nickname" : "Digirati"
+    },
+    "label" : "Leupp Indian School",
+    "generator" : "https://omeka.example.org/s/ida/annotation-studio/open/tagging/721",
+    "body" : [ {
+      "type" : "SpecificResource",
+      "format" : "application/html",
+      "purpose" : "tagging",
+      "source" : "https://omeka.example.org/s/ida/page/topics/school/leupp+indian+school"
+    }, {
+      "type" : "Text",
+      "format" : "text/plain",
+      "value" : "Leupp Indian School",
+      "purpose" : "tagging"
+    }, {
+      "value" : "entity:school",
+      "purpose" : "tagging"
+    } ],
+    "target" : {
+      "id" : "https://presley.example.org/iiif/idatest01/_roll_M-1011_079_cvs-488-528/canvas/c517#xywh=1378,535,774,106",
+      "type" : "Canvas",
+      "dcterms:isPartOf" : {
+        "id" : "https://presley.example.org/iiif/idatest01/_roll_M-1011_079_cvs-488-528/manifest",
+        "type" : "Manifest",
+        "label" : "Leupp Superintendent Annual Reports, 1925"
+      }
+    },
+    "motivation" : {
+      "id" : "oa:tagging",
+      "label" : "Tagging"
+    }
+  }, {
+    "id" : "https://elucidate.example.org/annotation/w3c/3931a17d6a8aebc6fa72e8467e86616c/d89cc24f-9710-4721-8317-00d8db005ff1",
+    "type" : "Annotation",
+    "created" : "2018-10-11T17:55:47+00:00",
+    "creator" : {
+      "id" : "https://omeka.example.org/admin/user/65",
+      "type" : "Person",
+      "email_sha1" : "20c7467091102bee73352e97a925c411107c8e8b",
+      "name" : "Digirati",
+      "nickname" : "Digirati"
+    },
+    "label" : "William D. Bryers, Clerk",
+    "generator" : "https://omeka.example.org/s/ida/annotation-studio/open/tagging/719",
+    "body" : [ {
+      "type" : "SpecificResource",
+      "format" : "application/html",
+      "purpose" : "tagging",
+      "source" : "https://omeka.example.org/s/ida/page/topics/person/william+d.+bryers,+clerk"
+    }, {
+      "type" : "Text",
+      "format" : "text/plain",
+      "value" : "William D. Bryers, Clerk",
+      "purpose" : "tagging"
+    }, {
+      "value" : "entity:person",
+      "purpose" : "tagging"
+    } ],
+    "target" : "https://presley.example.org/iiif/idatest01/_roll_PLB_02D_cvs-238-413/canvas/c336#xywh=2561,2167,660,214",
+    "motivation" : {
+      "id" : "oa:tagging",
+      "label" : "Tagging"
+    }
+  }, {
+    "id" : "https://elucidate.example.org/annotation/w3c/a1183ac2ac312f7414aecfc0445330b5/99d618b8-33d9-4ed4-b128-b1afad80a193",
+    "type" : "Annotation",
+    "created" : "2018-12-07T12:12:49+00:00",
+    "creator" : {
+      "id" : "https://omeka.example.org/admin/user/65",
+      "type" : "Person",
+      "email_sha1" : "20c7467091102bee73352e97a925c411107c8e8b",
+      "name" : "Digirati",
+      "nickname" : "Digirati"
+    },
+    "label" : "greenville school",
+    "generator" : "https://omeka.example.org/s/ida/annotation-studio/open/tagging/721",
+    "body" : [ {
+      "type" : "SpecificResource",
+      "format" : "application/html",
+      "purpose" : "tagging",
+      "source" : "https://omeka.example.org/s/ida/page/topics/school/greenville+school"
+    }, {
+      "type" : "Text",
+      "format" : "text/plain",
+      "value" : "greenville school",
+      "purpose" : "tagging"
+    }, {
+      "value" : "entity:school",
+      "purpose" : "tagging"
+    } ],
+    "target" : {
+      "id" : "https://presley.example.org/iiif/idatest01/_roll_M-1011_127_cvs-562-601/canvas/c600#xywh=402,1582,289,101",
+      "type" : "Canvas",
+      "dcterms:isPartOf" : {
+        "id" : "https://presley.example.org/iiif/idatest01/_roll_M-1011_127_cvs-562-601/manifest",
+        "type" : "Manifest",
+        "label" : "Santa Fe School Annual Report, 1914"
+      }
+    },
+    "motivation" : {
+      "id" : "oa:tagging",
+      "label" : "Tagging"
+    }
+  }, {
+    "id" : "https://elucidate.example.org/annotation/w3c/53e8e227fc8d209bc4e30d8fd132348c/d1f046ca-6a61-4e27-99cb-62686c392289",
+    "type" : "Annotation",
+    "created" : "2018-10-14T22:28:02+00:00",
+    "creator" : {
+      "id" : "https://omeka.example.org/admin/user/65",
+      "type" : "Person",
+      "email_sha1" : "20c7467091102bee73352e97a925c411107c8e8b",
+      "name" : "Digirati",
+      "nickname" : "Digirati"
+    },
+    "label" : "san ildefonso",
+    "generator" : "https://omeka.example.org/s/ida/annotation-studio/open/tagging/725",
+    "body" : [ {
+      "type" : "SpecificResource",
+      "format" : "application/html",
+      "purpose" : "tagging",
+      "source" : "https://omeka.example.org/s/ida/page/topics/tribe/san+ildefonso"
+    }, {
+      "type" : "Text",
+      "format" : "text/plain",
+      "value" : "san ildefonso",
+      "purpose" : "tagging"
+    }, {
+      "value" : "entity:tribe",
+      "purpose" : "tagging"
+    } ],
+    "target" : {
+      "id" : "https://presley.example.org/iiif/idatest01/_roll_M-1473_27_cvs-1-10/canvas/c10#xywh=706,1201,325,66",
+      "type" : "Canvas",
+      "dcterms:isPartOf" : {
+        "id" : "https://presley.example.org/iiif/idatest01/_roll_M-1473_27_cvs-1-10/manifest",
+        "type" : "Manifest",
+        "label" : "Bureau of Indian Affairs Records Created by the Santa Fe Indian School, 1890-1918, Finding Aid"
+      }
+    },
+    "motivation" : {
+      "id" : "oa:tagging",
+      "label" : "Tagging"
+    }
+  }, {
+    "id" : "https://elucidate.example.org/annotation/w3c/d953255e2bc2ac518496e9a0282c387b/7072961a-2f9d-4d4a-9275-3e5b63a91832",
+    "type" : "Annotation",
+    "created" : "2018-11-18T21:02:22+00:00",
+    "creator" : {
+      "id" : "https://omeka.example.org/admin/user/65",
+      "type" : "Person",
+      "email_sha1" : "20c7467091102bee73352e97a925c411107c8e8b",
+      "name" : "Digirati",
+      "nickname" : "Digirati"
+    },
+    "label" : "belle parker",
+    "generator" : "https://omeka.example.org/s/ida/annotation-studio/open/tagging/719",
+    "body" : [ {
+      "type" : "SpecificResource",
+      "format" : "application/html",
+      "purpose" : "tagging",
+      "source" : "https://omeka.example.org/s/ida/page/topics/virtual:person/belle+parker"
+    }, {
+      "type" : "Text",
+      "format" : "text/plain",
+      "value" : "belle parker",
+      "purpose" : "tagging"
+    }, {
+      "value" : "entity:person",
+      "purpose" : "tagging"
+    } ],
+    "target" : {
+      "id" : "https://presley.example.org/iiif/idatest01/_roll_PLB_02AB_cvs-173-379/canvas/c213#xywh=1030,1020,653,127",
+      "type" : "Canvas",
+      "dcterms:isPartOf" : {
+        "id" : "https://presley.example.org/iiif/idatest01/_roll_PLB_02AB_cvs-173-379/manifest",
+        "type" : "Manifest",
+        "label" : "Pueblo Lands Board 300.2-8 Isleta - United States as Guardian for Pueblo of Isleta v. Barboa et. al., Correspondence and Exhibits, 1930"
+      }
+    },
+    "motivation" : {
+      "id" : "oa:tagging",
+      "label" : "Tagging"
+    }
+  }, {
+    "id" : "https://elucidate.example.org/annotation/w3c/d6bb6f214973958bd77e47fd2b38bc46/4b9e0e38-c8ea-4d0f-b926-b4a62098c2e2",
+    "type" : "Annotation",
+    "created" : "2018-10-16T11:03:44+00:00",
+    "creator" : {
+      "id" : "https://omeka.example.org/admin/user/65",
+      "type" : "Person",
+      "email_sha1" : "20c7467091102bee73352e97a925c411107c8e8b",
+      "name" : "Digirati",
+      "nickname" : "Digirati"
+    },
+    "label" : "cochiti",
+    "generator" : "https://omeka.example.org/s/ida/annotation-studio/open/tagging/725",
+    "body" : [ {
+      "type" : "SpecificResource",
+      "format" : "application/html",
+      "purpose" : "tagging",
+      "source" : "https://omeka.example.org/s/ida/page/topics/tribe/cochiti"
+    }, {
+      "type" : "Text",
+      "format" : "text/plain",
+      "value" : "cochiti",
+      "purpose" : "tagging"
+    }, {
+      "value" : "entity:tribe",
+      "purpose" : "tagging"
+    } ],
+    "target" : {
+      "id" : "https://presley.example.org/iiif/idatest01/_roll_M-1473_38_cvs-939-1012/canvas/c988#xywh=427,945,270,84",
+      "type" : "Canvas",
+      "dcterms:isPartOf" : {
+        "id" : "https://presley.example.org/iiif/idatest01/_roll_M-1473_38_cvs-939-1012/manifest",
+        "type" : "Manifest",
+        "label" : "Santa Fe Superintendent General Records, 1887-1913"
+      }
+    },
+    "motivation" : {
+      "id" : "oa:tagging",
+      "label" : "Tagging"
+    }
+  }, {
+    "id" : "https://elucidate.example.org/annotation/w3c/a2c13378da859aae3a15209c484afaf6/c67c99ab-c27f-4f68-9802-e5ae11919d58",
+    "type" : "Annotation",
+    "created" : "2018-10-12T14:28:56+00:00",
+    "creator" : {
+      "id" : "https://omeka.example.org/admin/user/65",
+      "type" : "Person",
+      "email_sha1" : "20c7467091102bee73352e97a925c411107c8e8b",
+      "name" : "Digirati",
+      "nickname" : "Digirati"
+    },
+    "label" : "santa fe indian school",
+    "generator" : "https://omeka.example.org/s/ida/annotation-studio/open/tagging/721",
+    "body" : [ {
+      "type" : "SpecificResource",
+      "format" : "application/html",
+      "purpose" : "tagging",
+      "source" : "https://omeka.example.org/s/ida/page/topics/school/santa+fe+indian+school"
+    }, {
+      "type" : "Text",
+      "format" : "text/plain",
+      "value" : "santa fe indian school",
+      "purpose" : "tagging"
+    }, {
+      "value" : "entity:school",
+      "purpose" : "tagging"
+    } ],
+    "target" : {
+      "id" : "https://presley.example.org/iiif/idatest01/_roll_M-1304_25_cvs-17-29/canvas/c27#xywh=1540,1335,860,99",
+      "type" : "Canvas",
+      "dcterms:isPartOf" : {
+        "id" : "https://presley.example.org/iiif/idatest01/_roll_M-1304_25_cvs-17-29/manifest",
+        "type" : "Manifest",
+        "label" : "Register of Letters Received by the Pueblo and Jicarilla Indian Agencies, 1890 April-October, 1891 July - August"
+      }
+    },
+    "motivation" : {
+      "id" : "oa:tagging",
+      "label" : "Tagging"
+    }
+  }, {
+    "id" : "https://elucidate.example.org/annotation/w3c/7dd935a340ba96a6194bfa5a917f3293/edf725c7-3e1a-4b5d-b98e-7055f9a5d46c",
+    "type" : "Annotation",
+    "created" : "2018-10-08T10:24:53+00:00",
+    "creator" : {
+      "id" : "https://omeka.example.org/admin/user/65",
+      "type" : "Person",
+      "email_sha1" : "20c7467091102bee73352e97a925c411107c8e8b",
+      "name" : "Digirati",
+      "nickname" : "Digirati"
+    },
+    "label" : "Testing tribe",
+    "generator" : "https://omeka.example.org/s/ida/annotation-studio/open/tagging/725",
+    "body" : [ {
+      "type" : "SpecificResource",
+      "format" : "application/html",
+      "purpose" : "tagging",
+      "source" : "https://omeka.example.org/s/ida/page/topics/organization/testing+tribe"
+    }, {
+      "type" : "Text",
+      "format" : "text/plain",
+      "value" : "Testing tribe",
+      "purpose" : "tagging"
+    }, {
+      "value" : "entity:tribe",
+      "purpose" : "tagging"
+    } ],
+    "target" : "https://presley.example.org/iiif/idatest01/_roll_PLB_01_cvs-0-353/canvas/c46#xywh=516,361,681,681",
+    "motivation" : {
+      "id" : "oa:tagging",
+      "label" : "Tagging"
+    }
+  }, {
+    "id" : "https://elucidate.example.org/annotation/w3c/ae64ab9eb411c37cfff57c24d6756eca/e33adc7c-9a4a-48be-a1d6-9225c226ec4a",
+    "type" : "Annotation",
+    "created" : "2018-12-20T14:24:12+00:00",
+    "creator" : {
+      "id" : "https://omeka.example.org/admin/user/65",
+      "type" : "Person",
+      "email_sha1" : "20c7467091102bee73352e97a925c411107c8e8b",
+      "name" : "Digirati",
+      "nickname" : "Digirati"
+    },
+    "label" : "laguna",
+    "generator" : "https://omeka.example.org/s/ida/annotation-studio/open/tagging/725",
+    "body" : [ {
+      "type" : "SpecificResource",
+      "format" : "application/html",
+      "purpose" : "tagging",
+      "source" : "https://omeka.example.org/s/ida/page/topics/tribe/laguna"
+    }, {
+      "type" : "Text",
+      "format" : "text/plain",
+      "value" : "laguna",
+      "purpose" : "tagging"
+    }, {
+      "value" : "entity:tribe",
+      "purpose" : "tagging"
+    } ],
+    "target" : {
+      "id" : "https://presley.example.org/iiif/idatest01/_roll_M-1473_38_cvs-939-1012/canvas/c977#xywh=519,2697,205,126",
+      "type" : "Canvas",
+      "dcterms:isPartOf" : {
+        "id" : "https://presley.example.org/iiif/idatest01/_roll_M-1473_38_cvs-939-1012/manifest",
+        "type" : "Manifest",
+        "label" : "Santa Fe Superintendent General Records, 1887-1913"
+      }
+    },
+    "motivation" : {
+      "id" : "oa:tagging",
+      "label" : "Tagging"
+    }
+  }, {
+    "id" : "https://elucidate.example.org/annotation/w3c/ae64ab9eb411c37cfff57c24d6756eca/ef64411a-3974-4add-a98f-92721df0404d",
+    "type" : "Annotation",
+    "created" : "2018-11-18T20:56:51+00:00",
+    "creator" : {
+      "id" : "https://omeka.example.org/admin/user/65",
+      "type" : "Person",
+      "email_sha1" : "20c7467091102bee73352e97a925c411107c8e8b",
+      "name" : "Digirati",
+      "nickname" : "Digirati"
+    },
+    "label" : "santa clara",
+    "generator" : "https://omeka.example.org/s/ida/annotation-studio/open/tagging/725",
+    "body" : [ {
+      "type" : "SpecificResource",
+      "format" : "application/html",
+      "purpose" : "tagging",
+      "source" : "https://omeka.example.org/s/ida/page/topics/tribe/santa+clara"
+    }, {
+      "type" : "Text",
+      "format" : "text/plain",
+      "value" : "santa clara",
+      "purpose" : "tagging"
+    }, {
+      "value" : "entity:tribe",
+      "purpose" : "tagging"
+    } ],
+    "target" : {
+      "id" : "https://presley.example.org/iiif/idatest01/_roll_M-1473_38_cvs-939-1012/canvas/c977#xywh=208,1460,346,105",
+      "type" : "Canvas",
+      "dcterms:isPartOf" : {
+        "id" : "https://presley.example.org/iiif/idatest01/_roll_M-1473_38_cvs-939-1012/manifest",
+        "type" : "Manifest",
+        "label" : "Santa Fe Superintendent General Records, 1887-1913"
+      }
+    },
+    "motivation" : {
+      "id" : "oa:tagging",
+      "label" : "Tagging"
+    }
+  }, {
+    "id" : "https://elucidate.example.org/annotation/w3c/7dd935a340ba96a6194bfa5a917f3293/1d34522f-b91b-4da1-8e71-528e0e356826",
+    "type" : "Annotation",
+    "created" : "2018-10-11T14:02:49+00:00",
+    "creator" : {
+      "id" : "https://omeka.example.org/admin/user/65",
+      "type" : "Person",
+      "email_sha1" : "20c7467091102bee73352e97a925c411107c8e8b",
+      "name" : "Digirati",
+      "nickname" : "Digirati"
+    },
+    "label" : "unknown",
+    "generator" : "https://omeka.example.org/s/ida/annotation-studio/open/tagging/721",
+    "body" : [ {
+      "type" : "SpecificResource",
+      "format" : "application/html",
+      "purpose" : "tagging",
+      "source" : "https://omeka.example.org/s/ida/page/topics/school/unknown"
+    }, {
+      "type" : "Text",
+      "format" : "text/plain",
+      "value" : "unknown",
+      "purpose" : "tagging"
+    }, {
+      "value" : "entity:school",
+      "purpose" : "tagging"
+    } ],
+    "target" : "https://presley.example.org/iiif/idatest01/_roll_PLB_01_cvs-0-353/canvas/c46#xywh=1433,635,358,358",
+    "motivation" : {
+      "id" : "oa:tagging",
+      "label" : "Tagging"
+    }
+  }, {
+    "id" : "https://elucidate.example.org/annotation/w3c/53e8e227fc8d209bc4e30d8fd132348c/f96c1eb5-d549-476b-a3ae-8db5e224618d",
+    "type" : "Annotation",
+    "created" : "2018-10-14T22:24:44+00:00",
+    "creator" : {
+      "id" : "https://omeka.example.org/admin/user/65",
+      "type" : "Person",
+      "email_sha1" : "20c7467091102bee73352e97a925c411107c8e8b",
+      "name" : "Digirati",
+      "nickname" : "Digirati"
+    },
+    "label" : "taos",
+    "generator" : "https://omeka.example.org/s/ida/annotation-studio/open/tagging/725",
+    "body" : [ {
+      "type" : "SpecificResource",
+      "format" : "application/html",
+      "purpose" : "tagging",
+      "source" : "https://omeka.example.org/s/ida/page/topics/tribe/taos"
+    }, {
+      "type" : "Text",
+      "format" : "text/plain",
+      "value" : "taos",
+      "purpose" : "tagging"
+    }, {
+      "value" : "entity:tribe",
+      "purpose" : "tagging"
+    } ],
+    "target" : {
+      "id" : "https://presley.example.org/iiif/idatest01/_roll_M-1473_27_cvs-1-10/canvas/c10#xywh=709,1512,103,60",
+      "type" : "Canvas",
+      "dcterms:isPartOf" : {
+        "id" : "https://presley.example.org/iiif/idatest01/_roll_M-1473_27_cvs-1-10/manifest",
+        "type" : "Manifest",
+        "label" : "Bureau of Indian Affairs Records Created by the Santa Fe Indian School, 1890-1918, Finding Aid"
+      }
+    },
+    "motivation" : {
+      "id" : "oa:tagging",
+      "label" : "Tagging"
+    }
+  }, {
+    "id" : "https://elucidate.example.org/annotation/w3c/89463a04ed14e053ea1b19b2900e66d8/1b57bcf7-c5d7-4b0a-91a5-90a51ecb893a",
+    "type" : "Annotation",
+    "created" : "2018-10-12T13:10:00+00:00",
+    "creator" : {
+      "id" : "https://omeka.example.org/admin/user/65",
+      "type" : "Person",
+      "email_sha1" : "20c7467091102bee73352e97a925c411107c8e8b",
+      "name" : "Digirati",
+      "nickname" : "Digirati"
+    },
+    "label" : "Ramona School",
+    "generator" : "https://omeka.example.org/s/ida/annotation-studio/open/tagging/721",
+    "body" : [ {
+      "type" : "SpecificResource",
+      "format" : "application/html",
+      "purpose" : "tagging",
+      "source" : "https://omeka.example.org/s/ida/page/topics/school/ramona+school"
+    }, {
+      "type" : "Text",
+      "format" : "text/plain",
+      "value" : "Ramona School",
+      "purpose" : "tagging"
+    }, {
+      "value" : "entity:school",
+      "purpose" : "tagging"
+    } ],
+    "target" : "https://presley.example.org/iiif/idatest01/_roll_M-1304_25_cvs-17-29/canvas/c24#xywh=4111,1808,832,184",
+    "motivation" : {
+      "id" : "oa:tagging",
+      "label" : "Tagging"
+    }
+  }, {
+    "id" : "https://elucidate.example.org/annotation/w3c/1a162303e39b1d0eedd5df739b4ccfe8/6dc057b2-3288-4445-b672-174a8487f7c3",
+    "type" : "Annotation",
+    "created" : "2018-10-14T21:56:37+00:00",
+    "creator" : {
+      "id" : "https://omeka.example.org/admin/user/65",
+      "type" : "Person",
+      "email_sha1" : "20c7467091102bee73352e97a925c411107c8e8b",
+      "name" : "Digirati",
+      "nickname" : "Digirati"
+    },
+    "label" : "zuni indian school",
+    "generator" : "https://omeka.example.org/s/ida/annotation-studio/open/tagging/721",
+    "body" : [ {
+      "type" : "SpecificResource",
+      "format" : "application/html",
+      "purpose" : "tagging",
+      "source" : "https://omeka.example.org/s/ida/page/topics/school/zuni+indian+school"
+    }, {
+      "type" : "Text",
+      "format" : "text/plain",
+      "value" : "zuni indian school",
+      "purpose" : "tagging"
+    }, {
+      "value" : "entity:school",
+      "purpose" : "tagging"
+    } ],
+    "target" : {
+      "id" : "https://presley.example.org/iiif/idatest01/_roll_M-1011_174_cvs-30-52/canvas/c52#xywh=954,440,527,98",
+      "type" : "Canvas",
+      "dcterms:isPartOf" : {
+        "id" : "https://presley.example.org/iiif/idatest01/_roll_M-1011_174_cvs-30-52/manifest",
+        "type" : "Manifest",
+        "label" : "Zuni School Annual Reports, 1910"
+      }
+    },
+    "motivation" : {
+      "id" : "oa:tagging",
+      "label" : "Tagging"
+    }
+  }, {
+    "id" : "https://elucidate.example.org/annotation/w3c/2a942cf0f786c849a44a235be9b3297c/fa803267-89d1-48d5-991b-bbf347a46182",
+    "type" : "Annotation",
+    "created" : "2018-11-18T20:49:37+00:00",
+    "creator" : {
+      "id" : "https://omeka.example.org/admin/user/65",
+      "type" : "Person",
+      "email_sha1" : "20c7467091102bee73352e97a925c411107c8e8b",
+      "name" : "Digirati",
+      "nickname" : "Digirati"
+    },
+    "label" : "office of indian affairs",
+    "generator" : "https://omeka.example.org/s/ida/annotation-studio/open/tagging/723",
+    "body" : [ {
+      "type" : "SpecificResource",
+      "format" : "application/html",
+      "purpose" : "tagging",
+      "source" : "https://omeka.example.org/s/ida/page/topics/virtual:org/office+of+indian+affairs"
+    }, {
+      "type" : "Text",
+      "format" : "text/plain",
+      "value" : "office of indian affairs",
+      "purpose" : "tagging"
+    }, {
+      "value" : "entity:org",
+      "purpose" : "tagging"
+    } ],
+    "target" : {
+      "id" : "https://presley.example.org/iiif/idatest01/_roll_M-1011_128_cvs-387-644/canvas/c445#xywh=2130,369,555,69",
+      "type" : "Canvas",
+      "dcterms:isPartOf" : {
+        "id" : "https://presley.example.org/iiif/idatest01/_roll_M-1011_128_cvs-387-644/manifest",
+        "type" : "Manifest",
+        "label" : "Santa Fe School Annual Reports, 1933"
+      }
+    },
+    "motivation" : {
+      "id" : "oa:tagging",
+      "label" : "Tagging"
+    }
+  }, {
+    "id" : "https://elucidate.example.org/annotation/w3c/c145b993efdf1889c4f1b718ec262ff5/ebcc208f-b757-4bb3-9e09-2881c70cfb64",
+    "type" : "Annotation",
+    "created" : "2018-10-11T17:18:08+00:00",
+    "creator" : {
+      "id" : "https://omeka.example.org/admin/user/65",
+      "type" : "Person",
+      "email_sha1" : "20c7467091102bee73352e97a925c411107c8e8b",
+      "name" : "Digirati",
+      "nickname" : "Digirati"
+    },
+    "label" : "Miss Barlow",
+    "generator" : "https://omeka.example.org/s/ida/annotation-studio/open/tagging/719",
+    "body" : [ {
+      "type" : "SpecificResource",
+      "format" : "application/html",
+      "purpose" : "tagging",
+      "source" : "https://omeka.example.org/s/ida/page/topics/person/miss+barlow"
+    }, {
+      "type" : "Text",
+      "format" : "text/plain",
+      "value" : "Miss Barlow",
+      "purpose" : "tagging"
+    }, {
+      "value" : "entity:person",
+      "purpose" : "tagging"
+    } ],
+    "target" : "https://presley.example.org/iiif/idatest01/_roll_M-1473_31_cvs-603-609/canvas/c608#xywh=184,2528,595,186",
+    "motivation" : {
+      "id" : "oa:tagging",
+      "label" : "Tagging"
+    }
+  }, {
+    "id" : "https://elucidate.example.org/annotation/w3c/1a162303e39b1d0eedd5df739b4ccfe8/1f82631e-5520-458d-afd8-311b5d7a78f8",
+    "type" : "Annotation",
+    "created" : "2018-10-14T21:56:57+00:00",
+    "creator" : {
+      "id" : "https://omeka.example.org/admin/user/65",
+      "type" : "Person",
+      "email_sha1" : "20c7467091102bee73352e97a925c411107c8e8b",
+      "name" : "Digirati",
+      "nickname" : "Digirati"
+    },
+    "label" : "zuni",
+    "generator" : "https://omeka.example.org/s/ida/annotation-studio/open/tagging/725",
+    "body" : [ {
+      "type" : "SpecificResource",
+      "format" : "application/html",
+      "purpose" : "tagging",
+      "source" : "https://omeka.example.org/s/ida/page/topics/tribe/zuni"
+    }, {
+      "type" : "Text",
+      "format" : "text/plain",
+      "value" : "zuni",
+      "purpose" : "tagging"
+    }, {
+      "value" : "entity:tribe",
+      "purpose" : "tagging"
+    } ],
+    "target" : {
+      "id" : "https://presley.example.org/iiif/idatest01/_roll_M-1011_174_cvs-30-52/canvas/c52#xywh=946,454,135,91",
+      "type" : "Canvas",
+      "dcterms:isPartOf" : {
+        "id" : "https://presley.example.org/iiif/idatest01/_roll_M-1011_174_cvs-30-52/manifest",
+        "type" : "Manifest",
+        "label" : "Zuni School Annual Reports, 1910"
+      }
+    },
+    "motivation" : {
+      "id" : "oa:tagging",
+      "label" : "Tagging"
+    }
+  }, {
+    "id" : "https://elucidate.example.org/annotation/w3c/1a162303e39b1d0eedd5df739b4ccfe8/994d38c9-0e6a-4a74-bf5a-f509db86a5d7",
+    "type" : "Annotation",
+    "created" : "2018-10-14T21:57:15+00:00",
+    "creator" : {
+      "id" : "https://omeka.example.org/admin/user/65",
+      "type" : "Person",
+      "email_sha1" : "20c7467091102bee73352e97a925c411107c8e8b",
+      "name" : "Digirati",
+      "nickname" : "Digirati"
+    },
+    "label" : "blackrock",
+    "generator" : "https://omeka.example.org/s/ida/annotation-studio/open/tagging/727",
+    "body" : [ {
+      "type" : "SpecificResource",
+      "format" : "application/html",
+      "purpose" : "tagging",
+      "source" : "https://omeka.example.org/s/ida/page/topics/virtual:gpe/blackrock"
+    }, {
+      "type" : "Text",
+      "format" : "text/plain",
+      "value" : "blackrock",
+      "purpose" : "tagging"
+    }, {
+      "value" : "entity:place",
+      "purpose" : "tagging"
+    } ],
+    "target" : {
+      "id" : "https://presley.example.org/iiif/idatest01/_roll_M-1011_174_cvs-30-52/canvas/c52#xywh=1507,443,410,84",
+      "type" : "Canvas",
+      "dcterms:isPartOf" : {
+        "id" : "https://presley.example.org/iiif/idatest01/_roll_M-1011_174_cvs-30-52/manifest",
+        "type" : "Manifest",
+        "label" : "Zuni School Annual Reports, 1910"
+      }
+    },
+    "motivation" : {
+      "id" : "oa:tagging",
+      "label" : "Tagging"
+    }
+  }, {
+    "id" : "https://elucidate.example.org/annotation/w3c/0fbe29149e808978ef68ad89e251052a/0133e4f2-c621-4fc0-93f7-7b04ec155026",
+    "type" : "Annotation",
+    "created" : "2018-10-11T10:08:53+00:00",
+    "creator" : {
+      "id" : "https://omeka.example.org/admin/user/65",
+      "type" : "Person",
+      "email_sha1" : "20c7467091102bee73352e97a925c411107c8e8b",
+      "name" : "Digirati",
+      "nickname" : "Digirati"
+    },
+    "label" : "unknown",
+    "generator" : "https://omeka.example.org/s/ida/annotation-studio/open/transcriber/1435",
+    "body" : {
+      "type" : "TextualBody",
+      "format" : "text/plain",
+      "value" : "Annual Report, 1924. San Juan Agency menace, but once seen in flood, with waves from ten to fif. teen feet high and with trees fifty feet long going down the channel end over end, first with the roo ts in the air and then with the branches, he forgets to scoff and his soul is filled with respect, and with a fear of consequences The preseat Superintendent assurned charge here in mid- July 1923. At that time extensive improvements were be ing planned for the school, it being proposed practically to double the capacity. In fact the Superintendent of Cons true tion was on the ground and the work wall s tarted. In August a gentle rain, of three days duration, brought the river to a flood s tage and showed to us its possibilities, the last of the defences mentioned above being overcome. The matter was repor ted to Washington with the result that the work of enlarging the school was temporarily halted. In February Chief Supervisor Peairs, Chief Engineer Reed, together with Supervising Engineer Robinson, resident Engineer Gersbach, and the Superintendent, after making a thorough physical examination of conditions, decided to abandon the plan of enlarging the San Juan School until such time as some thing could be done to control the River and in the meanwhile use funds and materials, already available for this propos ed enlargement, iri the construction of a new school- unit having a capacity of 200, this to be erected on a site about one half mile east of the present San Juan School and above the high water mark of 191l. This plan was later approved Nostrace Response programmes are engagement ",
+      "purpose" : "describing"
+    },
+    "target" : "https://presley.example.org/iiif/idatest01/_roll_M-1011_127_cvs-219-282/canvas/c222",
+    "motivation" : {
+      "id" : "oa:describing",
+      "label" : "tagging"
+    }
+  }, {
+    "id" : "https://elucidate.example.org/annotation/w3c/541e19b4ef4c26e910a49250dfcb47d8/deb3892f-89ea-40b7-b955-fef8fb13a8f6",
+    "type" : "Annotation",
+    "created" : "2018-10-11T17:59:53+00:00",
+    "creator" : {
+      "id" : "https://omeka.example.org/admin/user/65",
+      "type" : "Person",
+      "email_sha1" : "20c7467091102bee73352e97a925c411107c8e8b",
+      "name" : "Digirati",
+      "nickname" : "Digirati"
+    },
+    "label" : "unknown",
+    "generator" : "https://omeka.example.org/s/ida/annotation-studio/open/tagging/721",
+    "body" : [ {
+      "type" : "SpecificResource",
+      "format" : "application/html",
+      "purpose" : "tagging",
+      "source" : "https://omeka.example.org/s/ida/page/topics/school/unknown"
+    }, {
+      "type" : "Text",
+      "format" : "text/plain",
+      "value" : "unknown",
+      "purpose" : "tagging"
+    }, {
+      "value" : "entity:school",
+      "purpose" : "tagging"
+    } ],
+    "target" : "https://presley.example.org/iiif/idatest01/_roll_M-1011_127_cvs-2-26/canvas/c7#xywh=433,1288,505,54",
+    "motivation" : {
+      "id" : "oa:tagging",
+      "label" : "Tagging"
+    }
+  }, {
+    "id" : "https://elucidate.example.org/annotation/w3c/b05c6aaef9e7c7028fa54f46c49eb320/a8d95149-0947-4e03-b0d0-bb97c6d35136",
+    "type" : "Annotation",
+    "created" : "2019-01-11T13:47:59+00:00",
+    "creator" : {
+      "id" : "https://omeka.example.org/admin/user/65",
+      "type" : "Person",
+      "email_sha1" : "20c7467091102bee73352e97a925c411107c8e8b",
+      "name" : "Digirati",
+      "nickname" : "Digirati"
+    },
+    "target" : "https://presley.example.org/iiif/idatest01/_roll_M-1011_127_cvs-2-26/canvas/c2",
+    "motivation" : "bookmarking"
+  }, {
+    "id" : "https://elucidate.example.org/annotation/w3c/f0cfb776bb01878c5856b716f066ecd4/0a87397f-2076-4d33-a3a6-87c682eb0621",
+    "type" : "Annotation",
+    "created" : "2018-10-15T09:12:08+00:00",
+    "creator" : {
+      "id" : "https://omeka.example.org/admin/user/65",
+      "type" : "Person",
+      "email_sha1" : "20c7467091102bee73352e97a925c411107c8e8b",
+      "name" : "Digirati",
+      "nickname" : "Digirati"
+    },
+    "label" : "J. F. Bennett",
+    "generator" : "https://omeka.example.org/s/ida/annotation-studio/open/tagging/719",
+    "body" : [ {
+      "type" : "SpecificResource",
+      "format" : "application/html",
+      "purpose" : "tagging",
+      "source" : "https://omeka.example.org/s/ida/page/topics/person/j.+f.+bennett"
+    }, {
+      "type" : "Text",
+      "format" : "text/plain",
+      "value" : "J. F. Bennett",
+      "purpose" : "tagging"
+    }, {
+      "value" : "entity:person",
+      "purpose" : "tagging"
+    } ],
+    "target" : {
+      "id" : "https://presley.example.org/iiif/idatest01/_roll_M-1304_25_cvs-17-29/canvas/c25#xywh=753,1054,745,228",
+      "type" : "Canvas",
+      "dcterms:isPartOf" : {
+        "id" : "https://presley.example.org/iiif/idatest01/_roll_M-1304_25_cvs-17-29/manifest",
+        "type" : "Manifest",
+        "label" : "Register of Letters Received by the Pueblo and Jicarilla Indian Agencies, 1890 April-October, 1891 July - August"
+      }
+    },
+    "motivation" : {
+      "id" : "oa:tagging",
+      "label" : "Tagging"
+    }
+  }, {
+    "id" : "https://elucidate.example.org/annotation/w3c/f0cfb776bb01878c5856b716f066ecd4/766db573-fed9-49a9-977c-a425e2394756",
+    "type" : "Annotation",
+    "created" : "2018-10-12T15:36:23+00:00",
+    "creator" : {
+      "id" : "https://omeka.example.org/admin/user/65",
+      "type" : "Person",
+      "email_sha1" : "20c7467091102bee73352e97a925c411107c8e8b",
+      "name" : "Digirati",
+      "nickname" : "Digirati"
+    },
+    "label" : "A.B. Creager",
+    "generator" : "https://omeka.example.org/s/ida/annotation-studio/open/tagging/719",
+    "body" : [ {
+      "type" : "SpecificResource",
+      "format" : "application/html",
+      "purpose" : "tagging",
+      "source" : "https://omeka.example.org/s/ida/page/topics/person/a.b.+creager"
+    }, {
+      "type" : "Text",
+      "format" : "text/plain",
+      "value" : "A.B. Creager",
+      "purpose" : "tagging"
+    }, {
+      "value" : "entity:person",
+      "purpose" : "tagging"
+    } ],
+    "target" : {
+      "id" : "https://presley.example.org/iiif/idatest01/_roll_M-1304_25_cvs-17-29/canvas/c25#xywh=823,1557,619,190",
+      "type" : "Canvas",
+      "dcterms:isPartOf" : {
+        "id" : "https://presley.example.org/iiif/idatest01/_roll_M-1304_25_cvs-17-29/manifest",
+        "type" : "Manifest",
+        "label" : "Register of Letters Received by the Pueblo and Jicarilla Indian Agencies, 1890 April-October, 1891 July - August"
+      }
+    },
+    "motivation" : {
+      "id" : "oa:tagging",
+      "label" : "Tagging"
+    }
+  }, {
+    "id" : "https://elucidate.example.org/annotation/w3c/0453414d8af0e19695ed01397ca2c59e/bdeb2fb0-8344-4f2d-ba4b-51554de06a61",
+    "type" : "Annotation",
+    "created" : "2018-10-11T18:11:21+00:00",
+    "creator" : {
+      "id" : "https://omeka.example.org/admin/user/65",
+      "type" : "Person",
+      "email_sha1" : "20c7467091102bee73352e97a925c411107c8e8b",
+      "name" : "Digirati",
+      "nickname" : "Digirati"
+    },
+    "label" : "Chickasaw",
+    "generator" : "https://omeka.example.org/s/ida/annotation-studio/open/tagging/725",
+    "body" : [ {
+      "type" : "SpecificResource",
+      "format" : "application/html",
+      "purpose" : "tagging",
+      "source" : "https://omeka.example.org/s/ida/page/topics/organization/chickasaw"
+    }, {
+      "type" : "Text",
+      "format" : "text/plain",
+      "value" : "Chickasaw",
+      "purpose" : "tagging"
+    }, {
+      "value" : "entity:tribe",
+      "purpose" : "tagging"
+    } ],
+    "target" : "https://presley.example.org/iiif/idatest01/_roll_M-1011_127_cvs-2-26/canvas/c9#xywh=709,1509,218,60",
+    "motivation" : {
+      "id" : "oa:tagging",
+      "label" : "Tagging"
+    }
+  }, {
+    "id" : "https://elucidate.example.org/annotation/w3c/3931a17d6a8aebc6fa72e8467e86616c/7bcfe016-aecc-44e0-bb4e-bb93c547c64f",
+    "type" : "Annotation",
+    "created" : "2018-10-11T17:55:09+00:00",
+    "creator" : {
+      "id" : "https://omeka.example.org/admin/user/65",
+      "type" : "Person",
+      "email_sha1" : "20c7467091102bee73352e97a925c411107c8e8b",
+      "name" : "Digirati",
+      "nickname" : "Digirati"
+    },
+    "label" : "jose d. naranjo",
+    "generator" : "https://omeka.example.org/s/ida/annotation-studio/open/tagging/719",
+    "body" : [ {
+      "type" : "SpecificResource",
+      "format" : "application/html",
+      "purpose" : "tagging",
+      "source" : "https://omeka.example.org/s/ida/page/topics/virtual:person/jose+d.+naranjo"
+    }, {
+      "type" : "Text",
+      "format" : "text/plain",
+      "value" : "jose d. naranjo",
+      "purpose" : "tagging"
+    }, {
+      "value" : "entity:person",
+      "purpose" : "tagging"
+    } ],
+    "target" : "https://presley.example.org/iiif/idatest01/_roll_PLB_02D_cvs-238-413/canvas/c336#xywh=771,1844,864,107",
+    "motivation" : {
+      "id" : "oa:tagging",
+      "label" : "Tagging"
+    }
+  }, {
+    "id" : "https://elucidate.example.org/annotation/w3c/efc9d1efe410e99f1bae49b232016efa/f64ebfae-c477-4144-ab8b-7fd42e6a6525",
+    "type" : "Annotation",
+    "created" : "2018-10-12T13:19:22+00:00",
+    "creator" : {
+      "id" : "https://omeka.example.org/admin/user/65",
+      "type" : "Person",
+      "email_sha1" : "20c7467091102bee73352e97a925c411107c8e8b",
+      "name" : "Digirati",
+      "nickname" : "Digirati"
+    },
+    "label" : "unknown",
+    "generator" : "https://omeka.example.org/s/ida/annotation-studio/open/transcriber/1435",
+    "body" : {
+      "type" : "TextualBody",
+      "format" : "text/plain",
+      "value" : "ZUNI 145\n1929 \nSTATISTICAL",
+      "purpose" : "describing"
+    },
+    "target" : {
+      "id" : "https://presley.example.org/iiif/idatest01/_roll_M-1011_174_cvs-894-947/canvas/c894",
+      "type" : "Canvas",
+      "dcterms:isPartOf" : {
+        "id" : "https://presley.example.org/iiif/idatest01/_roll_M-1011_174_cvs-894-947/manifest",
+        "type" : "Manifest",
+        "label" : "Zuni School Annual Reports, 1929"
+      }
+    },
+    "motivation" : {
+      "id" : "oa:describing",
+      "label" : "tagging"
+    }
+  }, {
+    "id" : "https://elucidate.example.org/annotation/w3c/24ab67767c65a77c5e303ed52733347e/81d2dd4e-ea13-4edf-b5e9-8de9e5c79e4e",
+    "type" : "Annotation",
+    "created" : "2018-10-11T17:17:18+00:00",
+    "creator" : {
+      "id" : "https://omeka.example.org/admin/user/65",
+      "type" : "Person",
+      "email_sha1" : "20c7467091102bee73352e97a925c411107c8e8b",
+      "name" : "Digirati",
+      "nickname" : "Digirati"
+    },
+    "label" : "mary haskett",
+    "generator" : "https://omeka.example.org/s/ida/annotation-studio/open/tagging/719",
+    "body" : [ {
+      "type" : "SpecificResource",
+      "format" : "application/html",
+      "purpose" : "tagging",
+      "source" : "https://omeka.example.org/s/ida/page/topics/person/mary+haskett"
+    }, {
+      "type" : "Text",
+      "format" : "text/plain",
+      "value" : "mary haskett",
+      "purpose" : "tagging"
+    }, {
+      "value" : "entity:person",
+      "purpose" : "tagging"
+    } ],
+    "target" : "https://presley.example.org/iiif/idatest01/_roll_M-1473_31_cvs-603-609/canvas/c607#xywh=1082,2432,1127,196",
+    "motivation" : {
+      "id" : "oa:tagging",
+      "label" : "Tagging"
+    }
+  }, {
+    "id" : "https://elucidate.example.org/annotation/w3c/efc9d1efe410e99f1bae49b232016efa/7c3d15a9-f221-45a5-af8c-82194fa36c5e",
+    "type" : "Annotation",
+    "created" : "2018-10-12T13:20:48+00:00",
+    "creator" : {
+      "id" : "https://omeka.example.org/admin/user/65",
+      "type" : "Person",
+      "email_sha1" : "20c7467091102bee73352e97a925c411107c8e8b",
+      "name" : "Digirati",
+      "nickname" : "Digirati"
+    },
+    "label" : "Test tribe SF 1",
+    "generator" : "https://omeka.example.org/s/ida/annotation-studio/open/tagging/725",
+    "body" : [ {
+      "type" : "SpecificResource",
+      "format" : "application/html",
+      "purpose" : "tagging",
+      "source" : "https://omeka.example.org/s/ida/page/topics/organization/test+tribe+sf+1"
+    }, {
+      "type" : "Text",
+      "format" : "text/plain",
+      "value" : "Test tribe SF 1",
+      "purpose" : "tagging"
+    }, {
+      "value" : "entity:tribe",
+      "purpose" : "tagging"
+    } ],
+    "target" : {
+      "id" : "https://presley.example.org/iiif/idatest01/_roll_M-1011_174_cvs-894-947/canvas/c894#xywh=1943,505,254,254",
+      "type" : "Canvas",
+      "dcterms:isPartOf" : {
+        "id" : "https://presley.example.org/iiif/idatest01/_roll_M-1011_174_cvs-894-947/manifest",
+        "type" : "Manifest",
+        "label" : "Zuni School Annual Reports, 1929"
+      }
+    },
+    "motivation" : {
+      "id" : "oa:tagging",
+      "label" : "Tagging"
+    }
+  }, {
+    "id" : "https://elucidate.example.org/annotation/w3c/3931a17d6a8aebc6fa72e8467e86616c/9b7e9bda-f093-4125-85a7-9ade0152613e",
+    "type" : "Annotation",
+    "created" : "2018-10-11T17:56:15+00:00",
+    "creator" : {
+      "id" : "https://omeka.example.org/admin/user/65",
+      "type" : "Person",
+      "email_sha1" : "20c7467091102bee73352e97a925c411107c8e8b",
+      "name" : "Digirati",
+      "nickname" : "Digirati"
+    },
+    "label" : "santa fe county",
+    "generator" : "https://omeka.example.org/s/ida/annotation-studio/open/tagging/727",
+    "body" : [ {
+      "type" : "SpecificResource",
+      "format" : "application/html",
+      "purpose" : "tagging",
+      "source" : "https://omeka.example.org/s/ida/page/topics/virtual:gpe/santa+fe+county"
+    }, {
+      "type" : "Text",
+      "format" : "text/plain",
+      "value" : "santa fe county",
+      "purpose" : "tagging"
+    }, {
+      "value" : "entity:place",
+      "purpose" : "tagging"
+    } ],
+    "target" : "https://presley.example.org/iiif/idatest01/_roll_PLB_02D_cvs-238-413/canvas/c336#xywh=797,1423,934,113",
+    "motivation" : {
+      "id" : "oa:tagging",
+      "label" : "Tagging"
+    }
+  }, {
+    "id" : "https://elucidate.example.org/annotation/w3c/b08b33ca9883a0ad4db855796edc2be1/c8dc9240-7ec5-4424-991a-566bb762c327",
+    "type" : "Annotation",
+    "created" : "2018-10-11T17:15:46+00:00",
+    "creator" : {
+      "id" : "https://omeka.example.org/admin/user/65",
+      "type" : "Person",
+      "email_sha1" : "20c7467091102bee73352e97a925c411107c8e8b",
+      "name" : "Digirati",
+      "nickname" : "Digirati"
+    },
+    "label" : "william j. oliver",
+    "generator" : "https://omeka.example.org/s/ida/annotation-studio/open/tagging/719",
+    "body" : [ {
+      "type" : "SpecificResource",
+      "format" : "application/html",
+      "purpose" : "tagging",
+      "source" : "https://omeka.example.org/s/ida/page/topics/virtual:person/william+j.+oliver"
+    }, {
+      "type" : "Text",
+      "format" : "text/plain",
+      "value" : "william j. oliver",
+      "purpose" : "tagging"
+    }, {
+      "value" : "entity:person",
+      "purpose" : "tagging"
+    } ],
+    "target" : "https://presley.example.org/iiif/idatest01/_roll_M-1011_174_cvs-30-52/canvas/c45#xywh=1052,1831,747,154",
+    "motivation" : {
+      "id" : "oa:tagging",
+      "label" : "Tagging"
+    }
+  }, {
+    "id" : "https://elucidate.example.org/annotation/w3c/7dd935a340ba96a6194bfa5a917f3293/ca0df55e-7505-4a17-82f2-8d4979dce13a",
+    "type" : "Annotation",
+    "created" : "2018-10-08T10:40:09+00:00",
+    "creator" : {
+      "id" : "https://omeka.example.org/admin/user/65",
+      "type" : "Person",
+      "email_sha1" : "20c7467091102bee73352e97a925c411107c8e8b",
+      "name" : "Digirati",
+      "nickname" : "Digirati"
+    },
+    "label" : "unknown",
+    "generator" : "https://omeka.example.org/s/ida/annotation-studio/open/tagging/719",
+    "body" : [ {
+      "type" : "SpecificResource",
+      "format" : "application/html",
+      "purpose" : "tagging",
+      "source" : "https://omeka.example.org/s/ida/page/topics/person/unknown"
+    }, {
+      "type" : "Text",
+      "format" : "text/plain",
+      "value" : "unknown",
+      "purpose" : "tagging"
+    }, {
+      "value" : "entity:person",
+      "purpose" : "tagging"
+    } ],
+    "target" : "https://presley.example.org/iiif/idatest01/_roll_PLB_01_cvs-0-353/canvas/c46#xywh=616,450,709,709",
+    "motivation" : {
+      "id" : "oa:tagging",
+      "label" : "Tagging"
+    }
+  }, {
+    "id" : "https://elucidate.example.org/annotation/w3c/a2c13378da859aae3a15209c484afaf6/28a91c7d-7495-4185-b874-d5a1eccad3ae",
+    "type" : "Annotation",
+    "created" : "2018-10-12T14:30:41+00:00",
+    "creator" : {
+      "id" : "https://omeka.example.org/admin/user/65",
+      "type" : "Person",
+      "email_sha1" : "20c7467091102bee73352e97a925c411107c8e8b",
+      "name" : "Digirati",
+      "nickname" : "Digirati"
+    },
+    "label" : "W.O.H. Marron",
+    "generator" : "https://omeka.example.org/s/ida/annotation-studio/open/tagging/719",
+    "body" : [ {
+      "type" : "SpecificResource",
+      "format" : "application/html",
+      "purpose" : "tagging",
+      "source" : "https://omeka.example.org/s/ida/page/topics/person/w.o.h.+marron"
+    }, {
+      "type" : "Text",
+      "format" : "text/plain",
+      "value" : "W.O.H. Marron",
+      "purpose" : "tagging"
+    }, {
+      "value" : "entity:person",
+      "purpose" : "tagging"
+    } ],
+    "target" : {
+      "id" : "https://presley.example.org/iiif/idatest01/_roll_M-1304_25_cvs-17-29/canvas/c27#xywh=1623,2216,956,133",
+      "type" : "Canvas",
+      "dcterms:isPartOf" : {
+        "id" : "https://presley.example.org/iiif/idatest01/_roll_M-1304_25_cvs-17-29/manifest",
+        "type" : "Manifest",
+        "label" : "Register of Letters Received by the Pueblo and Jicarilla Indian Agencies, 1890 April-October, 1891 July - August"
+      }
+    },
+    "motivation" : {
+      "id" : "oa:tagging",
+      "label" : "Tagging"
+    }
+  }, {
+    "id" : "https://elucidate.example.org/annotation/w3c/9041208a17580942af9afcfc295158f6/18e6bcf0-b73c-45ac-83d6-0006680a5888",
+    "type" : "Annotation",
+    "created" : "2018-10-11T17:58:55+00:00",
+    "creator" : {
+      "id" : "https://omeka.example.org/admin/user/65",
+      "type" : "Person",
+      "email_sha1" : "20c7467091102bee73352e97a925c411107c8e8b",
+      "name" : "Digirati",
+      "nickname" : "Digirati"
+    },
+    "label" : "Agency Guard House",
+    "generator" : "https://omeka.example.org/s/ida/annotation-studio/open/tagging/727",
+    "body" : [ {
+      "type" : "SpecificResource",
+      "format" : "application/html",
+      "purpose" : "tagging",
+      "source" : "https://omeka.example.org/s/ida/page/topics/place/agency+guard+house"
+    }, {
+      "type" : "Text",
+      "format" : "text/plain",
+      "value" : "Agency Guard House",
+      "purpose" : "tagging"
+    }, {
+      "value" : "entity:place",
+      "purpose" : "tagging"
+    } ],
+    "target" : "https://presley.example.org/iiif/idatest01/_roll_M-1011_127_cvs-219-282/canvas/c226#xywh=1443,2622,560,58",
+    "motivation" : {
+      "id" : "oa:tagging",
+      "label" : "Tagging"
+    }
+  }, {
+    "id" : "https://elucidate.example.org/annotation/w3c/eb427f5d0496864d28221429332f22fa/4acf1b59-0a93-44fa-8609-c7faee3d5ce4",
+    "type" : "Annotation",
+    "created" : "2018-11-18T19:38:59+00:00",
+    "creator" : {
+      "id" : "https://omeka.example.org/admin/user/65",
+      "type" : "Person",
+      "email_sha1" : "20c7467091102bee73352e97a925c411107c8e8b",
+      "name" : "Digirati",
+      "nickname" : "Digirati"
+    },
+    "label" : "ohkay owingeh",
+    "generator" : "https://omeka.example.org/s/ida/annotation-studio/open/tagging/725",
+    "body" : [ {
+      "type" : "SpecificResource",
+      "format" : "application/html",
+      "purpose" : "tagging",
+      "source" : "https://omeka.example.org/s/ida/page/topics/tribe/ohkay+owingeh"
+    }, {
+      "type" : "Text",
+      "format" : "text/plain",
+      "value" : "ohkay owingeh",
+      "purpose" : "tagging"
+    }, {
+      "value" : "entity:tribe",
+      "purpose" : "tagging"
+    } ],
+    "target" : {
+      "id" : "https://presley.example.org/iiif/idatest01/_roll_M-1011_127_cvs-972-986/canvas/c984#xywh=1088,1981,204,56",
+      "type" : "Canvas",
+      "dcterms:isPartOf" : {
+        "id" : "https://presley.example.org/iiif/idatest01/_roll_M-1011_127_cvs-972-986/manifest",
+        "type" : "Manifest",
+        "label" : "Santa Fe School Annual Reports, 1924"
+      }
+    },
+    "motivation" : {
+      "id" : "oa:tagging",
+      "label" : "Tagging"
+    }
+  }, {
+    "id" : "https://elucidate.example.org/annotation/w3c/ae64ab9eb411c37cfff57c24d6756eca/2495ab0d-5bb2-4162-aa64-95d219a26098",
+    "type" : "Annotation",
+    "created" : "2018-11-18T21:06:48+00:00",
+    "creator" : {
+      "id" : "https://omeka.example.org/admin/user/65",
+      "type" : "Person",
+      "email_sha1" : "20c7467091102bee73352e97a925c411107c8e8b",
+      "name" : "Digirati",
+      "nickname" : "Digirati"
+    },
+    "label" : "jemez",
+    "generator" : "https://omeka.example.org/s/ida/annotation-studio/open/tagging/725",
+    "body" : [ {
+      "type" : "SpecificResource",
+      "format" : "application/html",
+      "purpose" : "tagging",
+      "source" : "https://omeka.example.org/s/ida/page/topics/tribe/jemez"
+    }, {
+      "type" : "Text",
+      "format" : "text/plain",
+      "value" : "jemez",
+      "purpose" : "tagging"
+    }, {
+      "value" : "entity:tribe",
+      "purpose" : "tagging"
+    } ],
+    "target" : {
+      "id" : "https://presley.example.org/iiif/idatest01/_roll_M-1473_38_cvs-939-1012/canvas/c977#xywh=201,1279,273,82",
+      "type" : "Canvas",
+      "dcterms:isPartOf" : {
+        "id" : "https://presley.example.org/iiif/idatest01/_roll_M-1473_38_cvs-939-1012/manifest",
+        "type" : "Manifest",
+        "label" : "Santa Fe Superintendent General Records, 1887-1913"
+      }
+    },
+    "motivation" : {
+      "id" : "oa:tagging",
+      "label" : "Tagging"
+    }
+  }, {
+    "id" : "https://elucidate.example.org/annotation/w3c/89463a04ed14e053ea1b19b2900e66d8/c30554d9-1391-4ea7-bdce-319d381f7b08",
+    "type" : "Annotation",
+    "created" : "2018-10-12T13:12:43+00:00",
+    "creator" : {
+      "id" : "https://omeka.example.org/admin/user/65",
+      "type" : "Person",
+      "email_sha1" : "20c7467091102bee73352e97a925c411107c8e8b",
+      "name" : "Digirati",
+      "nickname" : "Digirati"
+    },
+    "label" : "interior department",
+    "generator" : "https://omeka.example.org/s/ida/annotation-studio/open/tagging/723",
+    "body" : [ {
+      "type" : "SpecificResource",
+      "format" : "application/html",
+      "purpose" : "tagging",
+      "source" : "https://omeka.example.org/s/ida/page/topics/virtual:org/interior+department"
+    }, {
+      "type" : "Text",
+      "format" : "text/plain",
+      "value" : "interior department",
+      "purpose" : "tagging"
+    }, {
+      "value" : "entity:org",
+      "purpose" : "tagging"
+    } ],
+    "target" : "https://presley.example.org/iiif/idatest01/_roll_M-1304_25_cvs-17-29/canvas/c24#xywh=3930,2214,1061,118",
+    "motivation" : {
+      "id" : "oa:tagging",
+      "label" : "Tagging"
+    }
+  }, {
+    "id" : "https://elucidate.example.org/annotation/w3c/7ee22720665dd7e3392afa28dfa71be8/0d8848b2-a686-4a2d-8d88-a860267d2444",
+    "type" : "Annotation",
+    "created" : "2018-10-14T21:50:01+00:00",
+    "creator" : {
+      "id" : "https://omeka.example.org/admin/user/65",
+      "type" : "Person",
+      "email_sha1" : "20c7467091102bee73352e97a925c411107c8e8b",
+      "name" : "Digirati",
+      "nickname" : "Digirati"
+    },
+    "label" : "navajo",
+    "generator" : "https://omeka.example.org/s/ida/annotation-studio/open/tagging/725",
+    "body" : [ {
+      "type" : "SpecificResource",
+      "format" : "application/html",
+      "purpose" : "tagging",
+      "source" : "https://omeka.example.org/s/ida/page/topics/virtual:tribe/navajo"
+    }, {
+      "type" : "Text",
+      "format" : "text/plain",
+      "value" : "navajo",
+      "purpose" : "tagging"
+    }, {
+      "value" : "entity:tribe",
+      "purpose" : "tagging"
+    } ],
+    "target" : {
+      "id" : "https://presley.example.org/iiif/idatest01/_roll_M-1011_089_cvs-901-920/canvas/c903#xywh=1217,560,161,101",
+      "type" : "Canvas",
+      "dcterms:isPartOf" : {
+        "id" : "https://presley.example.org/iiif/idatest01/_roll_M-1011_089_cvs-901-920/manifest",
+        "type" : "Manifest",
+        "label" : "Navajo Superintendent Annual Reports, 1919"
+      }
+    },
+    "motivation" : {
+      "id" : "oa:tagging",
+      "label" : "Tagging"
+    }
+  }, {
+    "id" : "https://elucidate.example.org/annotation/w3c/d6bb6f214973958bd77e47fd2b38bc46/8779ab5b-9b4f-4822-9c83-46ddaf589b55",
+    "type" : "Annotation",
+    "created" : "2018-10-16T11:04:58+00:00",
+    "creator" : {
+      "id" : "https://omeka.example.org/admin/user/65",
+      "type" : "Person",
+      "email_sha1" : "20c7467091102bee73352e97a925c411107c8e8b",
+      "name" : "Digirati",
+      "nickname" : "Digirati"
+    },
+    "label" : "san ildefonso",
+    "generator" : "https://omeka.example.org/s/ida/annotation-studio/open/tagging/725",
+    "body" : [ {
+      "type" : "SpecificResource",
+      "format" : "application/html",
+      "purpose" : "tagging",
+      "source" : "https://omeka.example.org/s/ida/page/topics/tribe/san+ildefonso"
+    }, {
+      "type" : "Text",
+      "format" : "text/plain",
+      "value" : "san ildefonso",
+      "purpose" : "tagging"
+    }, {
+      "value" : "entity:tribe",
+      "purpose" : "tagging"
+    } ],
+    "target" : {
+      "id" : "https://presley.example.org/iiif/idatest01/_roll_M-1473_38_cvs-939-1012/canvas/c988#xywh=418,695,330,67",
+      "type" : "Canvas",
+      "dcterms:isPartOf" : {
+        "id" : "https://presley.example.org/iiif/idatest01/_roll_M-1473_38_cvs-939-1012/manifest",
+        "type" : "Manifest",
+        "label" : "Santa Fe Superintendent General Records, 1887-1913"
+      }
+    },
+    "motivation" : {
+      "id" : "oa:tagging",
+      "label" : "Tagging"
+    }
+  }, {
+    "id" : "https://elucidate.example.org/annotation/w3c/1a162303e39b1d0eedd5df739b4ccfe8/04c175ca-3766-4fd5-92e5-d1ecadebb079",
+    "type" : "Annotation",
+    "created" : "2018-10-14T21:57:36+00:00",
+    "creator" : {
+      "id" : "https://omeka.example.org/admin/user/65",
+      "type" : "Person",
+      "email_sha1" : "20c7467091102bee73352e97a925c411107c8e8b",
+      "name" : "Digirati",
+      "nickname" : "Digirati"
+    },
+    "label" : "william j. oliver",
+    "generator" : "https://omeka.example.org/s/ida/annotation-studio/open/tagging/719",
+    "body" : [ {
+      "type" : "SpecificResource",
+      "format" : "application/html",
+      "purpose" : "tagging",
+      "source" : "https://omeka.example.org/s/ida/page/topics/virtual:person/william+j.+oliver"
+    }, {
+      "type" : "Text",
+      "format" : "text/plain",
+      "value" : "william j. oliver",
+      "purpose" : "tagging"
+    }, {
+      "value" : "entity:person",
+      "purpose" : "tagging"
+    } ],
+    "target" : {
+      "id" : "https://presley.example.org/iiif/idatest01/_roll_M-1011_174_cvs-30-52/canvas/c52#xywh=1071,960,802,186",
+      "type" : "Canvas",
+      "dcterms:isPartOf" : {
+        "id" : "https://presley.example.org/iiif/idatest01/_roll_M-1011_174_cvs-30-52/manifest",
+        "type" : "Manifest",
+        "label" : "Zuni School Annual Reports, 1910"
+      }
+    },
+    "motivation" : {
+      "id" : "oa:tagging",
+      "label" : "Tagging"
+    }
+  }, {
+    "id" : "https://elucidate.example.org/annotation/w3c/ae64ab9eb411c37cfff57c24d6756eca/91ca5bf9-e4eb-4dae-b3bc-7750a3c3b9d2",
+    "type" : "Annotation",
+    "created" : "2018-11-20T17:07:28+00:00",
+    "creator" : {
+      "id" : "https://omeka.example.org/admin/user/65",
+      "type" : "Person",
+      "email_sha1" : "20c7467091102bee73352e97a925c411107c8e8b",
+      "name" : "Digirati",
+      "nickname" : "Digirati"
+    },
+    "label" : "isleta",
+    "generator" : "https://omeka.example.org/s/ida/annotation-studio/open/tagging/725",
+    "body" : [ {
+      "type" : "SpecificResource",
+      "format" : "application/html",
+      "purpose" : "tagging",
+      "source" : "https://omeka.example.org/s/ida/page/topics/tribe/isleta"
+    }, {
+      "type" : "Text",
+      "format" : "text/plain",
+      "value" : "isleta",
+      "purpose" : "tagging"
+    }, {
+      "value" : "entity:tribe",
+      "purpose" : "tagging"
+    } ],
+    "target" : {
+      "id" : "https://presley.example.org/iiif/idatest01/_roll_M-1473_38_cvs-939-1012/canvas/c977#xywh=225,3111,274,101",
+      "type" : "Canvas",
+      "dcterms:isPartOf" : {
+        "id" : "https://presley.example.org/iiif/idatest01/_roll_M-1473_38_cvs-939-1012/manifest",
+        "type" : "Manifest",
+        "label" : "Santa Fe Superintendent General Records, 1887-1913"
+      }
+    },
+    "motivation" : {
+      "id" : "oa:tagging",
+      "label" : "Tagging"
+    }
+  }, {
+    "id" : "https://elucidate.example.org/annotation/w3c/0453414d8af0e19695ed01397ca2c59e/2f20774a-2129-45cc-b928-43e3ea5c41fd",
+    "type" : "Annotation",
+    "created" : "2018-10-11T18:08:21+00:00",
+    "creator" : {
+      "id" : "https://omeka.example.org/admin/user/65",
+      "type" : "Person",
+      "email_sha1" : "20c7467091102bee73352e97a925c411107c8e8b",
+      "name" : "Digirati",
+      "nickname" : "Digirati"
+    },
+    "label" : "Choctaw",
+    "generator" : "https://omeka.example.org/s/ida/annotation-studio/open/tagging/725",
+    "body" : [ {
+      "type" : "SpecificResource",
+      "format" : "application/html",
+      "purpose" : "tagging",
+      "source" : "https://omeka.example.org/s/ida/page/topics/organization/choctaw"
+    }, {
+      "type" : "Text",
+      "format" : "text/plain",
+      "value" : "Choctaw",
+      "purpose" : "tagging"
+    }, {
+      "value" : "entity:tribe",
+      "purpose" : "tagging"
+    } ],
+    "target" : "https://presley.example.org/iiif/idatest01/_roll_M-1011_127_cvs-2-26/canvas/c9#xywh=455,1505,161,61",
+    "motivation" : {
+      "id" : "oa:tagging",
+      "label" : "Tagging"
+    }
+  }, {
+    "id" : "https://elucidate.example.org/annotation/w3c/89463a04ed14e053ea1b19b2900e66d8/8824ffee-7394-41fb-b16b-9e41512a937d",
+    "type" : "Annotation",
+    "created" : "2018-10-12T13:13:38+00:00",
+    "creator" : {
+      "id" : "https://omeka.example.org/admin/user/65",
+      "type" : "Person",
+      "email_sha1" : "20c7467091102bee73352e97a925c411107c8e8b",
+      "name" : "Digirati",
+      "nickname" : "Digirati"
+    },
+    "label" : "N. A. McKenzie",
+    "generator" : "https://omeka.example.org/s/ida/annotation-studio/open/tagging/719",
+    "body" : [ {
+      "type" : "SpecificResource",
+      "format" : "application/html",
+      "purpose" : "tagging",
+      "source" : "https://omeka.example.org/s/ida/page/topics/person/n.+a.+mckenzie"
+    }, {
+      "type" : "Text",
+      "format" : "text/plain",
+      "value" : "N. A. McKenzie",
+      "purpose" : "tagging"
+    }, {
+      "value" : "entity:person",
+      "purpose" : "tagging"
+    } ],
+    "target" : "https://presley.example.org/iiif/idatest01/_roll_M-1304_25_cvs-17-29/canvas/c24#xywh=4078,3955,709,100",
+    "motivation" : {
+      "id" : "oa:tagging",
+      "label" : "Tagging"
+    }
+  }, {
+    "id" : "https://elucidate.example.org/annotation/w3c/efc9d1efe410e99f1bae49b232016efa/a50c6aad-1bc1-4014-b6dc-5b5f035de457",
+    "type" : "Annotation",
+    "created" : "2018-10-11T16:52:42+00:00",
+    "creator" : {
+      "id" : "https://omeka.example.org/admin/user/65",
+      "type" : "Person",
+      "email_sha1" : "20c7467091102bee73352e97a925c411107c8e8b",
+      "name" : "Digirati",
+      "nickname" : "Digirati"
+    },
+    "label" : "test person SF 7",
+    "generator" : "https://omeka.example.org/s/ida/annotation-studio/open/tagging/719",
+    "body" : [ {
+      "type" : "SpecificResource",
+      "format" : "application/html",
+      "purpose" : "tagging",
+      "source" : "https://omeka.example.org/s/ida/page/topics/person/test+person+sf+7"
+    }, {
+      "type" : "Text",
+      "format" : "text/plain",
+      "value" : "test person SF 7",
+      "purpose" : "tagging"
+    }, {
+      "value" : "entity:person",
+      "purpose" : "tagging"
+    } ],
+    "target" : "https://presley.example.org/iiif/idatest01/_roll_M-1011_174_cvs-894-947/canvas/c894#xywh=-29,257,358,358",
+    "motivation" : {
+      "id" : "oa:tagging",
+      "label" : "Tagging"
+    }
+  }, {
+    "id" : "https://elucidate.example.org/annotation/w3c/025b0704ba094fd38078a2df806bd72f/cb8cd1e5-88e5-493f-a9ee-ddd1d34a390a",
+    "type" : "Annotation",
+    "created" : "2018-10-11T12:53:41+00:00",
+    "creator" : {
+      "id" : "https://omeka.example.org/admin/user/65",
+      "type" : "Person",
+      "email_sha1" : "20c7467091102bee73352e97a925c411107c8e8b",
+      "name" : "Digirati",
+      "nickname" : "Digirati"
+    },
+    "generator" : "https://omeka.example.org/s/ida/annotation-studio/unmoderated/commenting",
+    "body" : {
+      "type" : "TextualBody",
+      "format" : "text/plain",
+      "value" : "The name is not easy to read, but looks like Frederic Snyder."
+    },
+    "target" : "https://presley.example.org/iiif/idatest01/_roll_M-1011_127_cvs-624-631/canvas/c631",
+    "motivation" : "commenting"
+  }, {
+    "id" : "https://elucidate.example.org/annotation/w3c/ae64ab9eb411c37cfff57c24d6756eca/e1e778ef-3519-4c1f-9b78-5247710df293",
+    "type" : "Annotation",
+    "created" : "2018-11-20T16:22:19+00:00",
+    "creator" : {
+      "id" : "https://omeka.example.org/admin/user/65",
+      "type" : "Person",
+      "email_sha1" : "20c7467091102bee73352e97a925c411107c8e8b",
+      "name" : "Digirati",
+      "nickname" : "Digirati"
+    },
+    "label" : "new mexico",
+    "generator" : "https://omeka.example.org/s/ida/annotation-studio/open/tagging/727",
+    "body" : [ {
+      "type" : "SpecificResource",
+      "format" : "application/html",
+      "purpose" : "tagging",
+      "source" : "https://omeka.example.org/s/ida/page/topics/gpe/new+mexico"
+    }, {
+      "type" : "Text",
+      "format" : "text/plain",
+      "value" : "new mexico",
+      "purpose" : "tagging"
+    }, {
+      "value" : "entity:place",
+      "purpose" : "tagging"
+    } ],
+    "target" : {
+      "id" : "https://presley.example.org/iiif/idatest01/_roll_M-1473_38_cvs-939-1012/canvas/c977#xywh=251,334,315,92",
+      "type" : "Canvas",
+      "dcterms:isPartOf" : {
+        "id" : "https://presley.example.org/iiif/idatest01/_roll_M-1473_38_cvs-939-1012/manifest",
+        "type" : "Manifest",
+        "label" : "Santa Fe Superintendent General Records, 1887-1913"
+      }
+    },
+    "motivation" : {
+      "id" : "oa:tagging",
+      "label" : "Tagging"
+    }
+  }, {
+    "id" : "https://elucidate.example.org/annotation/w3c/7ff79f456c3b649bd68a4924b97c91e2/53954bbd-a8c4-471a-8b1d-c07abe535668",
+    "type" : "Annotation",
+    "created" : "2018-11-19T09:05:15+00:00",
+    "creator" : {
+      "id" : "https://omeka.example.org/admin/user/65",
+      "type" : "Person",
+      "email_sha1" : "20c7467091102bee73352e97a925c411107c8e8b",
+      "name" : "Digirati",
+      "nickname" : "Digirati"
+    },
+    "label" : "Test school SF1",
+    "generator" : "https://omeka.example.org/s/ida/annotation-studio/open/tagging/721",
+    "body" : [ {
+      "type" : "SpecificResource",
+      "format" : "application/html",
+      "purpose" : "tagging",
+      "source" : "https://omeka.example.org/s/ida/page/topics/school/test+school+sf1"
+    }, {
+      "type" : "Text",
+      "format" : "text/plain",
+      "value" : "Test school SF1",
+      "purpose" : "tagging"
+    }, {
+      "value" : "entity:school",
+      "purpose" : "tagging"
+    } ],
+    "target" : {
+      "id" : "https://presley.example.org/iiif/idatest01/_roll_PLB_01_cvs-0-353/canvas/c5#xywh=257,128,657,657",
+      "type" : "Canvas",
+      "dcterms:isPartOf" : {
+        "id" : "https://presley.example.org/iiif/idatest01/_roll_PLB_01_cvs-0-353/manifest",
+        "type" : "Manifest",
+        "label" : "Pueblo Lands Board Report 1, 1924: Cochiti - Report on Titles to Land Granted or Confirmed to Pueblo Indians not Extinguished"
+      }
+    },
+    "motivation" : {
+      "id" : "oa:tagging",
+      "label" : "Tagging"
+    }
+  }, {
+    "id" : "https://elucidate.example.org/annotation/w3c/953f0245fc8d7ee627175d0146d41934/dfa6d7bb-3abc-4566-8dcb-ae509846babe",
+    "type" : "Annotation",
+    "created" : "2018-11-18T20:54:20+00:00",
+    "creator" : {
+      "id" : "https://omeka.example.org/admin/user/65",
+      "type" : "Person",
+      "email_sha1" : "20c7467091102bee73352e97a925c411107c8e8b",
+      "name" : "Digirati",
+      "nickname" : "Digirati"
+    },
+    "label" : "cochiti",
+    "generator" : "https://omeka.example.org/s/ida/annotation-studio/open/tagging/725",
+    "body" : [ {
+      "type" : "SpecificResource",
+      "format" : "application/html",
+      "purpose" : "tagging",
+      "source" : "https://omeka.example.org/s/ida/page/topics/tribe/cochiti"
+    }, {
+      "type" : "Text",
+      "format" : "text/plain",
+      "value" : "cochiti",
+      "purpose" : "tagging"
+    }, {
+      "value" : "entity:tribe",
+      "purpose" : "tagging"
+    } ],
+    "target" : {
+      "id" : "https://presley.example.org/iiif/idatest01/_roll_M-1473_38_cvs-239-432/canvas/c429#xywh=1665,1306,232,103",
+      "type" : "Canvas",
+      "dcterms:isPartOf" : {
+        "id" : "https://presley.example.org/iiif/idatest01/_roll_M-1473_38_cvs-239-432/manifest",
+        "type" : "Manifest",
+        "label" : "Santa Fe Superintendent's Correspondence with Day School Employees, Taos Pueblo, 1914"
+      }
+    },
+    "motivation" : {
+      "id" : "oa:tagging",
+      "label" : "Tagging"
+    }
+  }, {
+    "id" : "https://elucidate.example.org/annotation/w3c/ae64ab9eb411c37cfff57c24d6756eca/ed16be41-3ae5-430e-ab73-b03a0fc720ae",
+    "type" : "Annotation",
+    "created" : "2018-11-18T20:57:14+00:00",
+    "creator" : {
+      "id" : "https://omeka.example.org/admin/user/65",
+      "type" : "Person",
+      "email_sha1" : "20c7467091102bee73352e97a925c411107c8e8b",
+      "name" : "Digirati",
+      "nickname" : "Digirati"
+    },
+    "label" : "pojoaque",
+    "generator" : "https://omeka.example.org/s/ida/annotation-studio/open/tagging/725",
+    "body" : [ {
+      "type" : "SpecificResource",
+      "format" : "application/html",
+      "purpose" : "tagging",
+      "source" : "https://omeka.example.org/s/ida/page/topics/tribe/pojoaque"
+    }, {
+      "type" : "Text",
+      "format" : "text/plain",
+      "value" : "pojoaque",
+      "purpose" : "tagging"
+    }, {
+      "value" : "entity:tribe",
+      "purpose" : "tagging"
+    } ],
+    "target" : {
+      "id" : "https://presley.example.org/iiif/idatest01/_roll_M-1473_38_cvs-939-1012/canvas/c977#xywh=217,1727,228,70",
+      "type" : "Canvas",
+      "dcterms:isPartOf" : {
+        "id" : "https://presley.example.org/iiif/idatest01/_roll_M-1473_38_cvs-939-1012/manifest",
+        "type" : "Manifest",
+        "label" : "Santa Fe Superintendent General Records, 1887-1913"
+      }
+    },
+    "motivation" : {
+      "id" : "oa:tagging",
+      "label" : "Tagging"
+    }
+  }, {
+    "id" : "https://elucidate.example.org/annotation/w3c/d2079f99f56718959d3f4464d9083cae/807f9828-091e-4236-bcc6-4691a23d021a",
+    "type" : "Annotation",
+    "created" : "2018-10-12T14:24:51+00:00",
+    "creator" : {
+      "id" : "https://omeka.example.org/admin/user/65",
+      "type" : "Person",
+      "email_sha1" : "20c7467091102bee73352e97a925c411107c8e8b",
+      "name" : "Digirati",
+      "nickname" : "Digirati"
+    },
+    "label" : "unknown",
+    "generator" : "https://omeka.example.org/s/ida/annotation-studio/open/transcriber/1435",
+    "body" : {
+      "type" : "TextualBody",
+      "format" : "text/plain",
+      "value" : "Albuquerque Training School. Albuquerque, New Mexico. July 7, 1919 NARRATIVE. Section 6 Section 6 - - - - - - - Allotments . Allotments. This section does not apply to non- reservation boarding schools.",
+      "purpose" : "describing"
+    },
+    "target" : {
+      "id" : "https://presley.example.org/iiif/idatest01/_roll_M-1011_002_cvs-180-203/canvas/c201",
+      "type" : "Canvas",
+      "dcterms:isPartOf" : {
+        "id" : "https://presley.example.org/iiif/idatest01/_roll_M-1011_002_cvs-180-203/manifest",
+        "type" : "Manifest",
+        "label" : "Albuquerque Superintendent Annual Reports, 1919"
+      }
+    },
+    "motivation" : {
+      "id" : "oa:describing",
+      "label" : "tagging"
+    }
+  }, {
+    "id" : "https://elucidate.example.org/annotation/w3c/eb427f5d0496864d28221429332f22fa/7b1d5da9-31a0-48e9-aa62-d5ff3c88a84f",
+    "type" : "Annotation",
+    "created" : "2018-11-18T19:38:01+00:00",
+    "creator" : {
+      "id" : "https://omeka.example.org/admin/user/65",
+      "type" : "Person",
+      "email_sha1" : "20c7467091102bee73352e97a925c411107c8e8b",
+      "name" : "Digirati",
+      "nickname" : "Digirati"
+    },
+    "label" : "santa fe indian school",
+    "generator" : "https://omeka.example.org/s/ida/annotation-studio/open/tagging/721",
+    "body" : [ {
+      "type" : "SpecificResource",
+      "format" : "application/html",
+      "purpose" : "tagging",
+      "source" : "https://omeka.example.org/s/ida/page/topics/school/santa+fe+indian+school"
+    }, {
+      "type" : "Text",
+      "format" : "text/plain",
+      "value" : "santa fe indian school",
+      "purpose" : "tagging"
+    }, {
+      "value" : "entity:school",
+      "purpose" : "tagging"
+    } ],
+    "target" : {
+      "id" : "https://presley.example.org/iiif/idatest01/_roll_M-1011_127_cvs-972-986/canvas/c984#xywh=947,441,537,160",
+      "type" : "Canvas",
+      "dcterms:isPartOf" : {
+        "id" : "https://presley.example.org/iiif/idatest01/_roll_M-1011_127_cvs-972-986/manifest",
+        "type" : "Manifest",
+        "label" : "Santa Fe School Annual Reports, 1924"
+      }
+    },
+    "motivation" : {
+      "id" : "oa:tagging",
+      "label" : "Tagging"
+    }
+  }, {
+    "id" : "https://elucidate.example.org/annotation/w3c/1a162303e39b1d0eedd5df739b4ccfe8/1c9a09cc-8571-498c-953b-d783f0a1b6c5",
+    "type" : "Annotation",
+    "created" : "2018-10-14T21:58:02+00:00",
+    "creator" : {
+      "id" : "https://omeka.example.org/admin/user/65",
+      "type" : "Person",
+      "email_sha1" : "20c7467091102bee73352e97a925c411107c8e8b",
+      "name" : "Digirati",
+      "nickname" : "Digirati"
+    },
+    "label" : "office of indian affairs",
+    "generator" : "https://omeka.example.org/s/ida/annotation-studio/open/tagging/723",
+    "body" : [ {
+      "type" : "SpecificResource",
+      "format" : "application/html",
+      "purpose" : "tagging",
+      "source" : "https://omeka.example.org/s/ida/page/topics/virtual:org/office+of+indian+affairs"
+    }, {
+      "type" : "Text",
+      "format" : "text/plain",
+      "value" : "office of indian affairs",
+      "purpose" : "tagging"
+    }, {
+      "value" : "entity:org",
+      "purpose" : "tagging"
+    } ],
+    "target" : {
+      "id" : "https://presley.example.org/iiif/idatest01/_roll_M-1011_174_cvs-30-52/canvas/c52#xywh=1243,88,402,292",
+      "type" : "Canvas",
+      "dcterms:isPartOf" : {
+        "id" : "https://presley.example.org/iiif/idatest01/_roll_M-1011_174_cvs-30-52/manifest",
+        "type" : "Manifest",
+        "label" : "Zuni School Annual Reports, 1910"
+      }
+    },
+    "motivation" : {
+      "id" : "oa:tagging",
+      "label" : "Tagging"
+    }
+  }, {
+    "id" : "https://elucidate.example.org/annotation/w3c/0fbe29149e808978ef68ad89e251052a/14f99de5-ce34-4270-9967-561a968eb518",
+    "type" : "Annotation",
+    "created" : "2018-10-11T10:12:14+00:00",
+    "creator" : {
+      "id" : "https://omeka.example.org/admin/user/65",
+      "type" : "Person",
+      "email_sha1" : "20c7467091102bee73352e97a925c411107c8e8b",
+      "name" : "Digirati",
+      "nickname" : "Digirati"
+    },
+    "label" : "Flooding",
+    "generator" : "https://omeka.example.org/s/ida/annotation-studio/open/tagging/1661",
+    "body" : [ {
+      "type" : "SpecificResource",
+      "format" : "application/html",
+      "purpose" : "tagging",
+      "source" : "https://omeka.example.org/s/ida/page/topics/theme/flooding"
+    }, {
+      "type" : "Text",
+      "format" : "text/plain",
+      "value" : "Flooding",
+      "purpose" : "tagging"
+    }, {
+      "value" : "entity:theme",
+      "purpose" : "tagging"
+    } ],
+    "target" : "https://presley.example.org/iiif/idatest01/_roll_M-1011_127_cvs-219-282/canvas/c222",
+    "motivation" : {
+      "id" : "oa:tagging",
+      "label" : "Tagging"
+    }
+  }, {
+    "id" : "https://elucidate.example.org/annotation/w3c/d6bb6f214973958bd77e47fd2b38bc46/5a858600-6dbd-4fe1-8a9d-ce19e46419aa",
+    "type" : "Annotation",
+    "created" : "2018-10-16T11:04:24+00:00",
+    "creator" : {
+      "id" : "https://omeka.example.org/admin/user/65",
+      "type" : "Person",
+      "email_sha1" : "20c7467091102bee73352e97a925c411107c8e8b",
+      "name" : "Digirati",
+      "nickname" : "Digirati"
+    },
+    "label" : "zia",
+    "generator" : "https://omeka.example.org/s/ida/annotation-studio/open/tagging/725",
+    "body" : [ {
+      "type" : "SpecificResource",
+      "format" : "application/html",
+      "purpose" : "tagging",
+      "source" : "https://omeka.example.org/s/ida/page/topics/tribe/zia"
+    }, {
+      "type" : "Text",
+      "format" : "text/plain",
+      "value" : "zia",
+      "purpose" : "tagging"
+    }, {
+      "value" : "entity:tribe",
+      "purpose" : "tagging"
+    } ],
+    "target" : {
+      "id" : "https://presley.example.org/iiif/idatest01/_roll_M-1473_38_cvs-939-1012/canvas/c988#xywh=433,792,172,74",
+      "type" : "Canvas",
+      "dcterms:isPartOf" : {
+        "id" : "https://presley.example.org/iiif/idatest01/_roll_M-1473_38_cvs-939-1012/manifest",
+        "type" : "Manifest",
+        "label" : "Santa Fe Superintendent General Records, 1887-1913"
+      }
+    },
+    "motivation" : {
+      "id" : "oa:tagging",
+      "label" : "Tagging"
+    }
+  }, {
+    "id" : "https://elucidate.example.org/annotation/w3c/53e8e227fc8d209bc4e30d8fd132348c/d9207680-7f76-451e-a1bf-a63cde0a6770",
+    "type" : "Annotation",
+    "created" : "2018-10-14T22:25:18+00:00",
+    "creator" : {
+      "id" : "https://omeka.example.org/admin/user/65",
+      "type" : "Person",
+      "email_sha1" : "20c7467091102bee73352e97a925c411107c8e8b",
+      "name" : "Digirati",
+      "nickname" : "Digirati"
+    },
+    "label" : "jemez",
+    "generator" : "https://omeka.example.org/s/ida/annotation-studio/open/tagging/725",
+    "body" : [ {
+      "type" : "SpecificResource",
+      "format" : "application/html",
+      "purpose" : "tagging",
+      "source" : "https://omeka.example.org/s/ida/page/topics/tribe/jemez"
+    }, {
+      "type" : "Text",
+      "format" : "text/plain",
+      "value" : "jemez",
+      "purpose" : "tagging"
+    }, {
+      "value" : "entity:tribe",
+      "purpose" : "tagging"
+    } ],
+    "target" : {
+      "id" : "https://presley.example.org/iiif/idatest01/_roll_M-1473_27_cvs-1-10/canvas/c10#xywh=699,954,125,66",
+      "type" : "Canvas",
+      "dcterms:isPartOf" : {
+        "id" : "https://presley.example.org/iiif/idatest01/_roll_M-1473_27_cvs-1-10/manifest",
+        "type" : "Manifest",
+        "label" : "Bureau of Indian Affairs Records Created by the Santa Fe Indian School, 1890-1918, Finding Aid"
+      }
+    },
+    "motivation" : {
+      "id" : "oa:tagging",
+      "label" : "Tagging"
+    }
+  }, {
+    "id" : "https://elucidate.example.org/annotation/w3c/541e19b4ef4c26e910a49250dfcb47d8/e2642ed5-485e-4489-bc2d-980410af16dd",
+    "type" : "Annotation",
+    "created" : "2018-10-11T18:02:53+00:00",
+    "creator" : {
+      "id" : "https://omeka.example.org/admin/user/65",
+      "type" : "Person",
+      "email_sha1" : "20c7467091102bee73352e97a925c411107c8e8b",
+      "name" : "Digirati",
+      "nickname" : "Digirati"
+    },
+    "label" : "Bismarck School, N.D.",
+    "generator" : "https://omeka.example.org/s/ida/annotation-studio/open/tagging/721",
+    "body" : [ {
+      "type" : "SpecificResource",
+      "format" : "application/html",
+      "purpose" : "tagging",
+      "source" : "https://omeka.example.org/s/ida/page/topics/school/bismarck+school,+n.d."
+    }, {
+      "type" : "Text",
+      "format" : "text/plain",
+      "value" : "Bismarck School, N.D.",
+      "purpose" : "tagging"
+    }, {
+      "value" : "entity:school",
+      "purpose" : "tagging"
+    } ],
+    "target" : "https://presley.example.org/iiif/idatest01/_roll_M-1011_127_cvs-2-26/canvas/c7#xywh=420,1771,330,33",
+    "motivation" : {
+      "id" : "oa:tagging",
+      "label" : "Tagging"
+    }
+  }, {
+    "id" : "https://elucidate.example.org/annotation/w3c/7dd935a340ba96a6194bfa5a917f3293/e4f8bbd1-2857-427f-a400-8044a34e73d0",
+    "type" : "Annotation",
+    "created" : "2018-10-08T10:22:49+00:00",
+    "creator" : {
+      "id" : "https://omeka.example.org/admin/user/65",
+      "type" : "Person",
+      "email_sha1" : "20c7467091102bee73352e97a925c411107c8e8b",
+      "name" : "Digirati",
+      "nickname" : "Digirati"
+    },
+    "label" : "testing school",
+    "generator" : "https://omeka.example.org/s/ida/annotation-studio/open/tagging/721",
+    "body" : [ {
+      "type" : "SpecificResource",
+      "format" : "application/html",
+      "purpose" : "tagging",
+      "source" : "https://omeka.example.org/s/ida/page/topics/school/testing+school"
+    }, {
+      "type" : "Text",
+      "format" : "text/plain",
+      "value" : "testing school",
+      "purpose" : "tagging"
+    }, {
+      "value" : "entity:school",
+      "purpose" : "tagging"
+    } ],
+    "target" : "https://presley.example.org/iiif/idatest01/_roll_PLB_01_cvs-0-353/canvas/c46#xywh=401,279,681,681",
+    "motivation" : {
+      "id" : "oa:tagging",
+      "label" : "Tagging"
+    }
+  }, {
+    "id" : "https://elucidate.example.org/annotation/w3c/fca247a9da52bdfc9353cddf61f296b7/e34bbab5-7075-4330-8bae-d07b7906cf01",
+    "type" : "Annotation",
+    "created" : "2018-11-06T14:46:45+00:00",
+    "creator" : {
+      "id" : "https://omeka.example.org/admin/user/65",
+      "type" : "Person",
+      "email_sha1" : "20c7467091102bee73352e97a925c411107c8e8b",
+      "name" : "Digirati",
+      "nickname" : "Digirati"
+    },
+    "label" : "San Xavier Sanatorium",
+    "generator" : "https://omeka.example.org/s/ida/annotation-studio/open/tagging/723",
+    "body" : [ {
+      "type" : "SpecificResource",
+      "format" : "application/html",
+      "purpose" : "tagging",
+      "source" : "https://omeka.example.org/s/ida/page/topics/organization/san+xavier+sanatorium"
+    }, {
+      "type" : "Text",
+      "format" : "text/plain",
+      "value" : "San Xavier Sanatorium",
+      "purpose" : "tagging"
+    }, {
+      "value" : "entity:org",
+      "purpose" : "tagging"
+    } ],
+    "target" : {
+      "id" : "https://presley.example.org/iiif/idatest01/_roll_M-1011_127_cvs-2-26/canvas/c21#xywh=451,1569,479,69",
+      "type" : "Canvas",
+      "dcterms:isPartOf" : {
+        "id" : "https://presley.example.org/iiif/idatest01/_roll_M-1011_127_cvs-2-26/manifest",
+        "type" : "Manifest",
+        "label" : "Finding Aid, Superintendents' Annual Reports from Field Jurisdictions, 1907-1938, M-1011"
+      }
+    },
+    "motivation" : {
+      "id" : "oa:tagging",
+      "label" : "Tagging"
+    }
+  }, {
+    "id" : "https://elucidate.example.org/annotation/w3c/53e8e227fc8d209bc4e30d8fd132348c/550b0ee3-723e-4725-9ceb-b9bd419c3fac",
+    "type" : "Annotation",
+    "created" : "2018-10-14T22:25:05+00:00",
+    "creator" : {
+      "id" : "https://omeka.example.org/admin/user/65",
+      "type" : "Person",
+      "email_sha1" : "20c7467091102bee73352e97a925c411107c8e8b",
+      "name" : "Digirati",
+      "nickname" : "Digirati"
+    },
+    "label" : "nambe",
+    "generator" : "https://omeka.example.org/s/ida/annotation-studio/open/tagging/725",
+    "body" : [ {
+      "type" : "SpecificResource",
+      "format" : "application/html",
+      "purpose" : "tagging",
+      "source" : "https://omeka.example.org/s/ida/page/topics/tribe/nambe"
+    }, {
+      "type" : "Text",
+      "format" : "text/plain",
+      "value" : "nambe",
+      "purpose" : "tagging"
+    }, {
+      "value" : "entity:tribe",
+      "purpose" : "tagging"
+    } ],
+    "target" : {
+      "id" : "https://presley.example.org/iiif/idatest01/_roll_M-1473_27_cvs-1-10/canvas/c10#xywh=703,1048,129,70",
+      "type" : "Canvas",
+      "dcterms:isPartOf" : {
+        "id" : "https://presley.example.org/iiif/idatest01/_roll_M-1473_27_cvs-1-10/manifest",
+        "type" : "Manifest",
+        "label" : "Bureau of Indian Affairs Records Created by the Santa Fe Indian School, 1890-1918, Finding Aid"
+      }
+    },
+    "motivation" : {
+      "id" : "oa:tagging",
+      "label" : "Tagging"
+    }
+  }, {
+    "id" : "https://elucidate.example.org/annotation/w3c/efc9d1efe410e99f1bae49b232016efa/822abc81-c813-42b2-a657-285f9cc99ddf",
+    "type" : "Annotation",
+    "created" : "2018-10-12T13:20:33+00:00",
+    "creator" : {
+      "id" : "https://omeka.example.org/admin/user/65",
+      "type" : "Person",
+      "email_sha1" : "20c7467091102bee73352e97a925c411107c8e8b",
+      "name" : "Digirati",
+      "nickname" : "Digirati"
+    },
+    "label" : "zuni",
+    "generator" : "https://omeka.example.org/s/ida/annotation-studio/open/tagging/725",
+    "body" : [ {
+      "type" : "SpecificResource",
+      "format" : "application/html",
+      "purpose" : "tagging",
+      "source" : "https://omeka.example.org/s/ida/page/topics/tribe/zuni"
+    }, {
+      "type" : "Text",
+      "format" : "text/plain",
+      "value" : "zuni",
+      "purpose" : "tagging"
+    }, {
+      "value" : "entity:tribe",
+      "purpose" : "tagging"
+    } ],
+    "target" : {
+      "id" : "https://presley.example.org/iiif/idatest01/_roll_M-1011_174_cvs-894-947/canvas/c894#xywh=487,818,254,254",
+      "type" : "Canvas",
+      "dcterms:isPartOf" : {
+        "id" : "https://presley.example.org/iiif/idatest01/_roll_M-1011_174_cvs-894-947/manifest",
+        "type" : "Manifest",
+        "label" : "Zuni School Annual Reports, 1929"
+      }
+    },
+    "motivation" : {
+      "id" : "oa:tagging",
+      "label" : "Tagging"
+    }
+  }, {
+    "id" : "https://elucidate.example.org/annotation/w3c/d6bb6f214973958bd77e47fd2b38bc46/ca7bd1bc-8239-48ad-8f19-019c97833aff",
+    "type" : "Annotation",
+    "created" : "2018-10-16T11:03:57+00:00",
+    "creator" : {
+      "id" : "https://omeka.example.org/admin/user/65",
+      "type" : "Person",
+      "email_sha1" : "20c7467091102bee73352e97a925c411107c8e8b",
+      "name" : "Digirati",
+      "nickname" : "Digirati"
+    },
+    "label" : "santa clara",
+    "generator" : "https://omeka.example.org/s/ida/annotation-studio/open/tagging/725",
+    "body" : [ {
+      "type" : "SpecificResource",
+      "format" : "application/html",
+      "purpose" : "tagging",
+      "source" : "https://omeka.example.org/s/ida/page/topics/tribe/santa+clara"
+    }, {
+      "type" : "Text",
+      "format" : "text/plain",
+      "value" : "santa clara",
+      "purpose" : "tagging"
+    }, {
+      "value" : "entity:tribe",
+      "purpose" : "tagging"
+    } ],
+    "target" : {
+      "id" : "https://presley.example.org/iiif/idatest01/_roll_M-1473_38_cvs-939-1012/canvas/c988#xywh=433,886,353,71",
+      "type" : "Canvas",
+      "dcterms:isPartOf" : {
+        "id" : "https://presley.example.org/iiif/idatest01/_roll_M-1473_38_cvs-939-1012/manifest",
+        "type" : "Manifest",
+        "label" : "Santa Fe Superintendent General Records, 1887-1913"
+      }
+    },
+    "motivation" : {
+      "id" : "oa:tagging",
+      "label" : "Tagging"
+    }
+  }, {
+    "id" : "https://elucidate.example.org/annotation/w3c/eb427f5d0496864d28221429332f22fa/fe200a72-bcbc-4277-8e11-8c49e231e27e",
+    "type" : "Annotation",
+    "created" : "2018-11-18T19:43:11+00:00",
+    "creator" : {
+      "id" : "https://omeka.example.org/admin/user/65",
+      "type" : "Person",
+      "email_sha1" : "20c7467091102bee73352e97a925c411107c8e8b",
+      "name" : "Digirati",
+      "nickname" : "Digirati"
+    },
+    "label" : "zuni",
+    "generator" : "https://omeka.example.org/s/ida/annotation-studio/open/tagging/725",
+    "body" : [ {
+      "type" : "SpecificResource",
+      "format" : "application/html",
+      "purpose" : "tagging",
+      "source" : "https://omeka.example.org/s/ida/page/topics/tribe/zuni"
+    }, {
+      "type" : "Text",
+      "format" : "text/plain",
+      "value" : "zuni",
+      "purpose" : "tagging"
+    }, {
+      "value" : "entity:tribe",
+      "purpose" : "tagging"
+    } ],
+    "target" : {
+      "id" : "https://presley.example.org/iiif/idatest01/_roll_M-1011_127_cvs-972-986/canvas/c984#xywh=1080,1814,108,41",
+      "type" : "Canvas",
+      "dcterms:isPartOf" : {
+        "id" : "https://presley.example.org/iiif/idatest01/_roll_M-1011_127_cvs-972-986/manifest",
+        "type" : "Manifest",
+        "label" : "Santa Fe School Annual Reports, 1924"
+      }
+    },
+    "motivation" : {
+      "id" : "oa:tagging",
+      "label" : "Tagging"
+    }
+  }, {
+    "id" : "https://elucidate.example.org/annotation/w3c/efc9d1efe410e99f1bae49b232016efa/2aba5f68-95a5-47dc-b6c2-793468b43e3d",
+    "type" : "Annotation",
+    "created" : "2018-10-12T13:18:39+00:00",
+    "creator" : {
+      "id" : "https://omeka.example.org/admin/user/65",
+      "type" : "Person",
+      "email_sha1" : "20c7467091102bee73352e97a925c411107c8e8b",
+      "name" : "Digirati",
+      "nickname" : "Digirati"
+    },
+    "label" : "Test person SF 8",
+    "generator" : "https://omeka.example.org/s/ida/annotation-studio/open/tagging/719",
+    "body" : [ {
+      "type" : "SpecificResource",
+      "format" : "application/html",
+      "purpose" : "tagging",
+      "source" : "https://omeka.example.org/s/ida/page/topics/person/test+person+sf+8"
+    }, {
+      "type" : "Text",
+      "format" : "text/plain",
+      "value" : "Test person SF 8",
+      "purpose" : "tagging"
+    }, {
+      "value" : "entity:person",
+      "purpose" : "tagging"
+    } ],
+    "target" : {
+      "id" : "https://presley.example.org/iiif/idatest01/_roll_M-1011_174_cvs-894-947/canvas/c894#xywh=512,1246,254,254",
+      "type" : "Canvas",
+      "dcterms:isPartOf" : {
+        "id" : "https://presley.example.org/iiif/idatest01/_roll_M-1011_174_cvs-894-947/manifest",
+        "type" : "Manifest",
+        "label" : "Zuni School Annual Reports, 1929"
+      }
+    },
+    "motivation" : {
+      "id" : "oa:tagging",
+      "label" : "Tagging"
+    }
+  }, {
+    "id" : "https://elucidate.example.org/annotation/w3c/0819991ea44abcaaa8b2944ce2272ffc/8cd93c99-7d40-48c1-9fc3-9f68cf8277a6",
+    "type" : "Annotation",
+    "created" : "2018-11-06T14:49:16+00:00",
+    "creator" : {
+      "id" : "https://omeka.example.org/admin/user/65",
+      "type" : "Person",
+      "email_sha1" : "20c7467091102bee73352e97a925c411107c8e8b",
+      "name" : "Digirati",
+      "nickname" : "Digirati"
+    },
+    "label" : "san xavier school",
+    "generator" : "https://omeka.example.org/s/ida/annotation-studio/open/tagging/723",
+    "body" : [ {
+      "type" : "SpecificResource",
+      "format" : "application/html",
+      "purpose" : "tagging",
+      "source" : "https://omeka.example.org/s/ida/page/topics/virtual:org/san+xavier+school"
+    }, {
+      "type" : "Text",
+      "format" : "text/plain",
+      "value" : "san xavier school",
+      "purpose" : "tagging"
+    }, {
+      "value" : "entity:org",
+      "purpose" : "tagging"
+    } ],
+    "target" : {
+      "id" : "https://presley.example.org/iiif/idatest01/_roll_M-1304_25_cvs-17-29/canvas/c23#xywh=2853,1656,587,587",
+      "type" : "Canvas",
+      "dcterms:isPartOf" : {
+        "id" : "https://presley.example.org/iiif/idatest01/_roll_M-1304_25_cvs-17-29/manifest",
+        "type" : "Manifest",
+        "label" : "Register of Letters Received by the Pueblo and Jicarilla Indian Agencies, 1890 April-October, 1891 July - August"
+      }
+    },
+    "motivation" : {
+      "id" : "oa:tagging",
+      "label" : "Tagging"
+    }
+  }, {
+    "id" : "https://elucidate.example.org/annotation/w3c/7dd935a340ba96a6194bfa5a917f3293/246847c6-6c45-432f-acc3-37c67f3bb09b",
+    "type" : "Annotation",
+    "created" : "2018-10-08T10:23:10+00:00",
+    "creator" : {
+      "id" : "https://omeka.example.org/admin/user/65",
+      "type" : "Person",
+      "email_sha1" : "20c7467091102bee73352e97a925c411107c8e8b",
+      "name" : "Digirati",
+      "nickname" : "Digirati"
+    },
+    "label" : "unknown",
+    "generator" : "https://omeka.example.org/s/ida/annotation-studio/open/transcriber/1435",
+    "body" : {
+      "type" : "TextualBody",
+      "format" : "text/plain",
+      "value" : "TESTING\n\nEXCEPTION NO. 29 Private claim No. 17, P. 3. TRINIDAD C. de ARAGON ( widow) A tract or parcel of land si tuate in Section 31, T. 16 N., R, 6 E., N. M. P. M., described in survey ma de by the General Le nd office as follows: Beginning at cor, No. 1 of this claim,( which is also eor, No. 8 of P. c. 15 P, 1); Thence s. 83° 58' E., 1. 13 chs., to cor. No. 2; Thence N. 86° 52' E., 1. 31 chs., to cor. No. 3; Thence S. 4° 00' W., 0. 82 ch., to cor. No. 4; Thence S. 87° 46' E., 0. 89 ch., to cor. No. 5; Thence s. 2° 52' E., 0. 21 ch., to cor. No. 6; Thence s. 87° 40' E., 0. 19 ch., to cor, No. 7; Thence North, 0. 09 ch., to sor. No. 8; Thence s. 84° 26' E., 2. 45 chs., to cor. No. 9; Thence s. 25° 28' E., 1. 33 o hs., to an iron post for cor. No. 10; Thense N. 88° 49' W., 4. 77 chs., to cor. No. 11; Thence N. 14° 17' E., 0. 64 ch., to cor. No. 12; 42",
+      "purpose" : "describing"
+    },
+    "target" : "https://presley.example.org/iiif/idatest01/_roll_PLB_01_cvs-0-353/canvas/c46",
+    "motivation" : {
+      "id" : "oa:describing",
+      "label" : "tagging"
+    }
+  }, {
+    "id" : "https://elucidate.example.org/annotation/w3c/7685f63d11725e6ffcabf0629cec8c22/a0ed035e-6e9a-4079-bc4f-dbaf80aa0644",
+    "type" : "Annotation",
+    "created" : "2018-10-15T09:20:26+00:00",
+    "creator" : {
+      "id" : "https://omeka.example.org/admin/user/65",
+      "type" : "Person",
+      "email_sha1" : "20c7467091102bee73352e97a925c411107c8e8b",
+      "name" : "Digirati",
+      "nickname" : "Digirati"
+    },
+    "label" : "Santiago Mirabal",
+    "generator" : "https://omeka.example.org/s/ida/annotation-studio/open/tagging/719",
+    "body" : [ {
+      "type" : "SpecificResource",
+      "format" : "application/html",
+      "purpose" : "tagging",
+      "source" : "https://omeka.example.org/s/ida/page/topics/person/santiago+mirabal"
+    }, {
+      "type" : "Text",
+      "format" : "text/plain",
+      "value" : "Santiago Mirabal",
+      "purpose" : "tagging"
+    }, {
+      "value" : "entity:person",
+      "purpose" : "tagging"
+    } ],
+    "target" : {
+      "id" : "https://presley.example.org/iiif/idatest01/_roll_M-1473_38_cvs-239-432/canvas/c340#xywh=858,1779,541,146",
+      "type" : "Canvas",
+      "dcterms:isPartOf" : {
+        "id" : "https://presley.example.org/iiif/idatest01/_roll_M-1473_38_cvs-239-432/manifest",
+        "type" : "Manifest",
+        "label" : "Santa Fe Superintendent's Correspondence with Day School Employees, Taos Pueblo, 1914"
+      }
+    },
+    "motivation" : {
+      "id" : "oa:tagging",
+      "label" : "Tagging"
+    }
+  }, {
+    "id" : "https://elucidate.example.org/annotation/w3c/541e19b4ef4c26e910a49250dfcb47d8/0666a542-8712-4857-a166-0682c7738942",
+    "type" : "Annotation",
+    "created" : "2018-10-11T18:01:42+00:00",
+    "creator" : {
+      "id" : "https://omeka.example.org/admin/user/65",
+      "type" : "Person",
+      "email_sha1" : "20c7467091102bee73352e97a925c411107c8e8b",
+      "name" : "Digirati",
+      "nickname" : "Digirati"
+    },
+    "label" : "unknown",
+    "generator" : "https://omeka.example.org/s/ida/annotation-studio/open/tagging/721",
+    "body" : [ {
+      "type" : "SpecificResource",
+      "format" : "application/html",
+      "purpose" : "tagging",
+      "source" : "https://omeka.example.org/s/ida/page/topics/school/unknown"
+    }, {
+      "type" : "Text",
+      "format" : "text/plain",
+      "value" : "unknown",
+      "purpose" : "tagging"
+    }, {
+      "value" : "entity:school",
+      "purpose" : "tagging"
+    } ],
+    "target" : "https://presley.example.org/iiif/idatest01/_roll_M-1011_127_cvs-2-26/canvas/c7#xywh=419,1402,505,70",
+    "motivation" : {
+      "id" : "oa:tagging",
+      "label" : "Tagging"
+    }
+  }, {
+    "id" : "https://elucidate.example.org/annotation/w3c/ae64ab9eb411c37cfff57c24d6756eca/25ce38f3-1c11-4a72-a064-4bf7693c95b0",
+    "type" : "Annotation",
+    "created" : "2018-11-18T21:07:04+00:00",
+    "creator" : {
+      "id" : "https://omeka.example.org/admin/user/65",
+      "type" : "Person",
+      "email_sha1" : "20c7467091102bee73352e97a925c411107c8e8b",
+      "name" : "Digirati",
+      "nickname" : "Digirati"
+    },
+    "label" : "ohkay owingeh",
+    "generator" : "https://omeka.example.org/s/ida/annotation-studio/open/tagging/725",
+    "body" : [ {
+      "type" : "SpecificResource",
+      "format" : "application/html",
+      "purpose" : "tagging",
+      "source" : "https://omeka.example.org/s/ida/page/topics/tribe/ohkay+owingeh"
+    }, {
+      "type" : "Text",
+      "format" : "text/plain",
+      "value" : "ohkay owingeh",
+      "purpose" : "tagging"
+    }, {
+      "value" : "entity:tribe",
+      "purpose" : "tagging"
+    } ],
+    "target" : {
+      "id" : "https://presley.example.org/iiif/idatest01/_roll_M-1473_38_cvs-939-1012/canvas/c977#xywh=217,2328,249,63",
+      "type" : "Canvas",
+      "dcterms:isPartOf" : {
+        "id" : "https://presley.example.org/iiif/idatest01/_roll_M-1473_38_cvs-939-1012/manifest",
+        "type" : "Manifest",
+        "label" : "Santa Fe Superintendent General Records, 1887-1913"
+      }
+    },
+    "motivation" : {
+      "id" : "oa:tagging",
+      "label" : "Tagging"
+    }
+  }, {
+    "id" : "https://elucidate.example.org/annotation/w3c/eb427f5d0496864d28221429332f22fa/f2cd1cdd-a3e2-48e0-8d82-20455c13f913",
+    "type" : "Annotation",
+    "created" : "2018-11-18T19:48:33+00:00",
+    "creator" : {
+      "id" : "https://omeka.example.org/admin/user/65",
+      "type" : "Person",
+      "email_sha1" : "20c7467091102bee73352e97a925c411107c8e8b",
+      "name" : "Digirati",
+      "nickname" : "Digirati"
+    },
+    "label" : "ute mountain utes",
+    "generator" : "https://omeka.example.org/s/ida/annotation-studio/open/tagging/725",
+    "body" : [ {
+      "type" : "SpecificResource",
+      "format" : "application/html",
+      "purpose" : "tagging",
+      "source" : "https://omeka.example.org/s/ida/page/topics/tribe/ute+mountain+utes"
+    }, {
+      "type" : "Text",
+      "format" : "text/plain",
+      "value" : "ute mountain utes",
+      "purpose" : "tagging"
+    }, {
+      "value" : "entity:tribe",
+      "purpose" : "tagging"
+    } ],
+    "target" : {
+      "id" : "https://presley.example.org/iiif/idatest01/_roll_M-1011_127_cvs-972-986/canvas/c984#xywh=1263,1861,88,42",
+      "type" : "Canvas",
+      "dcterms:isPartOf" : {
+        "id" : "https://presley.example.org/iiif/idatest01/_roll_M-1011_127_cvs-972-986/manifest",
+        "type" : "Manifest",
+        "label" : "Santa Fe School Annual Reports, 1924"
+      }
+    },
+    "motivation" : {
+      "id" : "oa:tagging",
+      "label" : "Tagging"
+    }
+  }, {
+    "id" : "https://elucidate.example.org/annotation/w3c/d14d9e8c911d1d3464ca061e38908cf4/f98e103d-da49-4bca-addc-bc7695921bad",
+    "type" : "Annotation",
+    "created" : "2018-10-12T14:33:15+00:00",
+    "creator" : {
+      "id" : "https://omeka.example.org/admin/user/65",
+      "type" : "Person",
+      "email_sha1" : "20c7467091102bee73352e97a925c411107c8e8b",
+      "name" : "Digirati",
+      "nickname" : "Digirati"
+    },
+    "label" : "Charles Springer",
+    "generator" : "https://omeka.example.org/s/ida/annotation-studio/open/tagging/719",
+    "body" : [ {
+      "type" : "SpecificResource",
+      "format" : "application/html",
+      "purpose" : "tagging",
+      "source" : "https://omeka.example.org/s/ida/page/topics/person/charles+springer"
+    }, {
+      "type" : "Text",
+      "format" : "text/plain",
+      "value" : "Charles Springer",
+      "purpose" : "tagging"
+    }, {
+      "value" : "entity:person",
+      "purpose" : "tagging"
+    } ],
+    "target" : {
+      "id" : "https://presley.example.org/iiif/idatest01/_roll_PLB_02AB_cvs-173-379/canvas/c249#xywh=883,828,200,40",
+      "type" : "Canvas",
+      "dcterms:isPartOf" : {
+        "id" : "https://presley.example.org/iiif/idatest01/_roll_PLB_02AB_cvs-173-379/manifest",
+        "type" : "Manifest",
+        "label" : "Pueblo Lands Board 300.2-8 Isleta - United States as Guardian for Pueblo of Isleta v. Barboa et. al., Correspondence and Exhibits, 1930"
+      }
+    },
+    "motivation" : {
+      "id" : "oa:tagging",
+      "label" : "Tagging"
+    }
+  }, {
+    "id" : "https://elucidate.example.org/annotation/w3c/0453414d8af0e19695ed01397ca2c59e/3a3edbbe-640b-4ce0-b4e1-7b1d108b2dfe",
+    "type" : "Annotation",
+    "created" : "2018-10-11T18:12:57+00:00",
+    "creator" : {
+      "id" : "https://omeka.example.org/admin/user/65",
+      "type" : "Person",
+      "email_sha1" : "20c7467091102bee73352e97a925c411107c8e8b",
+      "name" : "Digirati",
+      "nickname" : "Digirati"
+    },
+    "label" : "Chippewa",
+    "generator" : "https://omeka.example.org/s/ida/annotation-studio/open/tagging/725",
+    "body" : [ {
+      "type" : "SpecificResource",
+      "format" : "application/html",
+      "purpose" : "tagging",
+      "source" : "https://omeka.example.org/s/ida/page/topics/organization/chippewa"
+    }, {
+      "type" : "Text",
+      "format" : "text/plain",
+      "value" : "Chippewa",
+      "purpose" : "tagging"
+    }, {
+      "value" : "entity:tribe",
+      "purpose" : "tagging"
+    } ],
+    "target" : "https://presley.example.org/iiif/idatest01/_roll_M-1011_127_cvs-2-26/canvas/c9#xywh=749,2510,172,53",
+    "motivation" : {
+      "id" : "oa:tagging",
+      "label" : "Tagging"
+    }
+  }, {
+    "id" : "https://elucidate.example.org/annotation/w3c/56c90390f843ffacdf2550cbe8089bbe/b87b7c74-abb8-43d1-ada9-6ecba1dafa8e",
+    "type" : "Annotation",
+    "created" : "2018-10-12T12:25:45+00:00",
+    "creator" : {
+      "id" : "https://omeka.example.org/admin/user/65",
+      "type" : "Person",
+      "email_sha1" : "20c7467091102bee73352e97a925c411107c8e8b",
+      "name" : "Digirati",
+      "nickname" : "Digirati"
+    },
+    "label" : "unknown",
+    "generator" : "https://omeka.example.org/s/ida/annotation-studio/open/transcriber/1435",
+    "body" : {
+      "type" : "TextualBody",
+      "format" : "text/plain",
+      "value" : "Annual Report, 1924 San Juan Agency The San Juan Boarding School was originally constructed with a capacity of one hundred eighty, subsequently several small cottages for boys were added and thus the capacity was considerably increased, although no additional capacity for girls has been provided. During the year there were two hundred fifteen pupils enrolled. A new school, now being built at Shiprock, will take care of two hundred pupils when finished as it probably will be early in October next. The San Juan School Plant has immediate need of a great deal of equipment: A new boiler for the power- house; a new pump to supply all domestic water; a he at er an d a small feed- water pump to supplement the injector now being used to feed the boilers; a bake oven for the bakery as it is almost impossible to provide bread for 215 pupils when it must all be based in the kitchen range; an extractor and a washing machine for the laundry as it is only with difficulty that the present equip ment supplies the present need and with the new school with its 200 additional pupils added it will be wholly impossible to turn out the necessary work; the laundry needs a new drive shaft and at least six new hangers; five radiators have been removed from the girls' building during the past years and have disappeared, those should be replaced The acreage under cultivation on the school farm decreases each year because of the ever increasing presence of ground water and the total lack of drainage. 34",
+      "purpose" : "describing"
+    },
+    "target" : "https://presley.example.org/iiif/idatest01/_roll_M-1011_127_cvs-219-282/canvas/c254",
+    "motivation" : {
+      "id" : "oa:describing",
+      "label" : "tagging"
+    }
+  }, {
+    "id" : "https://elucidate.example.org/annotation/w3c/4c7812909d794ddc360c9113693a8d83/d7d8b697-6ad7-4db7-b030-53400b3ceac5",
+    "type" : "Annotation",
+    "created" : "2018-10-14T22:32:14+00:00",
+    "creator" : {
+      "id" : "https://omeka.example.org/admin/user/65",
+      "type" : "Person",
+      "email_sha1" : "20c7467091102bee73352e97a925c411107c8e8b",
+      "name" : "Digirati",
+      "nickname" : "Digirati"
+    },
+    "label" : "Florencio Cortez",
+    "generator" : "https://omeka.example.org/s/ida/annotation-studio/open/tagging/719",
+    "body" : [ {
+      "type" : "SpecificResource",
+      "format" : "application/html",
+      "purpose" : "tagging",
+      "source" : "https://omeka.example.org/s/ida/page/topics/person/florencio+cortez"
+    }, {
+      "type" : "Text",
+      "format" : "text/plain",
+      "value" : "Florencio Cortez",
+      "purpose" : "tagging"
+    }, {
+      "value" : "entity:person",
+      "purpose" : "tagging"
+    } ],
+    "target" : {
+      "id" : "https://presley.example.org/iiif/idatest01/_roll_PLB_02D_cvs-427-586/canvas/c502#xywh=931,3035,585,74",
+      "type" : "Canvas",
+      "dcterms:isPartOf" : {
+        "id" : "https://presley.example.org/iiif/idatest01/_roll_PLB_02D_cvs-427-586/manifest",
+        "type" : "Manifest",
+        "label" : "Pueblo Lands Board Final Decrees, Taos, 1929-1931"
+      }
+    },
+    "motivation" : {
+      "id" : "oa:tagging",
+      "label" : "Tagging"
+    }
+  } ],
+  "partOf" : "https://elucidate.example.org/annotation/w3c/services/search/creator?type=id&strict=true&value=https%3A%2F%2Fomeka.example.org%2Fadmin%2Fuser%2F65&levels=annotation",
+  "startIndex" : 0
+}

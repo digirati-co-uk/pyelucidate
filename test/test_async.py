@@ -571,3 +571,104 @@ def test_items_delete_by_manifest_no_canvases(datafiles):
             dry_run=True,
         )
         assert response is False
+
+
+@pytest.mark.datafiles(
+    os.path.join(FIXTURE_DIR, "search_by_creator.json"),
+    os.path.join(FIXTURE_DIR, "search_by_creator_page.json"),
+)
+def test_items_by_creator_filter(datafiles):
+    path = str(datafiles)
+    with aioresponses() as mock, requests_mock.Mocker() as m:
+        with open(os.path.join(path, "search_by_creator.json"), "r") as f:
+            search_by_creator = json.load(f)
+        with open(os.path.join(path, "search_by_creator_page.json"), "r") as f0:
+            search_by_creator_page = json.load(f0)
+        c = "https://omeka.example.org/admin/user/65"
+        u = (
+            "https://elucidate.example.org/annotation/w3c/services/search/creator?type=id&levels=annotation&strict=" +
+            "True&value=https%3A%2F%2Fomeka.example.org%2Fadmin%2Fuser%2F65"
+        )
+        print("U", u)
+        m.register_uri("GET", url=u, json=search_by_creator)
+        anno_uris = [
+            "https://elucidate.example.org/annotation/w3c/services/search/creator?page=0&type=id&strict=true" +
+            "&value=https%3A%2F%2Fomeka.example.org%2Fadmin%2Fuser%2F65&levels=annotation&desc=1"
+        ]
+        for anno_uri in anno_uris:
+            mock.get(anno_uri, payload=search_by_creator_page)
+        response = elucidate.async_items_by_creator(
+            elucidate="https://elucidate.example.org",
+            creator_id=c,
+            filter_by={"motivation": [{"id": "bookmarking"}]},
+        )
+        anno_list = list(response)
+        assert isinstance(response, types.GeneratorType)  # is True
+        assert len(anno_list) == 1
+
+
+@pytest.mark.datafiles(
+    os.path.join(FIXTURE_DIR, "search_by_creator.json"),
+    os.path.join(FIXTURE_DIR, "search_by_creator_page.json"),
+)
+def test_items_by_creator_no_filter(datafiles):
+    path = str(datafiles)
+    with aioresponses() as mock, requests_mock.Mocker() as m:
+        with open(os.path.join(path, "search_by_creator.json"), "r") as f:
+            search_by_creator = json.load(f)
+        with open(os.path.join(path, "search_by_creator_page.json"), "r") as f0:
+            search_by_creator_page = json.load(f0)
+        c = "https://omeka.example.org/admin/user/65"
+        u = (
+            "https://elucidate.example.org/annotation/w3c/services/search/creator?type=id&levels=annotation&strict=" +
+            "True&value=https%3A%2F%2Fomeka.example.org%2Fadmin%2Fuser%2F65"
+        )
+        print("U", u)
+        m.register_uri("GET", url=u, json=search_by_creator)
+        anno_uris = [
+            "https://elucidate.example.org/annotation/w3c/services/search/creator?page=0&type=id&strict=true" +
+            "&value=https%3A%2F%2Fomeka.example.org%2Fadmin%2Fuser%2F65&levels=annotation&desc=1"
+        ]
+        for anno_uri in anno_uris:
+            mock.get(anno_uri, payload=search_by_creator_page)
+        response = elucidate.async_items_by_creator(
+            elucidate="https://elucidate.example.org",
+            creator_id=c,
+        )
+        anno_list = list(response)
+        assert isinstance(response, types.GeneratorType)  # is True
+        assert len(anno_list) == 74
+
+
+@pytest.mark.datafiles(
+    os.path.join(FIXTURE_DIR, "search_by_creator.json"),
+    os.path.join(FIXTURE_DIR, "search_by_creator_page.json"),
+)
+def test_items_by_creator_filter_multi(datafiles):
+    path = str(datafiles)
+    with aioresponses() as mock, requests_mock.Mocker() as m:
+        with open(os.path.join(path, "search_by_creator.json"), "r") as f:
+            search_by_creator = json.load(f)
+        with open(os.path.join(path, "search_by_creator_page.json"), "r") as f0:
+            search_by_creator_page = json.load(f0)
+        c = "https://omeka.example.org/admin/user/65"
+        u = (
+            "https://elucidate.example.org/annotation/w3c/services/search/creator?type=id&levels=annotation&strict=" +
+            "True&value=https%3A%2F%2Fomeka.example.org%2Fadmin%2Fuser%2F65"
+        )
+        print("U", u)
+        m.register_uri("GET", url=u, json=search_by_creator)
+        anno_uris = [
+            "https://elucidate.example.org/annotation/w3c/services/search/creator?page=0&type=id&strict=true" +
+            "&value=https%3A%2F%2Fomeka.example.org%2Fadmin%2Fuser%2F65&levels=annotation&desc=1"
+        ]
+        for anno_uri in anno_uris:
+            mock.get(anno_uri, payload=search_by_creator_page)
+        response = elucidate.async_items_by_creator(
+            elucidate="https://elucidate.example.org",
+            creator_id=c,
+            filter_by={"motivation": [{"label": "tagging"}]},
+        )
+        anno_list = list(response)
+        assert isinstance(response, types.GeneratorType)  # is True
+        assert len(anno_list) == 5
