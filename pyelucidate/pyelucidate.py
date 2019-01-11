@@ -630,10 +630,7 @@ def create_anno(
         return 400, None
 
 
-def update_anno(anno_uri: str,
-                anno_content: dict,
-                etag: str,
-                dry_run: bool = True) -> int:
+def update_anno(anno_uri: str, anno_content: dict, etag: str, dry_run: bool = True) -> int:
     """
     Update an individual annotation, requires etag.
 
@@ -1081,7 +1078,10 @@ def async_items_by_target(elucidate: str, target_uri: str, **kwargs) -> dict:
                                 if item.get(filter_key):
                                     if isinstance(item.get(filter_key), dict):
                                         if all(
-                                            [item[filter_key][k] == v for k, v in filter_value.items()]
+                                            [
+                                                item[filter_key][k] == v
+                                                for k, v in filter_value.items()
+                                            ]
                                         ):
                                             yield transform_annotation(
                                                 item=item,
@@ -1160,7 +1160,10 @@ def async_items_by_container(
                                                 )
                                         elif isinstance(item.get(filter_key), str):
                                             if all(
-                                                [item[filter_key] == v for k, v in filter_value.items()]
+                                                [
+                                                    item[filter_key] == v
+                                                    for k, v in filter_value.items()
+                                                ]
                                             ):
                                                 yield transform_annotation(
                                                     item=item,
@@ -1298,7 +1301,11 @@ def async_items_by_creator(elucidate: str, creator_id: str, **kwargs) -> dict:
     :return: annotation object
     """
     c = quote_plus(creator_id)
-    sample_uri = elucidate + "/annotation/w3c/services/search/creator?type=id&levels=annotation&strict=True&value=" + c
+    sample_uri = (
+        elucidate
+        + "/annotation/w3c/services/search/creator?type=id&levels=annotation&strict=True&value="
+        + c
+    )
     r = requests.get(sample_uri)
     filter_by = kwargs.get("filter_by")
     if r.status_code == requests.codes.ok:
@@ -1324,7 +1331,10 @@ def async_items_by_creator(elucidate: str, creator_id: str, **kwargs) -> dict:
                                 if item.get(filter_key):
                                     if isinstance(item.get(filter_key), dict):
                                         if all(
-                                            [item[filter_key][k] == v for k, v in filter_value.items()]
+                                            [
+                                                item[filter_key][k] == v
+                                                for k, v in filter_value.items()
+                                            ]
                                         ):
                                             yield transform_annotation(
                                                 item=item,
