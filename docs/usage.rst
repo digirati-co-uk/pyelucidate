@@ -268,7 +268,8 @@ Search by annotation target:
     print(json.dumps(annotations, indent=4))
 
 
-Search by container (assumes the container is an MD5 hash of the target URI):
+Search by container (assumes the container is an MD5 hash of the target URI, which is usual practice on Digirati's
+DLCS projects):
 
 .. code-block:: python
 
@@ -301,6 +302,20 @@ Typical usage:
 
     For tagging annotations, where the target is tagged with a particular topic URI, return all parent manifests for
     canvases that have been tagged with that topic URI.
+
+N.B. this code sets `strict=True` on the Elucidate query.
+
+
+.. code-block:: python
+
+    from pyelucidate import pyelucidate
+
+
+    parents = pyelucidate.parents_by_topic(elucidate="http://elucidate.example.org",
+                                           topic="https://omeka.example.org/topic/virtual:person/mary+smith")
+
+
+    print(list(set(parents)))
 
 
 Bulk update
