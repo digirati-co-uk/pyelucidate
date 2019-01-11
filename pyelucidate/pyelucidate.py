@@ -1285,3 +1285,65 @@ def iiif_iterative_delete_by_manifest_async_get(
             logging.error("Could not GET manifest %s", manifest_uri)
             return False
     return all(statuses)
+
+
+def async_items_by_creator(elucidate: str, creator_id: str, **kwargs) -> dict:
+    """
+    Asynchronously yield annotations from a query by creator to Elucidate.
+
+    Async requests all of the annotation pages before yielding.
+
+    :param elucidate: Elucidate server, e.g. https://elucidate.example.org
+    :param creator_id: URI from target source and id, e.g. 'https://manifest.example.org/manifest/1'
+    :return: annotation object
+    """
+    c = quote_plus(creator_id)
+    sample_uri = elucidate + "/annotation/w3c/services/search/creator?type=id&levels=annotation&strict=True&value=" + c
+    r = requests.get(sample_uri)
+    filter_by = kwargs.get("filter_by")
+    if r.status_code == requests.codes.ok:
+        loop = asyncio.new_event_loop()
+        asyncio.set_event_loop(loop)
+        future = asyncio.ensure_future(
+            fetch_all([p for p in annotation_pages(r.json())])
+        )  # tasks to do
+        pages = loop.run_until_complete(future)  # loop until done
+        for page in pages:
+            if page.get("items"):
+                for item in page["items"]:
+                    # will not return if the annotation doesn't have the
+                    # filter property, e.g. {"motivation": [{"id": "bookmarking"}]}
+                    # if the value of they is a simple string, e.g. if the annotation has
+                    # "motivation" : "bookmarking"
+                    # the code will ignore the "id" key, and check that all values match,
+                    # irresepctive of
+                    # the key.
+                    if filter_by:
+                        for filter_key, filter_value_list in filter_by.items():
+                            for filter_value in filter_value_list:
+                                if item.get(filter_key):
+                                    if isinstance(item.get(filter_key), dict):
+                                        if all(
+                                            [item[filter_key][k] == v for k, v in filter_value.items()]
+                                        ):
+                                            yield transform_annotation(
+                                                item=item,
+                                                flatten_at_ids=kwargs.get("flatten_ids"),
+                                                transform_function=kwargs.get("trans_function"),
+                                            )
+                                    elif isinstance(item.get(filter_key), str):
+                                        if all(
+                                            [item[filter_key] == v for k, v in filter_value.items()]
+                                        ):
+                                            yield transform_annotation(
+                                                item=item,
+                                                flatten_at_ids=kwargs.get("flatten_ids"),
+                                                transform_function=kwargs.get("trans_function"),
+                                            )
+
+                    else:
+                        yield transform_annotation(
+                            item=item,
+                            flatten_at_ids=kwargs.get("flatten_ids"),
+                            transform_function=kwargs.get("trans_function"),
+                        )
