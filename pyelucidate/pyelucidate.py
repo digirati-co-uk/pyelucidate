@@ -7,6 +7,7 @@ import logging
 import aiohttp
 import requests
 from aiohttp import ClientSession, TCPConnector
+from copy import deepcopy
 
 
 def set_query_field(url: str, field: str, value: Union[int, str], replace: bool = False):
@@ -913,29 +914,31 @@ def transform_annotation(
     :param transform_function: function to pass the annotation through
     :return:
     """
+    item_copy = deepcopy(item)
     if transform_function:
         if flatten_at_ids:  # flatten dicts with @ids to simple key / value
-            for k, v in item.items():
-                if "@id" in item[k]:
-                    item[k] = item[k]["@id"]
-        item["motivation"] = "oa:tagging"  # force motivation to tagging
-        if isinstance(item["body"], list):  # transform each anno body (in list of bodies)
-            item["body"] = [transform_function(body) for body in item["body"]]
-        elif isinstance(item["body"], dict):  # transform single anno (if not a list)
-            item["body"] = transform_function(item["body"])
-        if isinstance(item["target"], dict):  # replace the target with a simple 'on'
-            item["on"] = target_extract(item["target"])  # o
-        elif isinstance(item["target"], list):
-            item["on"] = [target_extract(o) for o in item["target"]][0]  # o_list[0]
+            for k, v in item_copy.items():
+                if "@id" in item_copy[k]:
+                    item_copy[k] = item_copy[k]["@id"]
+        item_copy["motivation"] = "oa:tagging"  # force motivation to tagging
+        if item_copy.get("body"):
+            if isinstance(item_copy["body"], list):  # transform each anno body (in list of bodies)
+                item_copy["body"] = [transform_function(body) for body in item_copy["body"]]
+            elif isinstance(item_copy["body"], dict):  # transform single anno (if not a list)
+                item_copy["body"] = transform_function(item_copy["body"])
+        if isinstance(item_copy["target"], dict):  # replace the target with a simple 'on'
+            item_copy["on"] = target_extract(item_copy["target"])  # o
+        elif isinstance(item_copy["target"], list):
+            item_copy["on"] = [target_extract(o) for o in item_copy["target"]][0]  # o_list[0]
         else:
-            item["on"] = item["target"]
-        item["@id"] = item["id"]
-        item["@type"] = "oa:Annotation"
-        item["resource"] = item["body"]
-        item = remove_keys(
-            d=item, keys=["generator", "label", "target", "creator", "type", "id", "body"]
+            item_copy["on"] = item_copy["target"]
+        item_copy["@id"] = item_copy["id"]
+        item_copy["@type"] = "oa:Annotation"
+        item_copy["resource"] = item_copy["body"]
+        item_copy = remove_keys(
+            d=item_copy, keys=["generator", "label", "target", "creator", "type", "id", "body"]
         )  # remove unused keys
-        return item
+        return item_copy
     else:
         return item
 
