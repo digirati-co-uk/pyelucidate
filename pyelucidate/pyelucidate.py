@@ -934,7 +934,7 @@ def transform_annotation(
             item_copy["on"] = item_copy["target"]
         item_copy["@id"] = item_copy["id"]
         item_copy["@type"] = "oa:Annotation"
-        item_copy["resource"] = item_copy["body"]
+        item_copy["resource"] = item_copy.get(["body"])
         item_copy = remove_keys(
             d=item_copy, keys=["generator", "label", "target", "creator", "type", "id", "body"]
         )  # remove unused keys
